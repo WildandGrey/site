@@ -1,0 +1,11 @@
+<%# CONFIG %>
+<%# COMMENT: Storing `sample.json` data %>
+<% page = data.sample %>
+<%# END %>
+<main>
+  <%# Component: Greeting %>
+  <%= partial("components/greeting", :locals => {
+      :title => page.greeting.title,
+      :description => page.greeting.description
+  }) %>
+</main>
