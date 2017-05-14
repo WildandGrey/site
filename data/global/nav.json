@@ -1,0 +1,30 @@
+{
+  "image": {
+    "src": "/images/brand/logo.svg",
+    "alt": "Greyson MacAlpline Logo"
+  },
+  "links": [
+    {
+      "title": "About",
+      "href": "/about",
+      "target": false
+    },
+    {
+      "title": "Photography",
+      "href": "http://vsco.co/greysonmacalpine",
+      "target": true
+    }
+  ],
+  "contact": [
+    {
+      "title": "greyson@wildandgrey.com",
+      "href": "mailto:greyson@wildandgrey.com",
+      "target": false
+    },
+    {
+      "title": "210 412 8870",
+      "href": "tel:2104128870",
+      "target": false
+    }
+  ]
+}
