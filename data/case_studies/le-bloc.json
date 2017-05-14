@@ -1,0 +1,12 @@
+{
+  "index": 3,
+  "title": "Le Bloc",
+  "card": {
+    "image": {
+      "src": "/images/case-studies/le-bloc/card.jpg",
+      "alt": "Lorem ipsum"
+    },
+    "title": "Responsive Ecommerce Website",
+    "description": "—> Insert descriptive text “i.e. I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.”"
+  }
+}

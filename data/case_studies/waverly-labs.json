@@ -1,0 +1,12 @@
+{
+  "index": 1,
+  "title": "Waverly Labs",
+  "card": {
+    "image": {
+      "src": "/images/case-studies/waverly-labs/card.jpg",
+      "alt": "Lorem ipsum"
+    },
+    "title": "The Pilot App",
+    "description": "From early user research, to wireframes and prototypes, to final polished deliverables, I was involved in the end-to-end process of designing for both Android and iOS."
+  }
+}

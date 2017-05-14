@@ -1,0 +1,12 @@
+{
+  "index": 4,
+  "title": "Concept Projects",
+  "card": {
+    "image": {
+      "src": "/images/case-studies/concept-projects/card.jpg",
+      "alt": "Lorem ipsum"
+    },
+    "title": "Studies in Product Thinking",
+    "description": "—> Insert descriptive text “i.e. I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.”"
+  }
+}
