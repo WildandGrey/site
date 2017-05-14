@@ -3,6 +3,8 @@
 <% nav = data.global.nav %>
 <%# COMMENT: Storing `data/sections/home.json` data %>
 <% page = data.sections.home %>
+<%# COMMENT: Article index %>
+<% article_index = 1 %>
 <%# END %>
 <%# Component: Nav %>
 <%= partial("components/nav", :locals => {
@@ -14,12 +16,67 @@
   <section>
     <%# Component: Hero %>
     <%= partial("components/hero", :locals => {
-          :portrait => page.hero.image,
-          :caption => page.hero.caption
+          :heading => page.hero.heading,
+          :portrait => page.hero.image
     }) %>
     <%# Component: Caption %>
     <%= partial("components/caption", :locals => {
-          :text => page.intro
+          :text => page.caption
     }) %>
+    <%# List: Blocks %>
+    <div class="clearfix mw-42_125rem mh-auto mb-8_125rem">
+      <% page.blocks.each_with_index do |block, index| %>
+        <%# Component: Block %>
+        <%= partial("components/block", :locals => {
+              :index => article_index,
+              :title => block.title,
+              :type => block.type,
+              :links => block.links
+        }) %>
+        <%# CONFIG %>
+        <%# COMMENT: Increment Article Index %>
+        <% article_index = article_index + 1 %>
+        <%# END %>
+      <% end %>
+    </div>
+    <%# List: Cards %>
+    <div class="clearfix mw-52_75rem mh-auto">
+      <%# CONFIG %>
+      <%# COMMENT: Card index %>
+      <% index = 0 %>
+      <%# COMMENT: Total number of case studies %>
+      <% total_cards = data.case_studies.length - 1 %>
+      <%# END %>
+      <% data.case_studies.each do |id, card| %>
+        <% if index % 2 === 0 %>
+          <div class="f-left w-50percent pr-2_9375rem">
+            <%# Component: Card %>
+            <%= partial("components/card", :locals => {
+                  :index => article_index,
+                  :title => card.title,
+                  :image => card.card.image,
+                  :project => card.card.title,
+                  :description => card.card.description
+            }) %>
+          </div>
+        <% else %>
+          <div class="f-right w-50percent <% if index === 1 %>mt-8_75rem<% end %> pl-2_9375rem">
+            <%# Component: Card %>
+            <%= partial("components/card", :locals => {
+                  :index => article_index,
+                  :title => card.title,
+                  :image => card.card.image,
+                  :project => card.card.title,
+                  :description => card.card.description
+            }) %>
+          </div>
+        <% end %>
+        <%# CONFIG %>
+        <%# COMMENT: Increment index %>
+        <% index = index + 1 %>
+        <% article_index = article_index + 1 %>
+        <%# END %>
+      <% end %>
+    </div>
   </section>
 </main>
