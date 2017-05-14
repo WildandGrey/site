@@ -3,6 +3,7 @@
   - Web Font Smoothing
   - Clearfix
   - Display
+  - Flexbox
   - Float
   - Vertical Align
 */
@@ -15,20 +16,29 @@
 /* Display */
 .d-block { display: block; }
 .d-inline_block { display: inline-block; }
+.d-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+/* Flexbox */
+.ai-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 /* Float */
 .f-right { float: right; }
+.f-left { float: left; }
 /* Vertical Align */
 .va-top { vertical-align: top; }
 /*
   SIZING
+  - Width
   - Max Width
 */
+.w-45percent { width: 45%; }
+.w-50percent { width: 50%; }
 /* Max Width */
+.mw-42_125rem { max-width: 42.125rem; }
 .mw-52_75rem { max-width: 52.75rem; }
 /*
   SPACING
   - Margin
   - Padding
+  - Aspect Ratios
 */
 /* Margin */
 .ma-0 { margin: 0; }
@@ -36,15 +46,23 @@
 .mt-3_125rem { margin-top: 3.125rem; }
 .mr-3_125rem { margin-right: 3.125rem; }
 .mb-0_4375rem { margin-bottom: 0.4375rem; }
+.mb-8_125rem { margin-bottom: 8.125rem; }
 /* Padding */
 .pa-0 { padding: 0; }
+.pv-8_125rem { padding-top: 8.125rem; padding-bottom: 8.125rem; }
+.pr-5percent { padding-right: 5%; }
 .pb-3_125rem { padding-bottom: 3.125rem; }
+/* Aspect Ratios */
+.ar { height: 0; position: relative; }
+.ar-object { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 100; }
+.ar-7x10 { padding-bottom: 143%; }
 /*
   TYPOGRAPHY
   - Font Face
   - Font Family
   - Font Weight
   - Font Size
+  - Line Height
   - Color
   - Text Decoration
 */
@@ -64,6 +82,12 @@
 .fw-bold { font-weight: bolder; }
 /* Font Size */
 .fs-0_9375rem { font-size: 0.9375rem; }
+.fs-1_25rem { font-size: 1.25rem; }
+.fs-2_1875rem { font-size: 2.1875rem; }
+/* Line Height */
+.lh-1_3 { line-height: 1.6; }
+.lh-1_5 { line-height: 1.5; }
+/* Color */
 .c-coal { color: #282828; }
 .c-peach { color: #f0ab93; }
 /* Text Decoration */
