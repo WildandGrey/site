@@ -1,0 +1,93 @@
+/*
+  GENERAL
+  - Web Font Smoothing
+  - Clearfix
+  - Display
+  - Float
+  - Vertical Align
+*/
+/* Web Font Smoothing */
+.wfs-antialiased { -webkit-font-smoothing: antialiased; }
+/* Clearfix */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+/* Display */
+.d-block { display: block; }
+.d-inline_block { display: inline-block; }
+/* Float */
+.f-right { float: right; }
+/* Vertical Align */
+.va-top { vertical-align: top; }
+/*
+  SIZING
+  - Max Width
+*/
+/* Max Width */
+.mw-52_75rem { max-width: 52.75rem; }
+/*
+  SPACING
+  - Margin
+  - Padding
+*/
+/* Margin */
+.ma-0 { margin: 0; }
+.mh-auto { margin-right: auto; margin-left: auto; }
+.mt-3_125rem { margin-top: 3.125rem; }
+.mr-3_125rem { margin-right: 3.125rem; }
+.mb-0_4375rem { margin-bottom: 0.4375rem; }
+/* Padding */
+.pa-0 { padding: 0; }
+.pb-3_125rem { padding-bottom: 3.125rem; }
+/*
+  TYPOGRAPHY
+  - Font Face
+  - Font Family
+  - Font Weight
+  - Font Size
+  - Color
+  - Text Decoration
+*/
+/* Font Face */
+@font-face {
+  font-family: 'Akkurat';
+  src: url('../Akkurat.eot'); /* IE9 Compat Modes */
+  src: url('../Akkurat.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../Akkurat.woff') format('woff'), /* Modern Browsers */
+  url('../Akkurat.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../Akkurat.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+/* Font Family */
+.ff-akkurat { font-family: 'Akkurat'; }
+/* Font Weight */
+.fw-regular { font-weight: normal; }
+.fw-bold { font-weight: bolder; }
+/* Font Size */
+.fs-0_9375rem { font-size: 0.9375rem; }
+.c-coal { color: #282828; }
+.c-peach { color: #f0ab93; }
+/* Text Decoration */
+.td-none { text-decoration: none; }
+/*
+  BACKGROUND
+  - Background Color
+*/
+/* Background Color */
+.bgc-tan { background-color: #f2edea; }
+/*
+  BORDER
+  - Border Style
+  - Border Width
+  - Border Color
+*/
+/* Border Style */
+.bbs-solid { border-bottom-style: solid; }
+/* Border Width */
+.bbw-0_25rem { border-bottom-width: 0.25rem; }
+/* Border Color */
+.bc-coal { border-color: #282828; }
+/*
+  LISTS
+  - List Style Type
+*/
+.lst-none { list-style-type: none; }
