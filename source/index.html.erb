@@ -1,13 +1,25 @@
 <%# CONFIG %>
-<%# COMMENT: Storing `sample.json` data %>
+<%# COMMENT: Storing `data/global/nav.json` data %>
 <% nav = data.global.nav %>
+<%# COMMENT: Storing `data/sections/home.json` data %>
+<% page = data.sections.home %>
 <%# END %>
 <%# Component: Nav %>
 <%= partial("components/nav", :locals => {
       :image => nav.image,
       :links => nav.links,
       :contact => nav.contact
-    }) %>
+}) %>
 <main>
-  <%# Component: Hero %>
+  <section>
+    <%# Component: Hero %>
+    <%= partial("components/hero", :locals => {
+          :portrait => page.hero.image,
+          :caption => page.hero.caption
+    }) %>
+    <%# Component: Caption %>
+    <%= partial("components/caption", :locals => {
+          :text => page.intro
+    }) %>
+  </section>
 </main>
