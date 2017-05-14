@@ -1,0 +1,60 @@
+<%#
+
+    NAME: Block,
+    PARAMETERS:
+      Index: Int
+      Title: String
+      Type: String-List
+            - single
+            - third
+      Links: Link-Array
+
+%>
+<%# CONFIG %>
+<%# COMMENT: Even-odd conditional horizontal padding %>
+<% if index % 2 != 0 %>
+  <% padding = "pr-2_9375rem" %>
+<% else %>
+  <% padding = "pl-2_9375rem" %>
+<% end %>
+<%# COMMENT: Type conditional width and right padding %>
+<% if type === "single" %>
+  <% width = "w-100percent" %>
+  <% padding_right = "" %>
+<% elsif type === "third" %>
+  <% width = "w-33percent" %>
+  <% padding_right = "pr-1rem" %>
+<% end %>
+<%# END %>
+<article class="f-left w-50percent <%= padding %>">
+  <header class="clearfix mb-1rem">
+    <%# Index %>
+    <h3 class="f-left w-15percent ma-0 ff-akkurat fw-bold fs-1_125rem c-gray"><%= "0#{ index }" %></h3>
+    <%# Title %>
+    <h1 class="f-left w-85percent ma-0 ff-akkurat fw-bold fs-1_125rem c-coal"><%= title %></h1>
+  </header>
+  <div class="f-left w-15percent mh-1px"></div>
+  <ul class="f-left w-85percent clearfix ma-0 pa-0 lst-none">
+    <%# CONFIG %>
+    <%# COMMENT: Link counter %>
+    <% counter = 0 %>
+    <%# END %>
+    <% links.each do |link| %>
+      <% if counter === 0 %>
+        <div class="f-left <%= width %> clearfix <%= padding_right %>">
+      <% end %>
+          <li class="mb-0_25rem"><a data-interaction="link" class="ff-akkurat fw-regular fs-0_9375rem c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
+      <% if counter === 2 %>
+        </div>
+      <% end %>
+      <%# CONFIG %>
+      <%# COMMENT: Counter modifier (3n-1) %>
+      <% if counter < 2 %>
+        <% counter = counter + 1 %>
+      <% else %>
+        <% counter = 0 %>
+      <% end %>
+      <%# END %>
+    <% end %>
+  </ul>
+</article>
