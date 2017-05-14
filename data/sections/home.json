@@ -1,10 +1,84 @@
 {
   "hero": {
+    "heading": "Product designer formerly at Ueno, Knife & Fox,<br>and Mossio.",
     "image": {
       "src": "/images/greyson/hero.jpg",
       "alt": "Hi there, I'm Greyson!"
-    },
-    "caption": "Product designer formerly at Ueno, Knife & Fox,<br>and Mossio."
+    }
   },
-  "intro": "As a product designer I care about people as much as I care about visual craft. My end-to-end process encompasses early UX to delivery of polished pixels, while remaining purposeful in helping companies deliver meaningful experiences."
+  "caption": "As a product designer I care about people as much as I care about visual craft. My end-to-end process encompasses early UX to delivery of polished pixels, while remaining purposeful in helping companies deliver meaningful experiences.",
+  "blocks": [
+    {
+      "title": "Companies I've Worked With",
+      "type": "third",
+      "links": [
+        {
+          "title": "Uber",
+          "href": "www.google.com",
+          "target": true
+        },
+        {
+          "title": "Samsung",
+          "href": "www.google.com",
+          "target": true
+        },
+        {
+          "title": "Articulate",
+          "href": "www.google.com",
+          "target": true
+        },
+        {
+          "title": "Ueno",
+          "href": "www.google.com",
+          "target": true
+        },
+        {
+          "title": "Arlo Skye",
+          "href": "www.google.com",
+          "target": true
+        },
+        {
+          "title": "Mashable",
+          "href": "www.google.com",
+          "target": true
+        },
+        {
+          "title": "Mux",
+          "href": "www.google.com",
+          "target": true
+        },
+        {
+          "title": "SalesLoft",
+          "href": "www.google.com",
+          "target": true
+        },
+        {
+          "title": "Code2040",
+          "href": "www.google.com",
+          "target": true
+        }
+      ]
+    },
+    {
+      "title": "Speaking Events",
+      "type": "single",
+      "links": [
+        {
+          "title": "Valiocon",
+          "href": "www.google.com",
+          "target": true
+        },
+        {
+          "title": "Squares Conference",
+          "href": "www.google.com",
+          "target": true
+        },
+        {
+          "title": "Creative Works",
+          "href": "www.google.com",
+          "target": true
+        }
+      ]
+    }
+  ]
 }
