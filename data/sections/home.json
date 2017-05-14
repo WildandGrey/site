@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "image": {
+      "src": "/images/greyson/hero.jpg",
+      "alt": "Hi there, I'm Greyson!"
+    },
+    "caption": "Product designer formerly at Ueno, Knife & Fox,<br>and Mossio."
+  },
+  "intro": "As a product designer I care about people as much as I care about visual craft. My end-to-end process encompasses early UX to delivery of polished pixels, while remaining purposeful in helping companies deliver meaningful experiences."
+}
