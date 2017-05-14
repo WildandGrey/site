@@ -1,11 +1,13 @@
 <%# CONFIG %>
 <%# COMMENT: Storing `sample.json` data %>
-<% page = data.sample %>
+<% nav = data.global.nav %>
 <%# END %>
+<%# Component: Nav %>
+<%= partial("components/nav", :locals => {
+      :image => nav.image,
+      :links => nav.links,
+      :contact => nav.contact
+    }) %>
 <main>
-  <%# Component: Greeting %>
-  <%= partial("components/greeting", :locals => {
-      :title => page.greeting.title,
-      :description => page.greeting.description
-  }) %>
+  <%# Component: Hero %>
 </main>
