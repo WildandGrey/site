@@ -17,6 +17,15 @@ if ($links) {
   });
 }
 /*
+  FOOTER COPYRIGHT YEAR
+  - Year
+*/
+/* Year */
+const date = new Date();
+const currentYear = date.getFullYear();
+const $year = document.querySelector(`[data-copyright="year"]`);
+$year.innerHTML = currentYear;
+/*
   FUNCTIONS
   - Toggle Class
 */
