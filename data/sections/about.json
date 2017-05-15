@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "src": "/images/greyson/header.png",
+    "alt": "This is a placeholder header image."
+  },
+  "first_section": {
+    "index": "01",
+    "title": "About Me as a Designer",
+    "text": "I'm a product designer in San Francisco, passionate about process, design systems, teams, collaboration, and developing culture. I dove headfirst into graphic design and illustration early on in my career, but quickly realized I was driven to design meaningful experiences for people and products rather than focusing only on visual craft. I now emphasize a balance between both and champion a human-centric approach to my process. During my focus on agency work, I was privileged to work on great projects with Mossio, Knife & Fox and most recently Ueno. I’m now pursuing opportunities to contribute value from early UX to final pixels, prioritizing people at the heart of what I do."
+  },
+  "gallery": {
+    "top_image": {
+      "src": "/images/greyson/top-placeholder.png",
+      "alt": "This is a placeholder image for the about page gallery."
+    },
+    "bottom_image": {
+      "src": "/images/greyson/bottom-placeholder.png",
+      "alt": "This is a placeholder image for the about page gallery."
+    }
+  },
+  "second_section": {
+    "index": "02",
+    "title": "Wild & Grey",
+    "text": "With deep roots in film and photography, I also work with a core team of creatives in running a collective studio, Wild & Grey. We’re a family of contractors focusing on on client services such as video production, photography, and design. We’re passionate about storytelling, social good, and creating meaningful experiences. We’ve worked with Airbnb, Mashable, Ugmonk, Jeremy Cowart, Dann Petty + Epicurrence, Sony, Reddit, Disney, and Target, Patagonia, Blood:Water, Intercom, Hallmark, 1Face Watch, Reach Records, SWISSGEAR, Pebble, and more."
+  }
+}
