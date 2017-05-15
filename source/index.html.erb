@@ -1,6 +1,8 @@
 <%# CONFIG %>
 <%# COMMENT: Storing `data/global/nav.json` data %>
 <% nav = data.global.nav %>
+<%# COMMENT: Storing `data/global/footer.json` data %>
+<% footer = data.global.footer %>
 <%# COMMENT: Storing `data/sections/home.json` data %>
 <% page = data.sections.home %>
 <%# COMMENT: Article index %>
@@ -80,3 +82,8 @@
     </div>
   </section>
 </main>
+<%# Component: Footer %>
+<%= partial("components/footer", :locals => {
+      :copyright => footer.copyright,
+      :social => footer.social
+}) %>
