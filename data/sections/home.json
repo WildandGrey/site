@@ -24,12 +24,12 @@
         },
         {
           "title": "Articulate",
-          "href": "www.google.com",
+          "href": "https://dribbble.com/shots/3103661-Articulate-Heroes",
           "target": true
         },
         {
           "title": "Ueno",
-          "href": "www.google.com",
+          "href": "https://dribbble.com/shots/3426436-Nylas",
           "target": true
         },
         {
@@ -49,7 +49,7 @@
         },
         {
           "title": "SalesLoft",
-          "href": "www.google.com",
+          "href": "https://dribbble.com/shots/2811832-Email-Reports",
           "target": true
         },
         {
@@ -65,17 +65,17 @@
       "links": [
         {
           "title": "Valiocon",
-          "href": "www.google.com",
+          "href": "http://valiocon.com/",
           "target": true
         },
         {
           "title": "Squares Conference",
-          "href": "www.google.com",
+          "href": "http://squaresconference.com/",
           "target": true
         },
         {
           "title": "Creative Works",
-          "href": "www.google.com",
+          "href": "https://conference.creativeworks.co/",
           "target": true
         }
       ]
