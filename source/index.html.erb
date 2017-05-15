@@ -30,15 +30,11 @@
       <% page.blocks.each_with_index do |block, index| %>
         <%# Component: Block %>
         <%= partial("components/block", :locals => {
-              :index => article_index,
+              :_index => index,
               :title => block.title,
               :type => block.type,
               :links => block.links
         }) %>
-        <%# CONFIG %>
-        <%# COMMENT: Increment Article Index %>
-        <% article_index = article_index + 1 %>
-        <%# END %>
       <% end %>
     </div>
     <%# List: Cards %>
@@ -54,7 +50,7 @@
           <div class="f-left w-50percent pr-2_9375rem">
             <%# Component: Card %>
             <%= partial("components/card", :locals => {
-                  :index => article_index,
+                  :_index => article_index,
                   :title => card.title,
                   :image => card.card.image,
                   :project => card.card.title,
@@ -65,7 +61,7 @@
           <div class="f-right w-50percent <% if index === 1 %>mt-8_75rem<% end %> pl-2_9375rem">
             <%# Component: Card %>
             <%= partial("components/card", :locals => {
-                  :index => article_index,
+                  :_index => article_index,
                   :title => card.title,
                   :image => card.card.image,
                   :project => card.card.title,
