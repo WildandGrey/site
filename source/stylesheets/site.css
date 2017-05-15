@@ -24,6 +24,10 @@
 /* Position */
 .p-absolute { position: absolute;; }
 .p-relative { position: relative; }
+.t-0 { top: 0; }
+.r-0 { right: 0; }
+.b-0 { bottom: 0; }
+.l-0 { left: 0; }
 /* Z Index */
 .zi-2 { z-index: 2; }
 /* Float */
@@ -60,24 +64,30 @@
 */
 /* Margin */
 .ma-0 { margin: 0; }
+.mv-8rem { margin-top: 8rem; margin-bottom: 8rem; }
 .mh-auto { margin-right: auto; margin-left: auto; }
 .mt-3_125rem { margin-top: 3.125rem; }
 .mt-8_75rem { margin-top: 8.75rem; }
+.mr-1_375rem { margin-right: 1.375rem; }
 .mr-3_125rem { margin-right: 3.125rem; }
 .mb-0_25rem { margin-bottom: 0.25rem; }
 .mb-0_4375rem { margin-bottom: 0.4375rem; }
+.mb-0_8125rem { margin-bottom: 0.8125rem; }
 .mb-1rem { margin-bottom: 1rem; }
 .mb-1_25rem { margin-bottom: 1.25rem; }
 .mb-7_75rem { margin-bottom: 7.75rem; }
+.mb-8rem { margin-bottom: 8rem; }
 .mb-8_125rem { margin-bottom: 8.125rem; }
 /* Padding */
 .pa-0 { padding: 0; }
 .pv-2_75rem { padding-top: 2.75rem; padding-bottom: 2.75rem; }
 .pv-8_125rem { padding-top: 8.125rem; padding-bottom: 8.125rem; }
 .pr-5percent { padding-right: 5%; }
+.pr-0_25rem { padding-right: 0.25rem; }
 .pr-1rem { padding-right: 1rem; }
 .pr-2_9375rem { padding-right: 2.9375rem; }
 .pb-3_125rem { padding-bottom: 3.125rem; }
+.pl-0_25rem { padding-left: 0.25rem; }
 .pl-2_9375rem { padding-left: 2.9375rem; }
 /* Aspect Ratios */
 .ar { height: 0; position: relative; }
@@ -115,6 +125,7 @@
 .fs-1_25rem { font-size: 1.25rem; }
 .fs-2_1875rem { font-size: 2.1875rem; }
 /* Line Height */
+.lh-0 { line-height: 0; }
 .lh-1_3 { line-height: 1.6; }
 .lh-1_5 { line-height: 1.5; }
 /* Color */
