@@ -1,0 +1,18 @@
+<%#
+
+    NAME: Image Stack
+    PARAMETERS:
+      top_image: Image
+      bottom_image: Image
+
+%>
+<section class="p-relative mw-52_75rem mh-auto mb-8rem" style="height: 520px;">
+  <%# top_image %>
+  <figure class="p-absolute b-0 l-0 zi-2 ma-0">
+    <img class="d-block" src="<%= top_image.src %>" alt="<%= top_image.alt %>">
+  </figure>
+  <%# bottom_image %>
+  <figure class="p-absolute t-0 r-0 ma-0">
+    <img class="d-block" src="<%= bottom_image.src %>" alt="<%= bottom_image.alt %>">
+  </figure>
+</section>
