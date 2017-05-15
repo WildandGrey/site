@@ -2,7 +2,7 @@
 
     NAME: Block
     PARAMETERS:
-      index: Int
+      _index: Int
       title: String
       type: Enum
             - single
@@ -11,8 +11,8 @@
 
 %>
 <%# CONFIG %>
-<%# COMMENT: Even-odd conditional horizontal padding %>
-<% if index % 2 != 0 %>
+<%# COMMENT: Conditional horizontal padding %>
+<% if _index % 2 === 0 %>
   <% padding = "pr-2_9375rem" %>
 <% else %>
   <% padding = "pl-2_9375rem" %>
@@ -27,14 +27,10 @@
 <% end %>
 <%# END %>
 <article class="f-left w-50percent <%= padding %>">
-  <header class="clearfix mb-1rem">
-    <%# Index %>
-    <h3 class="f-left w-15percent ma-0 ff-akkurat fw-bold fs-1_125rem c-gray"><%= "0#{ index }" %></h3>
-    <%# Title %>
-    <h1 class="f-left w-85percent ma-0 ff-akkurat fw-bold fs-1_125rem c-coal"><%= title %></h1>
+  <header class="mb-1rem">
+    <h1 class="ma-0 ff-akkurat fw-bold fs-1_125rem c-coal"><%= title %></h1>
   </header>
-  <div class="f-left w-15percent mh-1px"></div>
-  <ul class="f-left w-85percent clearfix ma-0 pa-0 lst-none">
+  <ul class="clearfix ma-0 pa-0 lst-none">
     <%# CONFIG %>
     <%# COMMENT: Link counter %>
     <% counter = 0 %>
