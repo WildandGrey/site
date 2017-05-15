@@ -62,6 +62,7 @@
 .mb-8_125rem { margin-bottom: 8.125rem; }
 /* Padding */
 .pa-0 { padding: 0; }
+.pv-2_75rem { padding-top: 2.75rem; padding-bottom: 2.75rem; }
 .pv-8_125rem { padding-top: 8.125rem; padding-bottom: 8.125rem; }
 .pr-5percent { padding-right: 5%; }
 .pr-1rem { padding-right: 1rem; }
@@ -97,6 +98,7 @@
 .fw-regular { font-weight: normal; }
 .fw-bold { font-weight: bolder; }
 /* Font Size */
+.fs-0_75rem { font-size: 0.75rem; }
 .fs-0_875rem { font-size: 0.875rem; }
 .fs-0_9375rem { font-size: 0.9375rem; }
 .fs-1_125rem { font-size: 1.125rem; }
@@ -108,6 +110,7 @@
 /* Color */
 .c-coal { color: #282828; }
 .c-gray { color: #8d8b89; }
+.c-white { color: #ffffff; }
 .c-peach { color: #f0ab93; }
 /* Text Decoration */
 .td-none { text-decoration: none; }
@@ -117,6 +120,7 @@
 */
 /* Background Color */
 .bgc-tan { background-color: #f2edea; }
+.bgc-coal { background-color: #282828; }
 /*
   BORDER
   - Border Style
