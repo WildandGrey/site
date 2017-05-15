@@ -1,0 +1,31 @@
+<%#
+
+    NAME: Footer,
+    PARAMETERS:
+      Copyright: String
+      Social: Link-Array
+
+%>
+<footer class="w-100 pv-2_75rem bgc-coal">
+  <div class="mw-52_75rem mh-auto clearfix">
+    <%# Copyright %>
+    <p class="f-left ma-0 ff-akkurat fw-regular fs-0_75rem c-white"><%= copyright %> <span data-copyright="year"></span></p>
+    <ul class="f-right ma-0 pa-0 lst-none">
+      <%# CONFIG %>
+      <%# COMMENT: Total number of links (index-base) %>
+      <% total_links = social.length - 1 %>
+      <%# END %>
+      <% social.each_with_index do |link, index| %>
+        <%# CONFIG %>
+        <% if index === total_links %>
+          <% margin_bottom = "" %>
+        <% else %>
+          <% margin_bottom = "mb-0_25rem" %>
+        <% end %>
+        <%# END %>
+        <%# Link %>
+        <li><a class="d-inline_block <%= margin_bottom %> ff-akkurat fw-regular fs-0_75rem c-white td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
+      <% end %>
+    </ul>
+  </div>
+</footer>
