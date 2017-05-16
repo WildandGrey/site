@@ -7,7 +7,7 @@
 <% page = data.sections.about %>
 <%# END %>
 <%# Component: Nav %>
-<%= partial("components/nav", :locals => {
+<%= partial("components/global/nav", :locals => {
       :image => nav.image,
       :links => nav.links,
       :contact => nav.contact
@@ -32,7 +32,7 @@
         :bottom_image => page.gallery.bottom_image
   }) %>
   <%# Component: Two-Column Paragraph %>
-  <%= partial("components/two_column_paragraph", :locals => {
+  <%= partial("components/double_column_paragraph", :locals => {
         :index => "02",
         :title => page.second_section.title,
         :first_column => page.second_section.first_column,
@@ -40,7 +40,7 @@
   }) %>
 </main>
 <%# Component: Footer %>
-<%= partial("components/footer", :locals => {
+<%= partial("components/global/footer", :locals => {
       :copyright => footer.copyright,
       :social => footer.social
 }) %>
