@@ -3,32 +3,53 @@
     NAME: Footer
     PARAMETERS:
       copyright: String
-      social: Array:Link
+      social: Array:Pseudolink
 
 %>
-<footer class="p-relative clearfix w-100percent h-100percent bgc-tan">
-  <div class="p-absolute clearfix w-100percent h-100percent">
-    <div class="f-left w-50percent h-100percent bgc-tan"></div>
-    <div class="f-left w-50percent h-100percent bgc-coal"></div>
+<footer class="p-relative clearfix w-100p h-100p bgc-tan">
+  <div class="p-absolute clearfix w-100p h-100p">
+    <div class="f-left w-50p h-100p bgc-tan"></div>
+    <div class="f-left w-50p h-100p bgc-coal"></div>
   </div>
-  <div class="p-relative zi-2 mw-52_75rem clearfix mh-auto pv-2_75rem bgc-coal" style="padding-left: 89px;">
-    <%# Copyright %>
-    <p class="f-left ma-0 ff-akkurat fw-regular fs-0_75rem c-white"><%= copyright %> <span data-copyright="year"></span></p>
-    <ul class="f-right ma-0 pa-0 lst-none">
+  <div class="p-relative zi-2 clearfix mw-56rem mh-auto pv-3rem pl-6rem bgc-coal">
+    <%# copyright %>
+    <p class="f-left ma-0 ff-akkurat fw-regular fs-0_8rem c-white"><%= copyright %> <span data-copyright="year"></span></p>
+    <%# social %>
+    <ul class="f-right clearfix ma-0 pa-0 lst-none">
       <%# CONFIG %>
-      <%# COMMENT: Total number of links (index-base) %>
-      <% total_links = social.length - 1 %>
+      <%# COMMENT: Link index %>
+      <% index = 0 %>
       <%# END %>
-      <% social.each_with_index do |link, index| %>
+      <% social.each do |link| %>
         <%# CONFIG %>
-        <% if index === total_links %>
+        <% if index === 2 %>
           <% margin_bottom = "" %>
         <% else %>
-          <% margin_bottom = "mb-0_25rem" %>
+          <% margin_bottom = "mb-0_2rem" %>
         <% end %>
         <%# END %>
         <%# Link %>
-        <li><a class="d-inline_block <%= margin_bottom %> ff-akkurat fw-regular fs-0_75rem c-white td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
+        <% if index === 0 %>
+          <div class="f-right ml-2_5rem">
+        <% end %>
+            <li>
+              <% if !link.href && !link.target %>
+                <p class="<%= margin_bottom %> ff-akkurat fw-regular fs-0_8rem c-white td-none"><%= link.title %></p>
+              <% else %>
+                <a class="d-inline_block <%= margin_bottom %> ff-akkurat fw-regular fs-0_8rem c-white td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+              <% end %>
+            </li>
+        <% if index === 2 %>
+          </div>
+        <% end %>
+        <%# CONFIG %>
+        <%# COMMENT: Updates/resets index based on value %>
+        <% if index < 2 %>
+          <% index = index + 1 %>
+        <% else %>
+          <% index = 0 %>
+        <% end %>
+        <%# END %>
       <% end %>
     </ul>
   </div>
