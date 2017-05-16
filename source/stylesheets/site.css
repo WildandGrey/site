@@ -21,6 +21,7 @@
 .d-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 /* Flexbox */
 .ai-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.jc-space_between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 /* Position */
 .p-absolute { position: absolute;; }
 .p-relative { position: relative; }
@@ -50,6 +51,7 @@
 .w-85p { width: 85%; }
 .w-100p { width: 100%; }
 /* Max Width */
+.mw-45rem { max-width: 45rem; }
 .mw-50rem { max-width: 50rem; }
 .mw-56rem { max-width: 56rem; }
 /* Height */
@@ -77,6 +79,7 @@
 .pa-0 { padding: 0; }
 .pv-3rem { padding-top: 3rem; padding-bottom: 3rem; }
 .pr-0_5rem { padding-right: 0.5rem; }
+.pr-9rem { padding-right: 9rem; }
 .pl-0_5rem { padding-left: 0.5rem; }
 .pb-2rem { padding-bottom: 2rem; }
 .pl-6rem { padding-left: 6rem; }
