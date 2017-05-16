@@ -50,8 +50,7 @@
 .w-85percent { width: 85%; }
 .w-100percent { width: 100%; }
 /* Max Width */
-.mw-42_125rem { max-width: 42.125rem; }
-.mw-52_75rem { max-width: 52.75rem; }
+.mw-56rem { max-width: 56rem; }
 /* Height */
 .h-100percent { height: 100%; }
 /* Min Height */
@@ -60,46 +59,22 @@
   SPACING
   - Margin
   - Padding
-  - Aspect Ratios
 */
-/* Margin */
+/* Old Margin */
 .ma-0 { margin: 0; }
-.mv-8rem { margin-top: 8rem; margin-bottom: 8rem; }
 .mh-auto { margin-right: auto; margin-left: auto; }
-.mt-3_125rem { margin-top: 3.125rem; }
-.mt-8rem { margin-top: 8rem; }
-.mt-8_75rem { margin-top: 8.75rem; }
-.mr-1_375rem { margin-right: 1.375rem; }
-.mr-3_125rem { margin-right: 3.125rem; }
-.mb-0_25rem { margin-bottom: 0.25rem; }
-.mb-0_4375rem { margin-bottom: 0.4375rem; }
-.mb-0_8125rem { margin-bottom: 0.8125rem; }
-.mb-1rem { margin-bottom: 1rem; }
-.mb-1_25rem { margin-bottom: 1.25rem; }
-.mb-3rem { margin-bottom: 3rem; }
-.mb-7_75rem { margin-bottom: 7.75rem; }
-.mb-8rem { margin-bottom: 8rem; }
-.mb-8_125rem { margin-bottom: 8.125rem; }
-/* Padding */
+.mt-3rem { margin-top: 3rem; }
+.mr-3rem { margin-right: 3rem; }
+.mb-0_5rem { margin-bottom: 0.5rem; }
+/* Old Padding */
 .pa-0 { padding: 0; }
-.pv-2_75rem { padding-top: 2.75rem; padding-bottom: 2.75rem; }
-.pv-8_125rem { padding-top: 8.125rem; padding-bottom: 8.125rem; }
-.pr-5percent { padding-right: 5%; }
-.pr-0_25rem { padding-right: 0.25rem; }
-.pr-1rem { padding-right: 1rem; }
-.pr-2_9375rem { padding-right: 2.9375rem; }
-.pb-3_125rem { padding-bottom: 3.125rem; }
-.pl-0_25rem { padding-left: 0.25rem; }
-.pl-2_9375rem { padding-left: 2.9375rem; }
-/* Aspect Ratios */
-.ar { height: 0; position: relative; }
-.ar-object { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 100; }
-.ar-7x10 { padding-bottom: 143%; }
+.pb-2rem { padding-bottom: 2rem; }
 /*
   TYPOGRAPHY
   - Font Face
   - Font Family
   - Font Weight
+  - Font Style
   - Font Size
   - Line Height
   - Color
@@ -119,7 +94,10 @@
 /* Font Weight */
 .fw-regular { font-weight: normal; }
 .fw-bold { font-weight: bolder; }
+/* Font Style */
+.fst-italic { font-style: italic; }
 /* Font Size */
+.fs-15px { font-size: 15px; }
 .fs-0_75rem { font-size: 0.75rem; }
 .fs-0_875rem { font-size: 0.875rem; }
 .fs-0_9375rem { font-size: 0.9375rem; }
@@ -153,7 +131,7 @@
 /* Border Style */
 .bbs-solid { border-bottom-style: solid; }
 /* Border Width */
-.bbw-0_25rem { border-bottom-width: 0.25rem; }
+.bbw-4px { border-bottom-width: 4px; }
 /* Border Color */
 .bc-coal { border-color: #282828; }
 /*
