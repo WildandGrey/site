@@ -7,13 +7,13 @@
       contact: Array:Link
 
 %>
-<nav class="mw-52_75rem mh-auto pb-3_125rem bbs-solid bbw-0_25rem bc-coal">
+<nav class="mw-56rem mh-auto mt-3rem pb-2rem bbs-solid bbw-4px bc-coal">
   <%# Logo %>
   <a href="/"><img src="<%= image.src %>" alt="<%= image.alt %>"></a>
   <ul class="clearfix f-right ma-0 pa-0 lst-none">
     <%# Links %>
     <% links.each do |link| %>
-      <li class="d-inline_block va-top"><a data-interaction="link" class="mr-3_125rem ff-akkurat c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+      <li class="d-inline_block va-top"><a data-interaction="link" class="mr-3rem ff-akkurat fw-regular fst-italic c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
     <% end %>
     <%# Contact %>
     <%# CONFIG %>
@@ -27,10 +27,10 @@
         <% if index == total_contact %>
           <% margin_bottom = "" %>
         <% else %>
-          <% margin_bottom = "mb-0_4375rem" %>
+          <% margin_bottom = "mb-0_5rem" %>
         <% end %>
         <%# END %>
-        <a data-interaction="link" class="d-block <%= margin_bottom %> ff-akkurat c-coal td-none" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
+        <a data-interaction="link" class="d-block <%= margin_bottom %> ff-akkurat fw-regular fst-italic c-coal td-none" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
       <% end %>
     </li>
   </ul>
