@@ -43,16 +43,16 @@
   - Min Height
 */
 /* Width */
-.w-33percent { width: calc( 100% / 3 ); }
-.w-15percent { width: 15%; }
-.w-45percent { width: 45%; }
-.w-50percent { width: 50%; }
-.w-85percent { width: 85%; }
-.w-100percent { width: 100%; }
+.w-33p { width: calc( 100% / 3 ); }
+.w-15p { width: 15%; }
+.w-45p { width: 45%; }
+.w-50p { width: 50%; }
+.w-85p { width: 85%; }
+.w-100p { width: 100%; }
 /* Max Width */
 .mw-56rem { max-width: 56rem; }
 /* Height */
-.h-100percent { height: 100%; }
+.h-100p { height: 100%; }
 /* Min Height */
 .mh-1px { min-height: 1px; }
 /*
@@ -60,15 +60,19 @@
   - Margin
   - Padding
 */
-/* Old Margin */
+/* Margin */
 .ma-0 { margin: 0; }
 .mh-auto { margin-right: auto; margin-left: auto; }
 .mt-3rem { margin-top: 3rem; }
 .mr-3rem { margin-right: 3rem; }
+.mb-0_2rem { margin-bottom: 0.2rem; }
 .mb-0_5rem { margin-bottom: 0.5rem; }
-/* Old Padding */
+.ml-2_5rem { margin-left: 2.5rem; }
+/* Padding */
 .pa-0 { padding: 0; }
+.pv-3rem { padding-top: 3rem; padding-bottom: 3rem; }
 .pb-2rem { padding-bottom: 2rem; }
+.pl-6rem { padding-left: 6rem; }
 /*
   TYPOGRAPHY
   - Font Face
@@ -98,12 +102,8 @@
 .fst-italic { font-style: italic; }
 /* Font Size */
 .fs-15px { font-size: 15px; }
-.fs-0_75rem { font-size: 0.75rem; }
-.fs-0_875rem { font-size: 0.875rem; }
-.fs-0_9375rem { font-size: 0.9375rem; }
-.fs-1_125rem { font-size: 1.125rem; }
-.fs-1_25rem { font-size: 1.25rem; }
-.fs-2_1875rem { font-size: 2.1875rem; }
+.fs-0_8rem { font-size: 0.8rem; }
+.fs-1rem { font-size: 1rem; }
 /* Line Height */
 .lh-0 { line-height: 0; }
 .lh-1_3 { line-height: 1.6; }
