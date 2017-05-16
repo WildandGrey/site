@@ -3,23 +3,30 @@
     NAME: Nav
     PARAMETERS:
       logo: Image
-      links: Array:Link
-      contact: Array:Link
+      links: Array:Pseudolink
+      contact: Array:Pseudolink
 
 %>
 <nav class="mw-56rem mh-auto mt-3rem pb-2rem bbs-solid bbw-4px bc-coal">
-  <%# Logo %>
+  <%# logo %>
   <a href="/"><img src="<%= image.src %>" alt="<%= image.alt %>"></a>
   <ul class="clearfix f-right ma-0 pa-0 lst-none">
-    <%# Links %>
+    <%# links %>
     <% links.each do |link| %>
-      <li class="d-inline_block va-top"><a data-interaction="link" class="mr-3rem ff-akkurat fw-regular fst-italic c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+      <li class="d-inline_block va-top">
+        <% if !link.href && !link.target %>
+          <p class="ma-0 mr-3rem ff-akkurat fw-regular fst-italic fs-1rem c-coal td-none"><%= link.title %></p>
+        <% else %>
+          <a data-interaction="link" class="mr-3rem ff-akkurat fw-regular fst-italic fs-1rem c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+        <% end %>
+      </li>
     <% end %>
     <%# Contact %>
     <%# CONFIG %>
     <%# COMMENT: Total number of contacts (index-base) %>
     <% total_contact = contact.length - 1 %>
     <%# END %>
+    <%# contact %>
     <li class="d-inline_block va-top">
       <% contact.each_with_index do |contact, index| %>
         <%# CONFIG %>
@@ -30,7 +37,11 @@
           <% margin_bottom = "mb-0_5rem" %>
         <% end %>
         <%# END %>
-        <a data-interaction="link" class="d-block <%= margin_bottom %> ff-akkurat fw-regular fst-italic c-coal td-none" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
+        <% if !contact.href && !contact.target %>
+          <p class="<%= margin_bottom %> ff-akkurat fw-regular fst-italic fs-1rem c-coal td-none"><%= contact.title %></p>
+        <% else %>
+          <a data-interaction="link" class="d-block <%= margin_bottom %> ff-akkurat fw-regular fst-italic fs-1rem c-coal td-none" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
+        <% end %>
       <% end %>
     </li>
   </ul>
