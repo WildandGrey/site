@@ -9,7 +9,7 @@
 <% article_index = 1 %>
 <%# END %>
 <%# Component: Nav %>
-<%= partial("components/nav", :locals => {
+<%= partial("components/global/nav", :locals => {
       :image => nav.image,
       :links => nav.links,
       :contact => nav.contact
@@ -79,7 +79,7 @@
   </section>
 </main>
 <%# Component: Footer %>
-<%= partial("components/footer", :locals => {
+<%= partial("components/global/footer", :locals => {
       :copyright => footer.copyright,
       :social => footer.social
 }) %>
