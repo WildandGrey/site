@@ -51,6 +51,7 @@
 .w-85p { width: 85%; }
 .w-100p { width: 100%; }
 /* Max Width */
+.mw-40rem { max-width: 40rem; }
 .mw-45rem { max-width: 45rem; }
 .mw-50rem { max-width: 50rem; }
 .mw-56rem { max-width: 56rem; }
@@ -68,20 +69,27 @@
 .ma-0 { margin: 0; }
 .mh-auto { margin-right: auto; margin-left: auto; }
 .mt-3rem { margin-top: 3rem; }
+.mt-8rem { margin-top: 8rem; }
 .mr-1rem { margin-right: 1rem; }
 .mr-3rem { margin-right: 3rem; }
 .mb-0_2rem { margin-bottom: 0.2rem; }
 .mb-0_5rem { margin-bottom: 0.5rem; }
 .mb-1rem { margin-bottom: 1rem; }
+.mb-2rem { margin-bottom: 2rem; }
+.mb-3rem { margin-bottom: 3rem; }
 .mb-8rem { margin-bottom: 8rem; }
 .ml-2_5rem { margin-left: 2.5rem; }
 /* Padding */
 .pa-0 { padding: 0; }
 .pv-3rem { padding-top: 3rem; padding-bottom: 3rem; }
+.pr-0_2rem { padding-right: 0.2rem; }
 .pr-0_5rem { padding-right: 0.5rem; }
+.pr-2rem { padding-right: 2rem; }
 .pr-9rem { padding-right: 9rem; }
-.pl-0_5rem { padding-left: 0.5rem; }
 .pb-2rem { padding-bottom: 2rem; }
+.pl-0_5rem { padding-left: 0.5rem; }
+.pl-2rem { padding-left: 2rem; }
+.pl-4rem { padding-left: 4rem; }
 .pl-6rem { padding-left: 6rem; }
 /*
   TYPOGRAPHY
@@ -115,6 +123,7 @@
 .fs-0_8rem { font-size: 0.8rem; }
 .fs-1rem { font-size: 1rem; }
 .fs-1_2rem { font-size: 1.2rem; }
+.fs-2_5rem { font-size: 2.5rem; }
 /* Line Height */
 .lh-0 { line-height: 0; }
 .lh-1_3 { line-height: 1.6; }
