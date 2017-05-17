@@ -16,7 +16,9 @@ page '/index.html', layout: 'main'
 page '/about.html', layout: 'main'
 page '/case-study.html', layout: 'main'
 
-# Ignore
+# Proxy
 
-## Case Study Template
-ignore '/case-study.html'
+## Case Studies
+data.case_studies.each do |id, article|
+  proxy "/case-studies/#{ article.title.parameterize }/index.html", "/case-study.html", :locals => { :article => article }, :ignore => true
+end
