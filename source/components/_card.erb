@@ -9,11 +9,11 @@
       description: String
 
 %>
-<article class="mb-7_75rem">
+<article class="mb-8rem">
   <header class="clearfix mb-1rem">
-    <h1 class="ma-0 ff-akkurat fw-bold fs-1_125rem c-coal"><span class="mr-1_375rem c-gray"><%= "0#{ _index }" %></span><a data-interaction="link" class="c-coal td-none" href="/case-studies/<%= project.parameterize %>"><%= title %></a></h1>
+    <h1 class="ma-0 ff-akkurat fw-bold fs-1_2rem c-coal"><span class="mr-1rem c-gray"><%= "0#{ _index }" %></span><a data-interaction="link" class="c-coal td-none" href="/case-studies/<%= title.parameterize %>"><%= title %></a></h1>
   </header>
-  <a class="d-block" href="/case-studies/<%= project.parameterize %>"><img class="w-100percent mb-1_25rem" src="<%= image.src %>" alt="<%= image.alt %>"></a>
-  <h2 class="ma-0 mb-0_4375rem ff-akkurat fw-bold fs-0_875rem c-coal"><%= project %></h2>
-  <p class="ma-0 ff-akkurat fw-regular fs-0_875rem lh-1_5 c-coal"><%= description %></p>
+  <a class="d-block" href="/case-studies/<%= title.parameterize %>"><img class="w-100p mb-1rem" src="<%= image.src %>" alt="<%= image.alt %>"></a>
+  <h2 class="ma-0 mb-0_2rem ff-akkurat fw-bold fs-0_8rem c-coal"><%= project %></h2>
+  <p class="ma-0 ff-akkurat fw-regular fs-0_8rem lh-1_5 c-coal"><%= description %></p>
 </article>
