@@ -13,22 +13,22 @@
 <%# CONFIG %>
 <%# COMMENT: Conditional horizontal padding %>
 <% if _index % 2 === 0 %>
-  <% padding = "pr-2_9375rem" %>
+  <% padding = "pr-2rem" %>
 <% else %>
-  <% padding = "pl-2_9375rem" %>
+  <% padding = "pl-2rem" %>
 <% end %>
 <%# COMMENT: Type conditional width and right padding %>
 <% if type === "single" %>
-  <% width = "w-100percent" %>
+  <% width = "w-100p" %>
   <% padding_right = "" %>
 <% elsif type === "third" %>
-  <% width = "w-33percent" %>
-  <% padding_right = "pr-1rem" %>
+  <% width = "w-33p" %>
+  <% padding_right = "pr-0_2rem" %>
 <% end %>
 <%# END %>
-<article class="f-left w-50percent <%= padding %>">
+<article class="f-left w-50p <%= padding %>">
   <header class="mb-1rem">
-    <h1 class="ma-0 ff-akkurat fw-bold fs-1_125rem c-coal"><%= title %></h1>
+    <h1 class="ma-0 ff-akkurat fw-bold fs-1_2rem c-coal"><%= title %></h1>
   </header>
   <ul class="clearfix ma-0 pa-0 lst-none">
     <%# CONFIG %>
@@ -39,7 +39,7 @@
       <% if counter === 0 %>
         <div class="f-left <%= width %> clearfix <%= padding_right %>">
       <% end %>
-          <li class="mb-0_25rem"><a data-interaction="link" class="ff-akkurat fw-regular fs-0_9375rem c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
+          <li class="mb-0_2rem"><a data-interaction="link" class="ff-akkurat fw-regular fs-1rem c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
       <% if counter === 2 %>
         </div>
       <% end %>
