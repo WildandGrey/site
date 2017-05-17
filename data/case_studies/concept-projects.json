@@ -24,6 +24,15 @@
         "alt": "This is a sample image. Please replace.",
         "caption": false
       }
+    },
+    {
+      "type": "Double-Column Paragraph",
+      "paragraph": {
+        "type": "Centered",
+        "title": "Market Research & Competitive Analysis",
+        "first_column": "Time and budget constraints limited in-depth and extensive user interviews, so secondary research was prioritized. Qualitative data was collected from the Pilot’s Indiegogo backers through specific surveys and insights were gathered by meticulously assessing user sentiment through reviews of competing translation apps.",
+        "second_column": "We also learned that a high percentage of the Pilot backers were educated males over thirty years old and lived in Western countries. Learning which languages they prioritized for both leisure and business purposes helped inform which five language offerings would be available in beta and which language would be the app default."
+      }
     }
   ]
 }

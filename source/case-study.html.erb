@@ -34,11 +34,7 @@
         <% margin_bottom = "mb-8rem" %>
       <% end %>
       <%# END %>
-      <%# Component:
-          Image
-          - With Caption
-          - Without Caption
-      %>
+      <%# Component: Image %>
       <% if component.type === "Image" %>
         <%= partial("components/content/image", :locals => {
               :margin => margin_bottom,
@@ -47,12 +43,16 @@
               :caption => component.image.caption
         }) %>
       <% end %>
+      <%# Component: Double-Column Paragraph %>
+      <% if component.type === "Double-Column Paragraph" %>
+        <%= partial("components/content/double_column_paragraph", :locals => {
+              :type => component.paragraph.type,
+              :title => component.paragraph.title,
+              :first_column => component.paragraph.first_column,
+              :second_column => component.paragraph.second_column
+        }) %>
+      <% end %>
     <% end %>
-      <%# Component:
-          Double-Column Paragraph
-          - Centered
-          - Floated Right
-      %>
       <%# Component: Image Gallery %>
       <%# Component:
           Quote
