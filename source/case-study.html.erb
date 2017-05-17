@@ -4,41 +4,27 @@
 <%# COMMENT: Storing `data/global/footer.json` data %>
 <% footer = data.global.footer %>
 <%# COMMENT: Storing `data/sections/home.json` data %>
-<% article = locals[:case_study] %>
+<% article = locals[:article] %>
 <%# END %>
 <%# Component: Nav %>
-<%= partial("components/nav", :locals => {
+<%= partial("components/global/nav", :locals => {
       :image => nav.image,
       :links => nav.links,
       :contact => nav.contact
 }) %>
 <main>
   <article>
-    <header class="mw-42_125rem mh-auto mt-8rem mb-3rem">
-      <h1 class="ma-0 ff-akkurat fw-regular fs-2_1875rem c-coal"><%= article.card.title %></h1>
-    </header>
-    <%# CONFIG %>
-    <%# COMMENT: Total number of content components (index-base) %>
-    <%# List: Content Components %>
-    <% article.content.each do |component| %>
-      <%# Component: Single-Column Paragraph %>
-      <% if component.type === "Single-Column Paragraph" %>
-        <%= partial("components/single_column_paragraph", :locals => {
-              :title => component.paragraph.title,
-              :text => component.paragraph.text
-        }) %>
-      <% end %>
-      <%# Component: Double-Column Paragraph %>
-      <%# Component: Quote %>
-      <%# Component: Image %>
-      <%# Component: Image Gallery %>
-    <% end %>
-    <%# END %>
+    <%# Component: Header %>
+    <%= partial("components/content/header", :locals => {
+          :title => article.title,
+          :subtitle => article.header.title,
+          :text => article.header.text
+    }) %>
     <%# List: Content Components %>
   </article>
 </main>
 <%# Component: Footer %>
-<%= partial("components/footer", :locals => {
+<%= partial("components/global/footer", :locals => {
       :copyright => footer.copyright,
       :social => footer.social
 }) %>
