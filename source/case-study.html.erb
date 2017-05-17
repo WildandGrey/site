@@ -20,12 +20,34 @@
           :subtitle => article.header.title,
           :text => article.header.text
     }) %>
+    <%# CONFIG %>
+    <%# COMMENT: Total number of components (index-base) %>
+    <% total = article.content.length - 1 %>
+    <%# END %>
     <%# List: Content Components %>
+    <% article.content.each_with_index do |component, index| %>
+      <%# CONFIG %>
+      <%# COMMENT: Conditional bottom margin %>
+      <% if index === total %>
+        <% margin_bottom = "mb-4rem" %>
+      <% else %>
+        <% margin_bottom = "mb-8rem" %>
+      <% end %>
+      <%# END %>
       <%# Component:
           Image
           - With Caption
           - Without Caption
       %>
+      <% if component.type === "Image" %>
+        <%= partial("components/content/image", :locals => {
+              :margin => margin_bottom,
+              :src => component.image.src,
+              :alt => component.image.alt,
+              :caption => component.image.caption
+        }) %>
+      <% end %>
+    <% end %>
       <%# Component:
           Double-Column Paragraph
           - Centered
