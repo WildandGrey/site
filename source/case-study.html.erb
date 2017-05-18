@@ -43,6 +43,7 @@
               :caption => component.image.caption
         }) %>
       <% end %>
+      <%# Component: Image Gallery %>
       <%# Component: Double-Column Paragraph %>
       <% if component.type === "Double-Column Paragraph" %>
         <%= partial("components/content/double_column_paragraph", :locals => {
@@ -52,14 +53,14 @@
               :second_column => component.paragraph.second_column
         }) %>
       <% end %>
+      <%# Component: Quote %>
+      <% if component.type === "Quote" %>
+        <%= partial("components/content/quote", :locals => {
+              :quote => component.quote.text,
+              :author => component.quote.author
+        }) %>
+      <% end %>
     <% end %>
-      <%# Component: Image Gallery %>
-      <%# Component:
-          Quote
-          - With Author
-          - Without Author
-      %>
-    <%# END %>
   </article>
 </main>
 <%# Component: Footer %>

@@ -38,6 +38,7 @@
 .f-left { float: left; }
 /* Vertical Align */
 .va-top { vertical-align: top; }
+.va-middle { vertical-align: middle; }
 /*
   SIZING
   - Width
@@ -46,6 +47,7 @@
   - Min Height
 */
 /* Width */
+.w-1_5rem { width: 1.5rem; }
 .w-33p { width: calc( 100% / 3 ); }
 .w-15p { width: 15%; }
 .w-45p { width: 45%; }
@@ -53,11 +55,13 @@
 .w-85p { width: 85%; }
 .w-100p { width: 100%; }
 /* Max Width */
+.mw-35rem { max-width: 35rem; }
 .mw-40rem { max-width: 40rem; }
 .mw-45rem { max-width: 45rem; }
 .mw-50rem { max-width: 50rem; }
 .mw-56rem { max-width: 56rem; }
 /* Height */
+.h-1_5rem { height: 1.5rem; }
 .h-35rem { height: 35rem; }
 .h-100p { height: 100%; }
 /* Min Height */
@@ -135,6 +139,7 @@
 .fs-0_8rem { font-size: 0.8rem; }
 .fs-1rem { font-size: 1rem; }
 .fs-1_2rem { font-size: 1.2rem; }
+.fs-1_5rem { font-size: 1.5rem; }
 .fs-2_5rem { font-size: 2.5rem; }
 /* Line Height */
 .lh-0 { line-height: 0; }
@@ -158,12 +163,15 @@
   BORDER
   - Border Style
   - Border Width
+  - Border Radius
   - Border Color
 */
 /* Border Style */
 .bbs-solid { border-bottom-style: solid; }
 /* Border Width */
 .bbw-4px { border-bottom-width: 4px; }
+/* Border Radius */
+.br-50p { border-radius: 50%; }
 /* Border Color */
 .bc-coal { border-color: #282828; }
 /*
