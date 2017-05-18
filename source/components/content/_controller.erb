@@ -6,6 +6,7 @@
     next: Link
 
 %>
-<nav class="clearfix mw-56rem mh-auto">
-
+<nav class="clearfix mw-56rem mh-auto mb-4rem">
+  <a data-interaction="link" class="d-inline_block f-left ff-akkurat fw-regular fst-italic fs-1rem c-coal td-none" href="/case-studies/<%= previous_article.parameterize %>"><%= previous_article %></a>
+  <a data-interaction="link" class="d-inline_block f-right ff-akkurat fw-regular fst-italic fs-1rem c-coal td-none" href="/case-studies/<%= next_article.parameterize %>"><%= next_article %></a>
 </nav>
