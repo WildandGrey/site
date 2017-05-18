@@ -2,13 +2,12 @@
 
     NAME: Image
     PARAMETERS:
-      margin: Int
       src: String
       alt: String
       caption: String?
 
 %>
-<figure class="p-relative mw-56rem ma-0 mh-auto <%= margin %>">
+<figure class="p-relative mw-56rem ma-0 mh-auto mb-8rem">
   <img class="d-block w-100p" src="<%= src %>" alt="<%= alt %>">
   <% if caption %>
     <figcaption class="p-absolute zi-2 t-35p l-2rem to-top_right t-caption ff-akkurat fw-regular fs-0_8rem c-coal"><%= caption %></figcaption>
