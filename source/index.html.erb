@@ -7,6 +7,14 @@
 <% page = data.sections.home %>
 <%# COMMENT: Article index %>
 <% article_index = 1 %>
+<%# COMMENT: Total number of case studies %>
+<% total = data.case_studies.length %>
+<%# COMMENT: List of ordered case studies %>
+<% case_studies = [] %>
+<%# COMMENT: Fetch and push case studies into list %>
+<% (1..total).each do |index| %>
+  <% case_studies.push(fetch_article(index)) %>
+<% end %>
 <%# END %>
 <%# Component: Nav %>
 <%= partial("components/global/nav", :locals => {
@@ -40,17 +48,12 @@
     <%# List: Cards %>
     <div class="clearfix mw-56rem mh-auto">
       <%# CONFIG %>
-      <%# COMMENT: Card index %>
-      <% index = 0 %>
-      <%# COMMENT: Total number of case studies %>
-      <% total_cards = data.case_studies.length - 1 %>
-      <%# END %>
-      <% data.case_studies.each do |id, card| %>
+      <% case_studies.each_with_index do |card, index| %>
         <% if index % 2 === 0 %>
           <div class="f-left w-50p pr-2rem">
             <%# Component: Card %>
             <%= partial("components/card", :locals => {
-                  :_index => article_index,
+                  :_index => card._index,
                   :title => card.title,
                   :image => card.card.image,
                   :project => card.card.title,
@@ -61,7 +64,7 @@
           <div class="f-right w-50p <% if index === 1 %>mt-8rem<% end %> pl-2rem">
             <%# Component: Card %>
             <%= partial("components/card", :locals => {
-                  :_index => article_index,
+                  :_index => card._index,
                   :title => card.title,
                   :image => card.card.image,
                   :project => card.card.title,
@@ -69,11 +72,6 @@
             }) %>
           </div>
         <% end %>
-        <%# CONFIG %>
-        <%# COMMENT: Increment index %>
-        <% index = index + 1 %>
-        <% article_index = article_index + 1 %>
-        <%# END %>
       <% end %>
     </div>
   </section>
