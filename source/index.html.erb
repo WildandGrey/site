@@ -23,7 +23,7 @@
       :contact => nav.contact
 }) %>
 <main>
-  <section>
+  <article>
     <%# Component: Hero %>
     <%= partial("components/hero", :locals => {
           :heading => page.hero.heading,
@@ -74,7 +74,7 @@
         <% end %>
       <% end %>
     </div>
-  </section>
+  </article>
 </main>
 <%# Component: Footer %>
 <%= partial("components/global/footer", :locals => {
