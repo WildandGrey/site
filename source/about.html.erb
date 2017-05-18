@@ -13,31 +13,48 @@
       :contact => nav.contact
 }) %>
 <main>
-  <%# Component: Image %>
-  <%= partial("components/image", :locals => {
-        :src => page.hero.src,
-        :alt => page.hero.alt,
-        :caption => ""
-  }) %>
-  <%# Component: Double-Column Paragraph %>
-  <%= partial("components/double_column_paragraph", :locals => {
-        :index => "01",
-        :title => page.first_section.title,
-        :first_column => page.first_section.first_column,
-        :second_column => page.first_section.second_column
-  }) %>
-  <%# Component: Image Stack %>
-  <%= partial("components/image_stack", :locals => {
-        :top_image => page.gallery.top_image,
-        :bottom_image => page.gallery.bottom_image
-  }) %>
-  <%# Component: Two-Column Paragraph %>
-  <%= partial("components/double_column_paragraph", :locals => {
-        :index => "02",
-        :title => page.second_section.title,
-        :first_column => page.second_section.first_column,
-        :second_column => page.second_section.second_column
-  }) %>
+  <article>
+    <%# List: Content Components %>
+    <% page.content.each_with_index do |component, index| %>
+      <%# Component: Image %>
+      <% if component.type === "Image" %>
+        <%= partial("components/content/image", :locals => {
+              :src => component.image.src,
+              :alt => component.image.alt,
+              :caption => component.image.caption
+        }) %>
+      <% end %>
+      <%# Component: Image Gallery %>
+      <% if component.type === "Image Gallery" %>
+        <%= partial("components/content/image_gallery", :locals => {
+              :images => component.images
+        }) %>
+      <% end %>
+      <%# Component: Image Stack %>
+      <% if component.type === "Image Stack" %>
+        <%= partial("components/content/image_stack", :locals => {
+              :top => component.images.top,
+              :bottom => component.images.bottom
+        }) %>
+      <% end %>
+      <%# Component: Double-Column Paragraph %>
+      <% if component.type === "Double-Column Paragraph" %>
+        <%= partial("components/content/double_column_paragraph", :locals => {
+              :type => component.paragraph.type,
+              :title => component.paragraph.title,
+              :first_column => component.paragraph.first_column,
+              :second_column => component.paragraph.second_column
+        }) %>
+      <% end %>
+      <%# Component: Quote %>
+      <% if component.type === "Quote" %>
+        <%= partial("components/content/quote", :locals => {
+              :quote => component.quote.text,
+              :author => component.quote.author
+        }) %>
+      <% end %>
+    <% end %>
+  </article>
 </main>
 <%# Component: Footer %>
 <%= partial("components/global/footer", :locals => {
