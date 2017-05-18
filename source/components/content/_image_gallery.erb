@@ -1,0 +1,57 @@
+<%#
+
+  NAME: Image Gallery
+  PARAMETERS:
+    images: Array:Image
+
+%>
+<section class="clearfix mh-auto mb-8rem" style="max-width: 50rem;">
+  <%# CONFIG %>
+  <%# COMMENT: Total number of images (index-base) %>
+  <% total = images.length - 1 %>
+  <%# END %>
+  <%# Left Column %>
+  <% images.each_with_index do |image, index| %>
+    <%# CONFIG %>
+    <%# COMMENT: Conditional bottom margin %>
+    <% if index != total - 1 %>
+      <% margin_bottom = "mb-4rem" %>
+    <% else %>
+      <% margin_bottom = "" %>
+    <% end %>
+    <%# END %>
+    <% if index % 2 === 0 %>
+      <% if index === 0 %>
+        <div class="f-left w-50p pr-2rem">
+      <% end %>
+          <figure class="ma-0 <%= margin_bottom %>">
+            <img class="d-block w-100p" src="<%= image.src %>" alt="<%= image.alt %>">
+          </figure>
+      <% if index === total - 1 %>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+  <%# Right Column %>
+  <% images.each_with_index do |image, index| %>
+    <%# CONFIG %>
+    <%# COMMENT: Conditional bottom margin %>
+    <% if index != total %>
+      <% margin_bottom = "mb-4rem" %>
+    <% else %>
+      <% margin_bottom = "" %>
+    <% end %>
+    <%# END %>
+    <% if index % 2 != 0 %>
+      <% if index === 1 %>
+        <div class="f-right w-50p mt-4rem pl-2rem">
+      <% end %>
+        <figure class="ma-0 <%= margin_bottom %>">
+          <img class="d-block w-100p" src="<%= image.src %>" alt="<%= image.alt %>">
+        </figure>
+      <% if index === total %>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+</section>

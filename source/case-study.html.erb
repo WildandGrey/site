@@ -44,6 +44,11 @@
         }) %>
       <% end %>
       <%# Component: Image Gallery %>
+      <% if component.type === "Image Gallery" %>
+        <%= partial("components/content/image_gallery", :locals => {
+              :images => component.images
+        }) %>
+      <% end %>
       <%# Component: Double-Column Paragraph %>
       <% if component.type === "Double-Column Paragraph" %>
         <%= partial("components/content/double_column_paragraph", :locals => {

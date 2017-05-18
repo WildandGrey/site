@@ -35,6 +35,31 @@
       }
     },
     {
+      "type": "Image Gallery",
+      "images": [
+        {
+          "src": "/images/case-studies/le-bloc/gallery-image-a.png",
+          "alt": "This is a sample image. Please replace.",
+          "caption": false
+        },
+        {
+          "src": "/images/case-studies/le-bloc/gallery-image-b.png",
+          "alt": "This is a sample image. Please replace.",
+          "caption": false
+        },
+        {
+          "src": "/images/case-studies/le-bloc/gallery-image-b.png",
+          "alt": "This is a sample image. Please replace.",
+          "caption": false
+        },
+        {
+          "src": "/images/case-studies/le-bloc/gallery-image-a.png",
+          "alt": "This is a sample image. Please replace.",
+          "caption": false
+        }
+      ]
+    },
+    {
       "type": "Quote",
       "quote": {
         "text": "Greyson is a fantastic designer. Every detail in a design matters to her. Her work is thoroughly thought out and researched. She is a pleasure to work with and someone I highly recommend.",
