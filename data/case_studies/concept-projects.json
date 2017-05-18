@@ -73,6 +73,64 @@
           "description": "CEO of Waverly Labs"
         }
       }
+    },
+    {
+      "type": "Double-Column Paragraph",
+      "paragraph": {
+        "type": "Right",
+        "title": "Wireframes & Prototypes",
+        "first_column": "We jumped into Sketch for higher fidelity in the wireframing process and designed flows for onboarding, text translation, voice translation, phrasebook capabilities, support and feedback, and more. It was particularly important that users be able to easily submit feedback and support requests, as the MVP would best improve through active listening to requests and feedback on experiences.",
+        "second_column": "I worked very closely with the team and their developers to ensure that the project would meet both business goals and also be completed by the beta’s launch date. We used Invision as an efficient way to review and engage with simple prototypes and leave feedback for each design iteration."
+      }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": "Example of iOS Wireframes"
+      }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": "Example of iOS Wireframes"
+      }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": "Example of Android Wireframes"
+      }
+    },
+    {
+      "type": "Double-Column Paragraph",
+      "paragraph": {
+        "type": "Right",
+        "title": "Rebrand & Launch for iOS & Android",
+        "first_column": "The app would be supported on both iOS and Android, so I designed the end-to-end experience for both, getting feedback from users of both platforms to better understand their needs and expectations. During this design process, Waverly Labs underwent a rebrand, which we integrated in the final design.",
+        "second_column": "Visually, we knew that we wanted to focus on undistracted simplicity. We embraced white space and kept the iconography straightfoward. The beta apps were quietly launched last year in November."
+      }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": "Example of iOS Visuals"
+      }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": "Example of Android Visuals"
+      }
     }
   ]
 }
