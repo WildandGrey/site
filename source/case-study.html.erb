@@ -24,10 +24,6 @@
           :subtitle => article.header.title,
           :text => article.header.text
     }) %>
-    <%# CONFIG %>
-    <%# COMMENT: Total number of components (index-base) %>
-    <% total = article.content.length - 1 %>
-    <%# END %>
     <%# List: Content Components %>
     <% article.content.each_with_index do |component, index| %>
       <%# Component: Image %>
@@ -42,6 +38,13 @@
       <% if component.type === "Image Gallery" %>
         <%= partial("components/content/image_gallery", :locals => {
               :images => component.images
+        }) %>
+      <% end %>
+      <%# Component: Image Stack %>
+      <% if component.type === "Image Stack" %>
+        <%= partial("components/content/image_stack", :locals => {
+              :top => component.images.top,
+              :bottom => component.images.bottom
         }) %>
       <% end %>
       <%# Component: Double-Column Paragraph %>
