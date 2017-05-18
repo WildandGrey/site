@@ -26,18 +26,9 @@
     <%# END %>
     <%# List: Content Components %>
     <% article.content.each_with_index do |component, index| %>
-      <%# CONFIG %>
-      <%# COMMENT: Conditional bottom margin %>
-      <% if index === total %>
-        <% margin_bottom = "mb-4rem" %>
-      <% else %>
-        <% margin_bottom = "mb-8rem" %>
-      <% end %>
-      <%# END %>
       <%# Component: Image %>
       <% if component.type === "Image" %>
         <%= partial("components/content/image", :locals => {
-              :margin => margin_bottom,
               :src => component.image.src,
               :alt => component.image.alt,
               :caption => component.image.caption
@@ -67,6 +58,8 @@
       <% end %>
     <% end %>
   </article>
+  <%# Component: Controller %>
+  <%= partial("components/content/controller") %>
 </main>
 <%# Component: Footer %>
 <%= partial("components/global/footer", :locals => {
