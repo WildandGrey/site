@@ -17,7 +17,7 @@
 <% end %>
 <%# END %>
 <%# Component: Nav %>
-<%= partial("components/global/nav", :locals => {
+<%= partial("components/nav", :locals => {
       :image => nav.image,
       :links => nav.links,
       :contact => nav.contact
@@ -77,7 +77,7 @@
   </article>
 </main>
 <%# Component: Footer %>
-<%= partial("components/global/footer", :locals => {
+<%= partial("components/footer", :locals => {
       :copyright => footer.copyright,
       :social => footer.social
 }) %>
