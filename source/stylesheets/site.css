@@ -100,9 +100,22 @@
 .pl-4rem { padding-left: 4rem; }
 .pl-6rem { padding-left: 6rem; }
 /*
-  TRANSFORMATIONS
+   TRANSITIONS
+   - Transition Functions
+   - Transition Durations
+   - Transition Properties
+*/
+/* Transition Functions */
+.ttf-ease_in_out { -webkit-transition-timing-function: ease-in-out; transition-timing-function: ease-in-out; }
+/* Transition Durations */
+.td-0_15s { -webkit-transition-duration: 0.15s; transition-duration: 0.15s; }
+/* Transition Properties */
+.tp-color { -webkit-transition-property: color; transition-property: color; }
+/*
+  TRANSFORMATIONS AND PROPERTIES
   - Trandform Origin
   - Transform
+  - Opacity
 */
 /* Transform Origin */
 .to-top_right { -webkit-transform-origin: top right; transform-origin: top right; }
@@ -130,6 +143,8 @@
 }
 /* Font Family */
 .ff-akkurat { font-family: 'Akkurat'; }
+.ff-pt_sans { font-family: 'PT Sans'; }
+.ff-source_sans_pro { font-family: 'Source Sans Pro'; }
 /* Font Weight */
 .fw-regular { font-weight: normal; }
 .fw-bold { font-weight: bolder; }
@@ -170,7 +185,7 @@
 /* Border Style */
 .bbs-solid { border-bottom-style: solid; }
 /* Border Width */
-.bbw-4px { border-bottom-width: 4px; }
+.bbw-3px { border-bottom-width: 3px; }
 /* Border Radius */
 .br-50p { border-radius: 50%; }
 /* Border Color */
