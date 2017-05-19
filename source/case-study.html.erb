@@ -11,7 +11,7 @@
 <% next_article = neighbor_articles[1] %>
 <%# END %>
 <%# Component: Nav %>
-<%= partial("components/global/nav", :locals => {
+<%= partial("components/nav", :locals => {
       :image => nav.image,
       :links => nav.links,
       :contact => nav.contact
@@ -19,7 +19,7 @@
 <main>
   <article>
     <%# Component: Header %>
-    <%= partial("components/content/header", :locals => {
+    <%= partial("components/header", :locals => {
           :title => article.title,
           :subtitle => article.header.title,
           :text => article.header.text
@@ -28,7 +28,7 @@
     <% article.content.each_with_index do |component, index| %>
       <%# Component: Image %>
       <% if component.type === "Image" %>
-        <%= partial("components/content/image", :locals => {
+        <%= partial("components/image", :locals => {
               :src => component.image.src,
               :alt => component.image.alt,
               :caption => component.image.caption
@@ -36,20 +36,20 @@
       <% end %>
       <%# Component: Image Gallery %>
       <% if component.type === "Image Gallery" %>
-        <%= partial("components/content/image_gallery", :locals => {
+        <%= partial("components/image_gallery", :locals => {
               :images => component.images
         }) %>
       <% end %>
       <%# Component: Image Stack %>
       <% if component.type === "Image Stack" %>
-        <%= partial("components/content/image_stack", :locals => {
+        <%= partial("components/image_stack", :locals => {
               :top => component.images.top,
               :bottom => component.images.bottom
         }) %>
       <% end %>
       <%# Component: Double-Column Paragraph %>
       <% if component.type === "Double-Column Paragraph" %>
-        <%= partial("components/content/double_column_paragraph", :locals => {
+        <%= partial("components/double_column_paragraph", :locals => {
               :type => component.paragraph.type,
               :title => component.paragraph.title,
               :first_column => component.paragraph.first_column,
@@ -58,7 +58,7 @@
       <% end %>
       <%# Component: Quote %>
       <% if component.type === "Quote" %>
-        <%= partial("components/content/quote", :locals => {
+        <%= partial("components/quote", :locals => {
               :quote => component.quote.text,
               :author => component.quote.author
         }) %>
@@ -66,13 +66,13 @@
     <% end %>
   </article>
   <%# Component: Controller %>
-  <%= partial("components/content/controller", :locals => {
+  <%= partial("components/controller", :locals => {
         :previous_article => previous_article.title,
         :next_article => next_article.title
   }) %>
 </main>
 <%# Component: Footer %>
-<%= partial("components/global/footer", :locals => {
+<%= partial("components/footer", :locals => {
       :copyright => footer.copyright,
       :social => footer.social
 }) %>
