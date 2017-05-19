@@ -10,11 +10,11 @@
 
 %>
 <section class="mw-35rem mh-auto mb-8rem">
-  <p class="ma-0 mb-1rem ff-akkurat fw-regular lh-1_5 fs-1_5rem c-coal">"<%= quote %>"</p>
+  <p class="ma-0 mb-1rem ff-source_sans_pro fw-regular lh-1_5 fs-1_5rem c-coal">"<%= quote %>"</p>
   <% if author %>
     <div>
       <img class="d-inline_block w-1_5rem h-1_5rem br-50p" style="margin-right: 0.5rem;" src="<%= author.image.src %>" alt="<%= author.image.alt %>">
-      <p class="p-relative d-inline_block ma-0 va-middle ff-akkurat fw-regular fs-1rem" style="bottom: 0.6rem;"><%= author.name %>, <%= author.description %></p>
+      <p class="p-relative d-inline_block ma-0 va-middle ff-source_sans_pro fw-regular fs-1rem" style="bottom: 0.6rem;"><%= author.name %>, <%= author.description %></p>
     </div>
   <% end %>
 </section>

@@ -13,7 +13,7 @@
   </div>
   <div class="p-relative zi-2 clearfix mw-56rem mh-auto pv-3rem pl-6rem bgc-coal">
     <%# copyright %>
-    <p class="f-left ma-0 ff-akkurat fw-regular fs-0_8rem c-white"><%= copyright %> <span data-copyright="year"></span></p>
+    <p class="f-left ma-0 ff-source_sans_pro fw-regular fs-0_8rem c-white"><%= copyright %> <span data-copyright="year"></span></p>
     <%# social %>
     <ul class="f-right clearfix ma-0 pa-0 lst-none">
       <%# CONFIG %>
@@ -34,9 +34,9 @@
         <% end %>
             <li>
               <% if !link.href && !link.target %>
-                <p class="<%= margin_bottom %> ff-akkurat fw-regular fs-0_8rem c-white td-none"><%= link.title %></p>
+                <p class="<%= margin_bottom %> ff-source_sans_pro fw-regular fs-0_8rem c-white td-none"><%= link.title %></p>
               <% else %>
-                <a class="d-inline_block <%= margin_bottom %> ff-akkurat fw-regular fs-0_8rem c-white td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+                <a class="d-inline_block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-0_8rem c-white td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
               <% end %>
             </li>
         <% if index === 2 %>

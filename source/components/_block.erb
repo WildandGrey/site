@@ -28,7 +28,7 @@
 <%# END %>
 <article class="f-left w-50p <%= padding %>">
   <header class="mb-1rem">
-    <h1 class="ma-0 ff-akkurat fw-bold fs-1_2rem c-coal"><%= title %></h1>
+    <h1 class="ma-0 ff-source_sans_pro fw-bold fs-1_2rem c-coal"><%= title %></h1>
   </header>
   <ul class="clearfix ma-0 pa-0 lst-none">
     <%# CONFIG %>
@@ -39,7 +39,7 @@
       <% if counter === 0 %>
         <div class="f-left <%= width %> clearfix <%= padding_right %>">
       <% end %>
-          <li class="mb-0_2rem"><a data-interaction="link" class="ff-akkurat fw-regular fs-1rem c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
+          <li class="mb-0_2rem"><a data-interaction="link" class="ff-source_sans_pro fw-regular fs-1rem c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
       <% if counter === 2 %>
         </div>
       <% end %>

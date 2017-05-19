@@ -2,20 +2,34 @@
 
     NAME: Double-Column Paragraph
     PARAMETERS:
-      index: Int
+      type: Enum:String
+            - Centered
+            - Right
       title: String
       first_column: String
       second_column: String
 
 %>
-<section class="clearfix mw-56rem mh-auto mb-8rem">
-  <div class="f-right mw-50rem">
-    <header class="mb-1rem">
-      <h1 class="ma-0 ff-akkurat fw-bold fs-1_2rem c-coal"><span class="mr-1rem c-gray"><%= index %></span><%= title %></h1>
-    </header>
-    <div class="clearfix">
-      <p class="f-left w-50p ma-0 pr-0_5rem ff-akkurat fw-regular fs-1rem c-coal lh-1_5"><%= first_column %></p>
-      <p class="f-right w-50p ma-0 pl-0_5rem ff-akkurat fw-regular fs-1rem c-coal lh-1_5"><%= second_column %></p>
+<%# CONFIG %>
+<%# COMMENT: Conditional section max width %>
+<% if type === "Centered" %>
+  <% max_width = "mw-50rem" %>
+<% elsif type === "Right" %>
+  <% max_width = "mw-56rem" %>
+<% end %>
+<%# END %>
+<section class="clearfix <%= max_width %> mh-auto mb-8rem">
+  <% if type == "Right" %>
+    <div class="f-right mw-50rem">
+  <% end %>
+      <header class="mb-1rem">
+        <h1 class="ma-0 ff-source_sans_pro fw-bold fs-1_2rem c-coal"><%= title %></h1>
+      </header>
+      <div class="clearfix">
+        <p class="f-left w-50p ma-0 pr-0_5rem ff-source_sans_pro fw-regular fs-1rem c-coal lh-1_5"><%= first_column %></p>
+        <p class="f-right w-50p ma-0 pl-0_5rem ff-source_sans_pro fw-regular fs-1rem c-coal lh-1_5"><%= second_column %></p>
+      </div>
+  <% if type == "Right" %>
     </div>
-  </div>
+  <% end %>
 </section>
