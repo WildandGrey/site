@@ -1,6 +1,6 @@
 {
   "hero": {
-    "heading": "Product designer formerly at Ueno,<br>Knife & Fox,<br>and Mossio.",
+    "heading": "Product designer formerly at <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://ueno.co/\" target=\"_blank\">Ueno</a>,<br><a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://www.knifeandfox.com/\" target=\"_blank\">Knife & Fox</a>,<br>and <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"http://www.mossio.co/\" target=\"_blank\">Mossio</a>.",
     "image": {
       "src": "/images/hero.jpg",
       "alt": "Hi there, I'm Greyson!"
@@ -11,35 +11,21 @@
     {
       "title": "Companies I've Worked With",
       "type": "third",
+      "note": "*NDA, will be posted on release",
       "links": [
         {
           "title": "Uber",
-          "href": "www.google.com",
-          "target": true
+          "href": false,
+          "target": false
         },
         {
           "title": "Samsung",
-          "href": "www.google.com",
-          "target": true
+          "href": false,
+          "target": false
         },
         {
           "title": "Articulate",
           "href": "https://dribbble.com/shots/3103661-Articulate-Heroes",
-          "target": true
-        },
-        {
-          "title": "Ueno",
-          "href": "https://dribbble.com/shots/3426436-Nylas",
-          "target": true
-        },
-        {
-          "title": "Arlo Skye",
-          "href": "www.google.com",
-          "target": true
-        },
-        {
-          "title": "Mashable",
-          "href": "www.google.com",
           "target": true
         },
         {
@@ -48,13 +34,28 @@
           "target": true
         },
         {
+          "title": "Ueno",
+          "href": "https://dribbble.com/ueno",
+          "target": true
+        },
+        {
+          "title": "Airbnb",
+          "href": false,
+          "target": false
+        },
+        {
           "title": "SalesLoft",
           "href": "https://dribbble.com/shots/2811832-Email-Reports",
           "target": true
         },
         {
-          "title": "Code2040",
-          "href": "www.google.com",
+          "title": "Waverly Labs",
+          "href": "https://www.indiegogo.com/projects/meet-the-pilot-smart-earpiece-language-translator-headphones-travel#/",
+          "target": true
+        },
+        {
+          "title": "1Face Watch",
+          "href": "https://www.instagram.com/1facewatch/",
           "target": true
         }
       ]
@@ -62,6 +63,7 @@
     {
       "title": "Speaking Events",
       "type": "single",
+      "note": false,
       "links": [
         {
           "title": "Valiocon",
