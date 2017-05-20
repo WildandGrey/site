@@ -3,7 +3,8 @@
     "heading": "Product designer formerly at <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://ueno.co/\" target=\"_blank\">Ueno</a>,<br><a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://www.knifeandfox.com/\" target=\"_blank\">Knife & Fox</a>,<br>and <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"http://www.mossio.co/\" target=\"_blank\">Mossio</a>.",
     "image": {
       "src": "/images/hero.jpg",
-      "alt": "Hi there, I'm Greyson!"
+      "alt": "Hi there, I'm Greyson!",
+      "caption": "Photo by: Troy Stains, Ueno"
     }
   },
   "caption": "As a product designer I care about people as much as I care about visual craft. My end-to-end process encompasses early UX to delivery of polished pixels, while remaining purposeful in helping companies deliver meaningful experiences.",
