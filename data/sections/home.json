@@ -2,7 +2,7 @@
   "hero": {
     "heading": "Product designer formerly at <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://ueno.co/\" target=\"_blank\">Ueno</a>,<br><a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://www.knifeandfox.com/\" target=\"_blank\">Knife & Fox</a>,<br>and <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"http://www.mossio.co/\" target=\"_blank\">Mossio</a>.",
     "image": {
-      "src": "/images/hero.jpg",
+      "src": "/images/greyson/hero.jpg",
       "alt": "Hi there, I'm Greyson!",
       "caption": "Photo by: <a data-interaction=\"link\" class=\"c-steel td-none ttf-ease_in_out td-0_15s tp-color\" href=\"http://troystains.co/\" target=\"_blank\">Troy Stains</a>, Ueno"
     }
