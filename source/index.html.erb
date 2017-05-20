@@ -1,8 +1,4 @@
 <%# CONFIG %>
-<%# COMMENT: Storing `data/global/nav.json` data %>
-<% nav = data.global.nav %>
-<%# COMMENT: Storing `data/global/footer.json` data %>
-<% footer = data.global.footer %>
 <%# COMMENT: Storing `data/sections/home.json` data %>
 <% page = data.sections.home %>
 <%# COMMENT: Article index %>
@@ -16,12 +12,6 @@
   <% case_studies.push(fetch_article(index)) %>
 <% end %>
 <%# END %>
-<%# Component: Nav %>
-<%= partial("components/nav", :locals => {
-      :image => nav.image,
-      :links => nav.links,
-      :contact => nav.contact
-}) %>
 <main>
   <article>
     <%# Component: Hero %>
@@ -76,8 +66,3 @@
     </div>
   </article>
 </main>
-<%# Component: Footer %>
-<%= partial("components/footer", :locals => {
-      :copyright => footer.copyright,
-      :social => footer.social
-}) %>

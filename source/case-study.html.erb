@@ -1,21 +1,11 @@
 <%# CONFIG %>
-<%# COMMENT: Storing `data/global/nav.json` data %>
-<% nav = data.global.nav %>
-<%# COMMENT: Storing `data/global/footer.json` data %>
-<% footer = data.global.footer %>
-<%# COMMENT: Storing `data/sections/home.json` data %>
-<% article = locals[:article] %>
+<%# COMMENT: Layout variable to determine template type %>
+<% $case_study = true %>
 <%# COMMENT: Define next and previous articles based on current article's index %>
 <% neighbor_articles = fetch_neighbors(article._index) %>
 <% previous_article = neighbor_articles[0] %>
 <% next_article = neighbor_articles[1] %>
 <%# END %>
-<%# Component: Nav %>
-<%= partial("components/nav", :locals => {
-      :image => nav.image,
-      :links => nav.links,
-      :contact => nav.contact
-}) %>
 <main>
   <article>
     <%# Component: Header %>
@@ -71,8 +61,3 @@
         :next_article => next_article.title
   }) %>
 </main>
-<%# Component: Footer %>
-<%= partial("components/footer", :locals => {
-      :copyright => footer.copyright,
-      :social => footer.social
-}) %>
