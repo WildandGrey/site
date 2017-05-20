@@ -12,10 +12,10 @@
     {
       "title": "Companies I've Worked With",
       "type": "third",
-      "note": "*NDA, will be posted on release",
+      "note": "*NDA, will be shared on release",
       "links": [
         {
-          "title": "Uber",
+          "title": "Airbnb",
           "href": false,
           "target": false
         },
@@ -28,21 +28,6 @@
           "title": "Articulate",
           "href": "https://dribbble.com/shots/3103661-Articulate-Heroes",
           "target": true
-        },
-        {
-          "title": "Mux",
-          "href": "https://mux.com/",
-          "target": true
-        },
-        {
-          "title": "Ueno",
-          "href": "https://dribbble.com/ueno",
-          "target": true
-        },
-        {
-          "title": "Airbnb",
-          "href": false,
-          "target": false
         },
         {
           "title": "SalesLoft",
@@ -58,6 +43,21 @@
           "title": "1Face Watch",
           "href": "https://www.instagram.com/1facewatch/",
           "target": true
+        },
+        {
+          "title": "Mux",
+          "href": "https://mux.com/",
+          "target": true
+        },
+        {
+          "title": "Ueno",
+          "href": "https://dribbble.com/ueno",
+          "target": true
+        },
+        {
+          "title": "Uber",
+          "href": false,
+          "target": false
         }
       ]
     },

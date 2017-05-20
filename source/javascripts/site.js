@@ -27,13 +27,13 @@ if ($pseudolinks && $note) {
     //  Mouse over
     $pseudolink.addEventListener('mouseover', function(){
       toggleClass(this, ['c-coal', 'c-peach']);
-      toggleClass($asterisk, ['c-light_gray', 'c-salmon']);
+      toggleClass($asterisk, ['c-steel', 'c-salmon']);
       toggleClass($note, ['o-0', 'o-1']);
     });
     //  Mouse out
     $pseudolink.addEventListener('mouseout', function(){
       toggleClass(this, ['c-coal', 'c-peach']);
-      toggleClass($asterisk, ['c-light_gray', 'c-salmon']);
+      toggleClass($asterisk, ['c-steel', 'c-salmon']);
       toggleClass($note, ['o-0', 'o-1']);
     });
   });

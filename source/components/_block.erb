@@ -21,10 +21,10 @@
 <%# COMMENT: Type conditional width and right padding %>
 <% if type === "single" %>
   <% width = "w-100p" %>
-  <% padding_right = "" %>
+  <% margin_right = "" %>
 <% elsif type === "third" %>
-  <% width = "w-33p" %>
-  <% padding_right = "pr-0_2rem" %>
+  <% width = "" %>
+  <% margin_right = "mr-1_25rem" %>
 <% end %>
 <%# END %>
 <article class="p-relative f-left w-50p <%= padding %>">
@@ -44,10 +44,10 @@
     <%# END %>
     <% links.each do |link| %>
       <% if counter === 0 %>
-        <div class="f-left <%= width %> clearfix <%= margin_bottom %> <%= padding_right %>">
+        <div class="f-left <%= width %> clearfix <%= margin_right %> <%= margin_bottom %>">
       <% end %>
         <% if !link.href && !link.target %>
-          <li class="mb-0_2rem"><p data-interaction="pseudolink" class="p-relative cr-default ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color"><span data-interaction="asterisk" class="p-absolute l--0_4rem c-light_gray ttf-ease_in_out td-0_15s tp-color">*</span><%= link.title %></p></li>
+          <li class="mb-0_2rem"><p data-interaction="pseudolink" class="p-relative cr-default ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color"><span data-interaction="asterisk" class="p-absolute l--0_4rem c-steel ttf-ease_in_out td-0_15s tp-color">*</span><%= link.title %></p></li>
         <% else %>
           <li class="mb-0_2rem"><a data-interaction="link" class="ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
         <% end %>

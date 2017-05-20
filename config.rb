@@ -1,5 +1,10 @@
 # General
 
+## Livereload
+configure :development do
+  activate :livereload
+end
+
 ## Directory Indexing
 activate :directory_indexes
 

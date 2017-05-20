@@ -7,6 +7,6 @@
 
 %>
 <nav class="clearfix mw-56rem mh-auto mb-4rem">
-  <a data-interaction="link" class="d-inline_block f-left ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none" href="/case-studies/<%= previous_article.parameterize %>"><%= previous_article %></a>
-  <a data-interaction="link" class="d-inline_block f-right ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none" href="/case-studies/<%= next_article.parameterize %>"><%= next_article %></a>
+  <a data-interaction="link" class="d-inline_block f-left ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none" href="/case-studies/<%= previous_article.parameterize %>"><img class="d-inline_block mr-1rem" src="/images/arrow.svg" alt="Left-pointing arrow icon"><%= previous_article %></a>
+  <a data-interaction="link" class="d-inline_block f-right ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none" href="/case-studies/<%= next_article.parameterize %>"><%= next_article %><img class="d-inline_block ml-1rem t-rotate_180d" src="/images/arrow.svg" alt="Right-pointing arrow icon"></a>
 </nav>
