@@ -30,6 +30,7 @@
 .t-35p { top: 35%; }
 .r-0 { right: 0; }
 .b-0 { bottom: 0; }
+.b-0_6rem { bottom: 0.6rem; }
 .l-0 { left: 0; }
 .l--0_4rem { left: -0.4rem; }
 .l-2rem { left: 2rem; }
@@ -81,9 +82,11 @@
 .mt-3rem { margin-top: 3rem; }
 .mt-4rem { margin-top: 4rem; }
 .mt-8rem { margin-top: 8rem; }
+.mr-0_5rem { margin-right: 0.5rem; }
 .mr-1rem { margin-right: 1rem; }
 .mr-3rem { margin-right: 3rem; }
 .mb-0_2rem { margin-bottom: 0.2rem; }
+.mb-0_4rem { margin-bottom: 0.4rem; }
 .mb-0_5rem { margin-bottom: 0.5rem; }
 .mb-1rem { margin-bottom: 1rem; }
 .mb-2rem { margin-bottom: 2rem; }
