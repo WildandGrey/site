@@ -5,7 +5,6 @@ var gzip = require('gulp-gzip');
 var clean = require('gulp-clean');
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
-var image = require('gulp-image');
 var runSequence = require('run-sequence');
 
 //  Concatenate stylesheets -> site.css
@@ -63,16 +62,9 @@ gulp.task('compress-js', function(){
   .pipe(gulp.dest('build/javascripts/'))
 });
 
-//  Compress image assets
-gulp.task('image', function(){
-  gulp.src('build/images/*')
-  .pipe(image())
-  .pipe(gulp.dest('build/images/'))
-});
-
 // Run tasks in order
 gulp.task('sequence', function(callback) {
-  runSequence('concat-css', 'minify-css', 'compress-css', 'ignore-css', 'minify-html', 'compress-html', 'minify-js', 'compress-js', 'image');
+  runSequence('concat-css', 'minify-css', 'compress-css', 'ignore-css', 'minify-html', 'compress-html', 'minify-js', 'compress-js');
 });
 
 // Build
