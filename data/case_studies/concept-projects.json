@@ -7,7 +7,7 @@
       "alt": "Lorem ipsum"
     },
     "title": "Studies in Product Thinking",
-    "description": "—> Insert descriptive text “i.e. I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.”"
+    "description": "Whether as a creative exercise or a challenge in solving real problems, I love to push boundaries and explore. Here’s a glimpse of work done in the past."
   },
   "header": {
     "title": "Overview",
@@ -25,12 +25,27 @@
       }
     },
     {
-      "type": "Double-Column Paragraph",
-      "paragraph": {
-        "type": "Centered",
-        "title": "Market Research & Competitive Analysis",
-        "first_column": "Time and budget constraints limited in-depth and extensive user interviews, so secondary research was prioritized. Qualitative data was collected from the Pilot’s Indiegogo backers through specific surveys and insights were gathered by meticulously assessing user sentiment through reviews of competing translation apps.",
-        "second_column": "We also learned that a high percentage of the Pilot backers were educated males over thirty years old and lived in Western countries. Learning which languages they prioritized for both leisure and business purposes helped inform which five language offerings would be available in beta and which language would be the app default."
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": false
+      }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": false
+      }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": false
       }
     }
   ]
