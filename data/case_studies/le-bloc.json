@@ -33,5 +33,10 @@
         "caption": false
       }
     }
-  ]
+  ],
+  "_meta": {
+    "title": "Greyson MacAlpine — Le Bloc",
+    "description": "Le Bloc is a company that allows customers the experience of personalizing jewelry. I designed the user experience flow for the jewelry customization process.",
+    "keywords": "experience personalize jewelry user experience customization"
+  }
 }
