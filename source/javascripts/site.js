@@ -1,6 +1,7 @@
 /*
   INTERACTIONS
   - Link
+  - Pseudolink
 */
 /* Link */
 const $links = document.querySelectorAll(`[data-interaction='link']`);
@@ -13,6 +14,27 @@ if ($links) {
     //  Mouse out
     $link.addEventListener('mouseout', function(){
       toggleClass(this, ['c-coal', 'c-peach']);
+    });
+  });
+}
+/* Pseudolink */
+const $pseudolinks = document.querySelectorAll(`[data-interaction='pseudolink']`);
+const $note = document.querySelector(`[data-interaction='note']`);
+if ($pseudolinks && $note) {
+  $pseudolinks.forEach(function($pseudolink){
+    //  Asterisk symbol
+    var $asterisk = $pseudolink.querySelector(`[data-interaction='asterisk']`);
+    //  Mouse over
+    $pseudolink.addEventListener('mouseover', function(){
+      toggleClass(this, ['c-coal', 'c-peach']);
+      toggleClass($asterisk, ['c-light_gray', 'c-salmon']);
+      toggleClass($note, ['o-0', 'o-1']);
+    });
+    //  Mouse out
+    $pseudolink.addEventListener('mouseout', function(){
+      toggleClass(this, ['c-coal', 'c-peach']);
+      toggleClass($asterisk, ['c-light_gray', 'c-salmon']);
+      toggleClass($note, ['o-0', 'o-1']);
     });
   });
 }
