@@ -1,17 +1,7 @@
 <%# CONFIG %>
-<%# COMMENT: Storing `data/global/nav.json` data %>
-<% nav = data.global.nav %>
-<%# COMMENT: Storing `data/global/footer.json` data %>
-<% footer = data.global.footer %>
-<%# COMMENT: Storing `data/sections/about.json` data %>
+<%# COMMENT: Storing `data/sections/home.json` data %>
 <% page = data.sections.about %>
 <%# END %>
-<%# Component: Nav %>
-<%= partial("components/nav", :locals => {
-      :image => nav.image,
-      :links => nav.links,
-      :contact => nav.contact
-}) %>
 <main>
   <article>
     <%# List: Content Components %>
@@ -56,8 +46,3 @@
     <% end %>
   </article>
 </main>
-<%# Component: Footer %>
-<%= partial("components/footer", :locals => {
-      :copyright => footer.copyright,
-      :social => footer.social
-}) %>
