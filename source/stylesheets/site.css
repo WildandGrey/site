@@ -52,6 +52,7 @@
   - Min Height
 */
 /* Width */
+.w-25px { width: 25px; }
 .w-1_5rem { width: 1.5rem; }
 .w-33p { width: calc( 100% / 3 ); }
 .w-15p { width: 15%; }
@@ -69,6 +70,7 @@
 .mw-50rem { max-width: 50rem; }
 .mw-56rem { max-width: 56rem; }
 /* Height */
+.h-10px { height: 10px; }
 .h-1_5rem { height: 1.5rem; }
 .h-35rem { height: 35rem; }
 .h-100p { height: 100%; }
@@ -98,6 +100,7 @@
 .mb-4rem { margin-bottom: 4rem; }
 .mb-8rem { margin-bottom: 8rem; }
 .ml-1rem { margin-left: 1rem; }
+.ml-1_25rem { margin-left: 1.25rem; }
 .ml-2_5rem { margin-left: 2.5rem; }
 /* Padding */
 .pa-0 { padding: 0; }
@@ -124,6 +127,7 @@
 /* Transition Properties */
 .tp-color { -webkit-transition-property: color; transition-property: color; }
 .tp-opacity { -webkit-transition-property: opacity; transition-property: opacity; }
+.tp-fill { -webkit-transition-property: fill; transition-property: fill; }
 /*
   TRANSFORMATIONS AND PROPERTIES
   - Trandform Origin
@@ -192,12 +196,16 @@
 .va-top { vertical-align: top; }
 .va-middle { vertical-align: middle; }
 /*
-  BACKGROUND
+  BACKGROUNDS & FILLS
   - Background Color
+  - Fill
 */
 /* Background Color */
 .bgc-tan { background-color: #f2edea; }
 .bgc-coal { background-color: #282828; }
+/* Fill */
+.f-coal { fill: #282828; }
+.f-peach { fill: #f0ab93; }
 /*
   BORDER
   - Border Style

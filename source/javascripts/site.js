@@ -2,6 +2,7 @@
   INTERACTIONS
   - Link
   - Pseudolink
+  - Controller
 */
 /* Link */
 const $links = document.querySelectorAll(`[data-interaction='link']`);
@@ -37,6 +38,24 @@ if ($pseudolinks && $note) {
       toggleClass($note, ['o-0', 'o-1']);
     });
   });
+}
+/* Controller */
+const $controllers = document.querySelectorAll(`[data-interaction='controller']`);
+if ($controllers) {
+  $controllers.forEach(function($control){
+    //  Arrow svg
+    var $arrow = $control.querySelector(`[data-interaction='arrow']`);
+    //  Mouse over
+    $control.addEventListener('mouseover', function(){
+      toggleClass(this, ['c-coal', 'c-peach']);
+      toggleClass($arrow, ['f-coal', 'f-peach']);
+    });
+    //  Mouse out
+    $control.addEventListener('mouseout', function(){
+      toggleClass(this, ['c-coal', 'c-peach']);
+      toggleClass($arrow, ['f-coal', 'f-peach']);
+    });
+  })
 }
 /*
   FOOTER COPYRIGHT YEAR
