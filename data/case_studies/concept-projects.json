@@ -19,33 +19,33 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/concept-projects/1a.jpg",
+        "src": "/images/case-studies/concept-projects/showcase_1.jpg",
         "alt": "This is a sample image. Please replace.",
-        "caption": false
+        "caption": "Concept Apps Showcase 01"
       }
     },
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/concept-projects/1b.jpg",
+        "src": "/images/case-studies/concept-projects/showcase_2.jpg",
         "alt": "This is a sample image. Please replace.",
-        "caption": false
+        "caption": "Concept Apps Showcase 02"
       }
     },
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
+        "src": "/images/case-studies/le-bloc/showcase_3.jpg",
         "alt": "This is a sample image. Please replace.",
-        "caption": false
+        "caption": "Concept Apps Showcase 03"
       }
     },
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
+        "src": "/images/case-studies/le-bloc/showcase_4.jpg",
         "alt": "This is a sample image. Please replace.",
-        "caption": false
+        "caption": "Concept Apps Showcase 04"
       }
     }
   ],
