@@ -4,7 +4,7 @@
   "card": {
     "image": {
       "src": "/images/case-studies/waverly-labs/card.jpg",
-      "alt": "Lorem ipsum"
+      "alt": "iPhone mockup displaying the main translation screen"
     },
     "title": "The Pilot App",
     "description": "The Pilot is a translation app that corresponds with its smart wearables counterpart. I was brought in to concept and design the first MVP for Waverly Labs."
@@ -21,7 +21,7 @@
       "type": "Image",
       "image": {
         "src": "/images/case-studies/waverly-labs/working.jpg",
-        "alt": "This is a sample image. Please replace.",
+        "alt": "The CEO and engineers of the Pilot App working on some initial designs",
         "caption": false
       }
     },
@@ -39,12 +39,12 @@
       "images": [
         {
           "src": "/images/case-studies/waverly-labs/desk.jpg",
-          "alt": "This is a sample image. Please replace.",
+          "alt": "Multiple papers lying on desk displaying concept designs",
           "caption": false
         },
         {
           "src": "/images/case-studies/waverly-labs/jeremiah.jpg",
-          "alt": "This is a sample image. Please replace.",
+          "alt": "Young guy sitting on sidewalk wearing a prototype of the translation device",
           "caption": false
         }
       ]
@@ -56,7 +56,7 @@
         "author": {
           "image": {
             "src": "/images/case-studies/waverly-labs/jeremiah-warren.jpg",
-            "alt": "This is a sample image. Please replace.",
+            "alt": "Jeremiah Warren, Creative Director",
             "caption": false
           },
           "name": "Jeremiah Warren",
@@ -102,7 +102,7 @@
       "type": "Image",
       "image": {
         "src": "/images/case-studies/waverly-labs/ios-visuals.jpg",
-        "alt": "This is a sample image. Please replace.",
+        "alt": "3 iPhone devices featuring iOS visual samples",
         "caption": "Example of iOS Visuals"
       }
     },
@@ -110,7 +110,7 @@
       "type": "Image",
       "image": {
         "src": "/images/case-studies/waverly-labs/android-visuals.jpg",
-        "alt": "This is a sample image. Please replace.",
+        "alt": "3 Samsung mobile devices featuring Android visual samples",
         "caption": "Example of Android Visuals"
       }
     }

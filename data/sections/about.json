@@ -4,7 +4,7 @@
       "type": "Image",
       "image": {
         "src": "/images/greyson/couch.jpg",
-        "alt": "Greyson working on her laptop on a blue-green couch.",
+        "alt": "Greyson working on her laptop on a blue-green couch",
         "caption": false
       }
     },
@@ -22,12 +22,12 @@
       "images": {
         "top": {
           "src": "/images/greyson/side.jpg",
-          "alt": "This is a placeholder image for the about page gallery.",
+          "alt": "Greyson posing with a black t-shirt with designy-geometric figures",
           "caption": false
         },
         "bottom": {
           "src": "/images/greyson/offscreen.jpg",
-          "alt": "This is a placeholder image for the about page gallery.",
+          "alt": "Desk image with the Offscreen magazine issue featuring Julie Zhou from Facebook",
           "caption": false
         }
       }

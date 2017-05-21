@@ -4,7 +4,7 @@
   "card": {
     "image": {
       "src": "/images/case-studies/concept-projects/card.jpg",
-      "alt": "Lorem ipsum"
+      "alt": "iOS mockups for a concept app showcase"
     },
     "title": "Studies in Product Thinking",
     "description": "Whether as a creative exercise or a challenge in solving real problems, I love to push boundaries and explore. Here’s a glimpse of work done in the past."
@@ -20,7 +20,7 @@
       "type": "Image",
       "image": {
         "src": "/images/case-studies/concept-projects/showcase_1.jpg",
-        "alt": "This is a sample image. Please replace.",
+        "alt": "iOS mockups for a concept app showcase",
         "caption": "Concept Apps Showcase 01"
       }
     },
@@ -28,7 +28,7 @@
       "type": "Image",
       "image": {
         "src": "/images/case-studies/concept-projects/showcase_2.jpg",
-        "alt": "This is a sample image. Please replace.",
+        "alt": "iOS mockups for a concept app showcase",
         "caption": "Concept Apps Showcase 02"
       }
     },
@@ -36,7 +36,7 @@
       "type": "Image",
       "image": {
         "src": "/images/case-studies/concept-projects/showcase_3.jpg",
-        "alt": "This is a sample image. Please replace.",
+        "alt": "iOS mockups for a concept app showcase",
         "caption": "Concept Apps Showcase 03"
       }
     }
