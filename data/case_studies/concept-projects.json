@@ -19,7 +19,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
+        "src": "/images/case-studies/concept-projects/1a.png",
         "alt": "This is a sample image. Please replace.",
         "caption": false
       }
@@ -27,7 +27,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
+        "src": "/images/case-studies/concept-projects/1b.png",
         "alt": "This is a sample image. Please replace.",
         "caption": false
       }

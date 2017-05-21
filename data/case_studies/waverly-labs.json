@@ -55,7 +55,7 @@
         "text": "Greyson is a fantastic designer. Every detail in a design matters to her. Her work is thoroughly thought out and researched. She is a pleasure to work with and someone I highly recommend.",
         "author": {
           "image": {
-            "src": "/images/case-studies/waverly-labs/crop.png",
+            "src": "/images/case-studies/waverly-labs/jeremiah-warren.jpg",
             "alt": "This is a sample image. Please replace.",
             "caption": false
           },
@@ -90,14 +90,6 @@
       }
     },
     {
-      "type": "Image",
-      "image": {
-        "src": "/images/case-studies/waverly-labs/image.png",
-        "alt": "This is a sample image. Please replace.",
-        "caption": "Example of Android Wireframes"
-      }
-    },
-    {
       "type": "Double-Column Paragraph",
       "paragraph": {
         "type": "Right",
@@ -109,7 +101,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/waverly-labs/image.png",
+        "src": "/images/case-studies/waverly-labs/ios-visuals.png",
         "alt": "This is a sample image. Please replace.",
         "caption": "Example of iOS Visuals"
       }
