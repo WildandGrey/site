@@ -3,10 +3,55 @@
   "title": "Concept Projects",
   "card": {
     "image": {
-      "src": "/images/case-studies/concept-projects/card.jpg",
+      "src": "/images/case-studies/concept-projects/card.png",
       "alt": "Lorem ipsum"
     },
     "title": "Studies in Product Thinking",
-    "description": "—> Insert descriptive text “i.e. I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.”"
+    "description": "Whether as a creative exercise or a challenge in solving real problems, I love to push boundaries and explore. Here’s a glimpse of work done in the past."
+  },
+  "header": {
+    "title": "Overview",
+    "text": [
+      "The Pilot app is a translation application that corresponds with its smart wearables counterpart developed by Waverly Labs, a consumer electronics company. They use the latest technologies in machine translation and speech recognition for their flagship product to allow wearers to speak different languages while clearly understanding each other."
+    ]
+  },
+  "content": [
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": false
+      }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": false
+      }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": false
+      }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": false
+      }
+    }
+  ],
+  "_meta": {
+    "title": "Greyson MacAlpine — Concept Projects",
+    "description": "The Pilot app is a translation application that corresponds with its smart wearables counterpart developed by Waverly Labs, a consumer electronics company. They use the latest technologies in machine translation and speech recognition for their flagship product to allow wearers to speak different languages while clearly understanding each other.",
+    "keywords": "pilot app translation smart wearables Waverly Labs consumer electronic company machine translation speech recognition"
   }
 }

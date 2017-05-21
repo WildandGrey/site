@@ -2,8 +2,23 @@
   "copyright": "© Wild & Grey",
   "social": [
     {
+      "title": "Linkedin",
+      "href": "https://www.linkedin.com/in/greysonmacalpine",
+      "target": true
+    },
+    {
+      "title": "Dribbble",
+      "href": "http://greysonmacalpine.dribbble.com/",
+      "target": true
+    },
+    {
+      "title": "VSCO",
+      "href": "http://vsco.co/greysonmacalpine/images/1",
+      "target": true
+    },
+    {
       "title": "Instagram",
-      "href": "https://www.instagram.com/greysonsofia_/?hl=en",
+      "href": "https://www.instagram.com/greysonsofia_/",
       "target": true
     },
     {

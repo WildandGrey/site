@@ -7,39 +7,50 @@
       type: Enum
             - single
             - third
-      links: Array:Link
+      note: String
+      links: Array:Pseudolink
 
 %>
 <%# CONFIG %>
 <%# COMMENT: Conditional horizontal padding %>
 <% if _index % 2 === 0 %>
-  <% padding = "pr-2_9375rem" %>
+  <% padding = "pr-2rem" %>
 <% else %>
-  <% padding = "pl-2_9375rem" %>
+  <% padding = "pl-2rem" %>
 <% end %>
 <%# COMMENT: Type conditional width and right padding %>
 <% if type === "single" %>
-  <% width = "w-100percent" %>
-  <% padding_right = "" %>
+  <% width = "w-100p" %>
+  <% margin_right = "" %>
 <% elsif type === "third" %>
-  <% width = "w-33percent" %>
-  <% padding_right = "pr-1rem" %>
+  <% width = "" %>
+  <% margin_right = "mr-1_25rem" %>
 <% end %>
 <%# END %>
-<article class="f-left w-50percent <%= padding %>">
+<article class="p-relative f-left w-50p <%= padding %>">
   <header class="mb-1rem">
-    <h1 class="ma-0 ff-akkurat fw-bold fs-1_125rem c-coal"><%= title %></h1>
+    <h1 class="ma-0 ff-source_sans_pro fw-bold fs-1_2rem c-coal"><%= title %></h1>
   </header>
   <ul class="clearfix ma-0 pa-0 lst-none">
     <%# CONFIG %>
     <%# COMMENT: Link counter %>
     <% counter = 0 %>
+    <%# COMMENT: Conditional bottom margin %>
+    <% if note %>
+      <% margin_bottom = "mb-1rem" %>
+    <% else %>
+      <% margin_bottom = "" %>
+    <% end %>
     <%# END %>
     <% links.each do |link| %>
       <% if counter === 0 %>
-        <div class="f-left <%= width %> clearfix <%= padding_right %>">
+        <div class="f-left <%= width %> clearfix <%= margin_right %> <%= margin_bottom %>">
       <% end %>
-          <li class="mb-0_25rem"><a data-interaction="link" class="ff-akkurat fw-regular fs-0_9375rem c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
+        <% if !link.href && !link.target %>
+          <li class="mb-0_2rem"><p data-interaction="pseudolink" class="p-relative cr-default ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color"><span data-interaction="asterisk" class="p-absolute l--0_4rem c-steel ttf-ease_in_out td-0_15s tp-color">*</span><%= link.title %></p></li>
+        <% else %>
+          <li class="mb-0_2rem"><a data-interaction="link" class="ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
+        <% end %>
       <% if counter === 2 %>
         </div>
       <% end %>
@@ -53,4 +64,7 @@
       <%# END %>
     <% end %>
   </ul>
+  <% if note %>
+    <p data-interaction="note" class="p-absolute ma-0 o-0 ff-source_sans_pro fw-regular fs-0_8rem c-gray ttf-ease_in_out td-0_15s tp-opacity"><%= note %></p>
+  <% end %>
 </article>

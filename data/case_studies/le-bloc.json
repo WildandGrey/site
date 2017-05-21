@@ -3,86 +3,40 @@
   "title": "Le Bloc",
   "card": {
     "image": {
-      "src": "/images/case-studies/le-bloc/card.jpg",
+      "src": "/images/case-studies/le-bloc/card.png",
       "alt": "Lorem ipsum"
     },
     "title": "Responsive Ecommerce Website",
-    "description": "—> Insert descriptive text “i.e. I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.”"
+    "description": "Le Bloc is a company that allows customers the experience of personalizing jewelry. I designed the user experience flow for the jewelry customization process."
+  },
+  "header": {
+    "title": "Overview",
+    "text": [
+      "Le Bloc is a jewelry company that allows customers a fun and whimsical experience personalizing necklaces, bracelets and earrings. The jewelry starts with a customizable base that the customer then adds blocks to in either yellow, white or rose gold letters and symbols.",
+      "Already posessing a brand identity and an elemental e-commerce website, they needed someone to focus on designing the user experience flow for the customization process on their product details pages. I worked with them to develop this process and add a level of visual finesse and simplicity that would uplift their site. Meant to be responsive, I also designed the mobile version of the product detail pages."
+    ]
   },
   "content": [
     {
-      "type": "Single-Column Paragraph",
-      "paragraph": {
-        "title": "Overview",
-        "text": "The Pilot app is a translation app that accompanies language translation earpieces design and developed by Waverly Labs. Based in NYC, Waverly Labs is seaking to transform the industry by allowing people to bridge language barriers with their flagship product. (insert more text on specific goals, link to Kickstarter campaign)"
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/le-bloc/image.png",
+        "alt": "This is a sample image. Please replace.",
+        "caption": false
       }
     },
     {
       "type": "Image",
       "image": {
         "src": "/images/case-studies/le-bloc/image.png",
-        "alt": "This is a temporary image placeholder.",
-        "caption": "Photo credit: Wild & Grey"
-      }
-    },
-    {
-      "type": "Double-Column Paragraph",
-      "paragraph": {
-        "title": "Market Research & Competitive Analysis",
-        "column_1": "With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.",
-        "column_2": "With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped."
-      }
-    },
-    {
-      "type": "Image Gallery",
-      "gallery": [
-        {
-          "src": "/images/le-bloc/gallery-image-a.png",
-          "alt": "This is a temporary image placeholder.",
-          "caption": ""
-        },
-        {
-          "src": "/images/le-bloc/gallery-image-b.png",
-          "alt": "This is a temporary image placeholder.",
-          "caption": ""
-        }
-      ]
-    },
-    {
-      "type": "Quote",
-      "quote": "I care about people as much as I care about craft. I’m passionate about helping startups and companies tell their stories through compelling experiences."
-    },
-    {
-      "type": "Double-Column Paragraph",
-      "paragraph": {
-        "title": "Wireframes and prototypes",
-        "column_1": "With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.",
-        "column_2": "With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped."
-      }
-    },
-    {
-      "type": "Image",
-      "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
-        "alt": "This is a temporary image placeholder.",
-        "caption": ""
-      }
-    },
-    {
-      "type": "Double-Column Paragraph",
-      "paragraph": {
-        "title": "Beta Launch for iOS & Android",
-        "column_1": "With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.",
-        "column_2": "With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped shape how we live today.With over a decade of experience, I’ve helped startups rethink, prototype and design products and brands that helped."
-      }
-    },
-    {
-      "type": "Image",
-      "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
-        "alt": "This is a temporary image placeholder.",
-        "caption": ""
+        "alt": "This is a sample image. Please replace.",
+        "caption": false
       }
     }
-  ]
+  ],
+  "_meta": {
+    "title": "Greyson MacAlpine — Le Bloc",
+    "description": "Le Bloc is a company that allows customers the experience of personalizing jewelry. I designed the user experience flow for the jewelry customization process.",
+    "keywords": "experience personalize jewelry user experience customization"
+  }
 }

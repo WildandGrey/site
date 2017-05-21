@@ -1,0 +1,38 @@
+{
+  "name": "greyson-macalpine",
+  "version": "1.0.0",
+  "description": "Personal portfolio with descriptive case studies for Greyson MacAlpine, product designer based in San Francisco",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildandGrey/site.git"
+  },
+  "keywords": [
+    "product",
+    "design",
+    "middleman",
+    "tachyons",
+    "portfolio"
+  ],
+  "author": "Claudio Vallejo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WildandGrey/site/issues"
+  },
+  "homepage": "https://github.com/WildandGrey/site#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-gzip": "^1.4.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-image": "^2.8.0",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "run-sequence": "^1.2.2"
+  }
+}

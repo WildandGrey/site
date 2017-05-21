@@ -1,5 +1,10 @@
 # General
 
+## Livereload
+configure :development do
+  activate :livereload
+end
+
 ## Directory Indexing
 activate :directory_indexes
 
@@ -16,9 +21,9 @@ page '/index.html', layout: 'main'
 page '/about.html', layout: 'main'
 page '/case-study.html', layout: 'main'
 
-# Proxies
+# Proxy
 
 ## Case Studies
-data.case_studies.each do |id, case_study|
-  proxy "/case-studies/#{ case_study.card.title.parameterize }/index.html", "/case-study.html", :locals => { :case_study => case_study }, :ignore => true
+data.case_studies.each do |id, article|
+  proxy "/case-studies/#{ article.title.parameterize }/index.html", "/case-study.html", :locals => { :article => article }, :ignore => true
 end

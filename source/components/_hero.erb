@@ -6,7 +6,12 @@
       portrait: Image
 
 %>
-<header class="flex ai-center mw-42_125rem mh-auto pv-8_125rem">
-  <h1 class="w-45percent ma-0 ff-akkurat fw-regular lh-1_5 c-coal"><%= heading %></h1>
-  <img class="w-50percent" src="<%= portrait.src %>" alt="<%= portrait.alt %>">
+<header class="d-flex ai-center jc-space_between mw-45rem mh-auto mb-8rem">
+  <h1 class="w-45p ma-0 ff-source_sans_pro fw-regular fs-2_5rem lh-1_5 c-coal"><%= heading %></h1>
+  <div class="w-50p">
+    <img class="d-block mw-100p mb-0_5rem" src="<%= portrait.src %>" alt="<%= portrait.alt %>">
+    <% if portrait.caption %>
+      <p class="ma-0 ff-source_sans_pro fw-bold fs-0_8rem c-steel"><%= portrait.caption %></p>
+    <% end %>
+  </div>
 </header>

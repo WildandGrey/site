@@ -1,0 +1,20 @@
+<%#
+
+  NAME: Quote
+  PARAMETERS:
+    quote: String
+    author: Object?
+      image: Image
+      name: String
+      company: String
+
+%>
+<section class="mw-35rem mh-auto mb-8rem">
+  <p class="ma-0 mb-1rem ff-source_sans_pro fw-regular lh-1_5 fs-1_5rem c-coal">"<%= quote %>"</p>
+  <% if author %>
+    <div>
+      <img class="d-inline_block w-1_5rem h-1_5rem mr-0_5rem br-50p" src="<%= author.image.src %>" alt="<%= author.image.alt %>">
+      <p class="p-relative b-0_6rem d-inline_block ma-0 va-middle ff-source_sans_pro fw-regular fs-1rem"><%= author.name %>, <%= author.description %></p>
+    </div>
+  <% end %>
+</section>

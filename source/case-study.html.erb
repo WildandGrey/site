@@ -1,44 +1,63 @@
 <%# CONFIG %>
-<%# COMMENT: Storing `data/global/nav.json` data %>
-<% nav = data.global.nav %>
-<%# COMMENT: Storing `data/global/footer.json` data %>
-<% footer = data.global.footer %>
-<%# COMMENT: Storing `data/sections/home.json` data %>
-<% article = locals[:case_study] %>
+<%# COMMENT: Layout variable to determine template type %>
+<% $case_study = true %>
+<%# COMMENT: Define next and previous articles based on current article's index %>
+<% neighbor_articles = fetch_neighbors(article._index) %>
+<% previous_article = neighbor_articles[0] %>
+<% next_article = neighbor_articles[1] %>
 <%# END %>
-<%# Component: Nav %>
-<%= partial("components/nav", :locals => {
-      :image => nav.image,
-      :links => nav.links,
-      :contact => nav.contact
-}) %>
 <main>
   <article>
-    <header class="mw-42_125rem mh-auto mt-8rem mb-3rem">
-      <h1 class="ma-0 ff-akkurat fw-regular fs-2_1875rem c-coal"><%= article.card.title %></h1>
-    </header>
-    <%# CONFIG %>
-    <%# COMMENT: Total number of content components (index-base) %>
+    <%# Component: Header %>
+    <%= partial("components/header", :locals => {
+          :title => article.title,
+          :subtitle => article.header.title,
+          :text => article.header.text
+    }) %>
     <%# List: Content Components %>
-    <% article.content.each do |component| %>
-      <%# Component: Single-Column Paragraph %>
-      <% if component.type === "Single-Column Paragraph" %>
-        <%= partial("components/single_column_paragraph", :locals => {
-              :title => component.paragraph.title,
-              :text => component.paragraph.text
+    <% article.content.each_with_index do |component, index| %>
+      <%# Component: Image %>
+      <% if component.type === "Image" %>
+        <%= partial("components/image", :locals => {
+              :src => component.image.src,
+              :alt => component.image.alt,
+              :caption => component.image.caption
+        }) %>
+      <% end %>
+      <%# Component: Image Gallery %>
+      <% if component.type === "Image Gallery" %>
+        <%= partial("components/image_gallery", :locals => {
+              :images => component.images
+        }) %>
+      <% end %>
+      <%# Component: Image Stack %>
+      <% if component.type === "Image Stack" %>
+        <%= partial("components/image_stack", :locals => {
+              :top => component.images.top,
+              :bottom => component.images.bottom
         }) %>
       <% end %>
       <%# Component: Double-Column Paragraph %>
+      <% if component.type === "Double-Column Paragraph" %>
+        <%= partial("components/double_column_paragraph", :locals => {
+              :type => component.paragraph.type,
+              :title => component.paragraph.title,
+              :first_column => component.paragraph.first_column,
+              :second_column => component.paragraph.second_column
+        }) %>
+      <% end %>
       <%# Component: Quote %>
-      <%# Component: Image %>
-      <%# Component: Image Gallery %>
+      <% if component.type === "Quote" %>
+        <%= partial("components/quote", :locals => {
+              :quote => component.quote.text,
+              :author => component.quote.author
+        }) %>
+      <% end %>
     <% end %>
-    <%# END %>
-    <%# List: Content Components %>
   </article>
+  <%# Component: Controller %>
+  <%= partial("components/controller", :locals => {
+        :previous_article => previous_article.title,
+        :next_article => next_article.title
+  }) %>
 </main>
-<%# Component: Footer %>
-<%= partial("components/footer", :locals => {
-      :copyright => footer.copyright,
-      :social => footer.social
-}) %>

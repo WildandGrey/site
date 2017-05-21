@@ -4,9 +4,12 @@
     PARAMETERS:
       src: String
       alt: String
-      caption: String
+      caption: String?
 
 %>
-<figure class="mw-42_125rem ma-0 mh-auto mv-8rem">
-  <img class="d-block w-100percent" src="<%= src %>" alt="<%= alt %>">
+<figure class="p-relative mw-56rem ma-0 mh-auto mb-8rem">
+  <img class="d-block w-100p" src="<%= src %>" alt="<%= alt %>">
+  <% if caption %>
+    <figcaption class="p-absolute zi-2 t-35p l-2rem to-top_right t-caption ff-source_sans_pro fw-regular fs-0_8rem c-coal"><%= caption %></figcaption>
+  <% end %>
 </figure>

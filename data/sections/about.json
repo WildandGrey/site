@@ -1,26 +1,50 @@
 {
-  "hero": {
-    "src": "/images/greyson/header.png",
-    "alt": "This is a placeholder header image."
-  },
-  "first_section": {
-    "title": "About Me as a Designer",
-    "first_column": "I'm a product designer in San Francisco, passionate about process, design systems, teams, collaboration, and developing culture. I dove headfirst into graphic design and illustration early on in my career, but quickly realized I was driven to design meaningful experiences for people and products rather than focusing only on visual craft.",
-    "second_column": "I now emphasize a balance between both and champion a human-centric approach to my process. During my focus on agency work, I was privileged to work on great projects with Mossio, Knife & Fox and most recently Ueno. I’m now pursuing opportunities to contribute value from early UX to final pixels, prioritizing people at the heart of what I do."
-  },
-  "gallery": {
-    "top_image": {
-      "src": "/images/greyson/top-placeholder.png",
-      "alt": "This is a placeholder image for the about page gallery."
+  "content": [
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/greyson/header.png",
+        "alt": "This is a placeholder header image.",
+        "caption": false
+      }
     },
-    "bottom_image": {
-      "src": "/images/greyson/bottom-placeholder.png",
-      "alt": "This is a placeholder image for the about page gallery."
+    {
+      "type": "Double-Column Paragraph",
+      "paragraph": {
+        "type": "Right",
+        "title": "About Me as a Designer",
+        "first_column": "I'm a product designer in San Francisco, passionate about process, design systems, building teams, collaboration, and developing culture. I dove headfirst into graphic design and illustration early on in my career, but quickly realized I was driven to design meaningful experiences for people and products rather than focusing only on visual craft.",
+        "second_column": "I now emphasize a balance between both and champion a human-centric approach to my process. During my focus on agency work, I was privileged to work on great projects with Mossio, Knife & Fox and most recently Ueno. I’m now pursuing opportunities to contribute value from early UX to final pixels, prioritizing people at the heart of what I do."
+      }
+    },
+    {
+      "type": "Image Stack",
+      "images": {
+        "top": {
+          "src": "/images/greyson/top-placeholder.png",
+          "alt": "This is a placeholder image for the about page gallery.",
+          "caption": false
+        },
+        "bottom": {
+          "src": "/images/greyson/bottom-placeholder.png",
+          "alt": "This is a placeholder image for the about page gallery.",
+          "caption": false
+        }
+      }
+    },
+    {
+      "type": "Double-Column Paragraph",
+      "paragraph": {
+        "type": "Right",
+        "title": "Wild & Grey",
+        "first_column": "With deep roots in film and photography, I also work with a core team of creatives in running a collective studio, Wild & Grey. We’re a family of contractors focusing on on client services such as video production, photography, and design. We’re passionate about storytelling, social good, and creating meaningful experiences.",
+        "second_column": "We’ve worked with Airbnb, Mashable, Ugmonk, Jeremy Cowart, Dann Petty + Epicurrence, Sony, Reddit, Disney, and Target, Patagonia, Blood:Water, Intercom, Hallmark, 1Face Watch, Reach Records, SWISSGEAR, Pebble, and more."
+      }
     }
-  },
-  "second_section": {
-    "title": "Wild & Grey",
-    "first_column": "With deep roots in film and photography, I also work with a core team of creatives in running a collective studio, Wild & Grey. We’re a family of contractors focusing on on client services such as video production, photography, and design. We’re passionate about storytelling, social good, and creating meaningful experiences.",
-    "second_column": "We’ve worked with Airbnb, Mashable, Ugmonk, Jeremy Cowart, Dann Petty + Epicurrence, Sony, Reddit, Disney, and Target, Patagonia, Blood:Water, Intercom, Hallmark, 1Face Watch, Reach Records, SWISSGEAR, Pebble, and more."
+  ],
+  "_meta": {
+    "title": "Greyson MacAlpine — About",
+    "description": "I'm a product designer in San Francisco, passionate about process, design systems, building teams, collaboration, and developing culture.",
+    "keywords": "product design San Francisco process design systems team building collaboration"
   }
 }

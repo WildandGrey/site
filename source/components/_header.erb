@@ -1,0 +1,35 @@
+<%#
+
+    NAME: Header
+    PARAMETERS:
+      title: String
+      subtitle: String
+      text: Array:String
+
+%>
+<div class="mw-56rem mh-auto mb-8rem pl-4rem">
+  <header class="mw-40">
+    <h1 class="ma-0 mb-3rem ff-source_sans_pro fw-regular fs-2_5rem c-coal"><%= title %></h1>
+  </header>
+  <section class="mw-40rem">
+    <header>
+      <h3 class="ma-0 mb-0_5rem ff-source_sans_pro fw-bold fs-1_2rem c-coal"><%= subtitle %></h3>
+    </header>
+    <%# CONFIG %>
+    <%# COMMENT: Total number of paragraphs (index-base) %>
+    <% text_length = text.length - 1 %>
+    <%# END %>
+    <%# List: Text %>
+    <% text.each_with_index do |paragraph, index| %>
+      <%# CONFIG %>
+      <%# COMMENT: Conditional bottom margin %>
+      <% if index === text_length %>
+        <% margin_bottom = "" %>
+      <% else %>
+        <% margin_bottom = "mb-2rem" %>
+      <% end %>
+      <%# END %>
+      <p class="ma-0 <%= margin_bottom %> ff-source_sans_pro fw-regular lh-1_5 fs-1rem c-coal"><%= paragraph %></p>
+    <% end %>
+  </section>
+</div>

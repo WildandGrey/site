@@ -1,16 +1,45 @@
 <!doctype html>
-<html class="wfs-antialiased" lang="en">
+<html class="wfs-antialiased fs-15px" lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= stylesheet_link_tag "normalize" %>
-    <%= stylesheet_link_tag "tachyons" %>
+    <%# CONFIG %>
+    <% if locals[:article] %>
+      <%# COMMENT: Storing `data/sections/home.json` data %>
+      <% article = locals[:article] %>
+      <%# COMMENT: Storing article meta-data %>
+      <% meta = article._meta %>
+    <% else %>
+      <%# COMMENT: Storing page meta-data %>
+      <% meta = data.sections.home._meta %>
+    <% end %>
+    <%# END %>
+    <%# Meta: Tags %>
+    <%= partial("meta/tags", :locals => {
+          :title => meta.title,
+          :description => meta.description,
+          :keywords => meta.keywords
+    }) %>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet">
     <%= stylesheet_link_tag "site" %>
-    <title>PROTOTYPE</title>
   </head>
-  <body class="mt-3_125rem bgc-tan">
+  <body class="bgc-tan">
+    <%# CONFIG %>
+    <%# COMMENT: Storing `data/global/nav.json` data %>
+    <% nav = data.global.nav %>
+    <%# COMMENT: Storing `data/global/footer.json` data %>
+    <% footer = data.global.footer %>
+    <%# END %>
+    <%# Component: Nav %>
+    <%= partial("components/nav", :locals => {
+          :image => nav.image,
+          :links => nav.links,
+          :contact => nav.contact
+    }) %>
     <%= yield %>
+    <%# Component: Footer %>
+    <%= partial("components/footer", :locals => {
+          :copyright => footer.copyright,
+          :social => footer.social
+    }) %>
     <%= javascript_include_tag "site" %>
   </body>
 </html>

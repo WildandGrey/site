@@ -1,21 +1,19 @@
 <%# CONFIG %>
-<%# COMMENT: Storing `data/global/nav.json` data %>
-<% nav = data.global.nav %>
-<%# COMMENT: Storing `data/global/footer.json` data %>
-<% footer = data.global.footer %>
 <%# COMMENT: Storing `data/sections/home.json` data %>
 <% page = data.sections.home %>
 <%# COMMENT: Article index %>
 <% article_index = 1 %>
+<%# COMMENT: Total number of case studies %>
+<% total = data.case_studies.length %>
+<%# COMMENT: List of ordered case studies %>
+<% case_studies = [] %>
+<%# COMMENT: Fetch and push case studies into list %>
+<% (1..total).each do |index| %>
+  <% case_studies.push(fetch_article(index)) %>
+<% end %>
 <%# END %>
-<%# Component: Nav %>
-<%= partial("components/nav", :locals => {
-      :image => nav.image,
-      :links => nav.links,
-      :contact => nav.contact
-}) %>
 <main>
-  <section>
+  <article>
     <%# Component: Hero %>
     <%= partial("components/hero", :locals => {
           :heading => page.hero.heading,
@@ -26,31 +24,26 @@
           :text => page.caption
     }) %>
     <%# List: Blocks %>
-    <div class="clearfix mw-42_125rem mh-auto mb-8_125rem">
+    <div class="clearfix mw-45rem mh-auto mb-8rem">
       <% page.blocks.each_with_index do |block, index| %>
         <%# Component: Block %>
         <%= partial("components/block", :locals => {
               :_index => index,
               :title => block.title,
               :type => block.type,
+              :note => block.note,
               :links => block.links
         }) %>
       <% end %>
     </div>
     <%# List: Cards %>
-    <div class="clearfix mw-52_75rem mh-auto">
-      <%# CONFIG %>
-      <%# COMMENT: Card index %>
-      <% index = 0 %>
-      <%# COMMENT: Total number of case studies %>
-      <% total_cards = data.case_studies.length - 1 %>
-      <%# END %>
-      <% data.case_studies.each do |id, card| %>
+    <div class="clearfix mw-56rem mh-auto">
+      <% case_studies.each_with_index do |card, index| %>
         <% if index % 2 === 0 %>
-          <div class="f-left w-50percent pr-2_9375rem">
+          <div class="f-left w-50p pr-2rem">
             <%# Component: Card %>
             <%= partial("components/card", :locals => {
-                  :_index => article_index,
+                  :_index => card._index,
                   :title => card.title,
                   :image => card.card.image,
                   :project => card.card.title,
@@ -58,10 +51,10 @@
             }) %>
           </div>
         <% else %>
-          <div class="f-right w-50percent <% if index === 1 %>mt-8_75rem<% end %> pl-2_9375rem">
+          <div class="f-right w-50p <% if index === 1 %>mt-8rem<% end %> pl-2rem">
             <%# Component: Card %>
             <%= partial("components/card", :locals => {
-                  :_index => article_index,
+                  :_index => card._index,
                   :title => card.title,
                   :image => card.card.image,
                   :project => card.card.title,
@@ -69,17 +62,7 @@
             }) %>
           </div>
         <% end %>
-        <%# CONFIG %>
-        <%# COMMENT: Increment index %>
-        <% index = index + 1 %>
-        <% article_index = article_index + 1 %>
-        <%# END %>
       <% end %>
     </div>
-  </section>
+  </article>
 </main>
-<%# Component: Footer %>
-<%= partial("components/footer", :locals => {
-      :copyright => footer.copyright,
-      :social => footer.social
-}) %>
