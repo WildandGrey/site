@@ -13,7 +13,7 @@
     "title": "Overview",
     "text": [
       "The Pilot app is a translation application that corresponds with its smart wearables counterpart developed by Waverly Labs, a consumer electronics company. They use the latest technologies in machine translation and speech recognition for their flagship product to allow wearers to speak different languages while clearly understanding each other.",
-      "After the viral success of their <a data-interaction=\"link\" class=\"fw-bold c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://www.indiegogo.com/projects/meet-the-pilot-smart-earpiece-language-translator-headphones-travel#/\" target=\"_blank\">Indiegogo<a/> video, I was brought in to concept and design the first MVP. The first version would be a simple stand-alone app. Its scope was intentionally kept to a minimum, offering speech translation in only 5 languages. Quality of experience and relevance to the target demographic were top priorities, as was developing an intuitive system for users to submit feedback during beta."
+      "After the viral success of their <a data-interaction=\"link\" class=\"fw-bold c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://www.indiegogo.com/projects/meet-the-pilot-smart-earpiece-language-translator-headphones-travel#/\" target=\"_blank\">Indiegogo<a/> video, I was brought in to concept and design the first MVP. The first version would be a simple stand-alone app. Its scope was intentionally kept to a minimum, offering speech translation in only 5 languages. Quality of experience and relevance to the target demographic were top priorities, as was developing an intuitive way for users to submit feedback during beta."
     ]
   },
   "content": [
@@ -29,9 +29,9 @@
       "type": "Double-Column Paragraph",
       "paragraph": {
         "type": "Centered",
-        "title": "Market Research & Competitive Analysis",
+        "title": "Secondary & Competitive Research",
         "first_column": "Time and budget constraints limited in-depth and extensive user interviews, so secondary research was prioritized. Qualitative data was collected from the Pilot’s Indiegogo backers through specific surveys and insights were gathered by meticulously assessing user sentiment through reviews of competing translation apps.",
-        "second_column": "We also learned that a high percentage of the Pilot backers were educated males over thirty years old and lived in Western countries. Learning which languages they prioritized for both leisure and business purposes helped inform which five language offerings would be available in beta and which language would be the app default."
+        "second_column": "We also learned that a high percentage of the Pilot backers were educated males living in Westernized countries. Learning which languages they prioritized for both leisure and business purposes helped inform which five language offerings would be available in beta and which language would be the app default."
       }
     },
     {
@@ -69,8 +69,8 @@
       "paragraph": {
         "type": "Right",
         "title": "Wireframes & Prototypes",
-        "first_column": "We jumped into Sketch for higher fidelity in the wireframing process and designed flows for onboarding, text translation, voice translation, phrasebook capabilities, support and feedback, and more. It was particularly important that users be able to easily submit feedback and support requests, as the MVP would best improve through active listening to requests and feedback on experiences.",
-        "second_column": "I worked very closely with the team and their developers to ensure that the project would meet both business goals and also be completed by the beta’s launch date. We used Invision as an efficient way to review and engage with simple prototypes and leave feedback for each design iteration."
+        "first_column": "We jumped into Sketch for higher fidelity in the wireframing process and designed flows for onboarding, text translation, voice translation, support and feedback, and more. It was particularly important that users be able to easily submit feedback and support requests.",
+        "second_column": "I worked closely with the team and their developers to ensure that the project would meet both business goals and also be completed by the beta’s launch date. We used Invision as an efficient way to engage with simple prototypes and leave feedback for each design iteration."
       }
     },
     {
