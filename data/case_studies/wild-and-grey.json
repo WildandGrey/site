@@ -4,7 +4,7 @@
   "card": {
     "image": {
       "src": "/images/case-studies/wild-and-grey/card.jpg",
-      "alt": "Lorem ipsum"
+      "alt": "Wild & Grey desktop homepage screen"
     },
     "title": "Marketing Website",
     "description": "Wild & Grey is a collective studio of designers and creatives passionate about storytelling, social good, and designing meaningful experiences."
@@ -21,15 +21,15 @@
       "type": "Image",
       "image": {
         "src": "/images/case-studies/wild-and-grey/main.jpg",
-        "alt": "Desktop homepage screen for Wild and Grey.",
+        "alt": "Desktop homepage screen for Wild and Grey",
         "caption": "Site Showcase 01"
       }
     },
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
-        "alt": "This is a sample image. Please replace.",
+        "src": "/images/case-studies/wild-and-grey/details.png",
+        "alt": "Two screens with different sections of the Wild and Grey homepage.",
         "caption": "Site Showcase 02"
       }
     }
