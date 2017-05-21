@@ -30,7 +30,7 @@
       "image": {
         "src": "/images/case-studies/wild-and-grey/details.png",
         "alt": "Two screens with different sections of the Wild and Grey homepage.",
-        "caption": "Site Showcase 02"
+        "caption": false
       }
     }
   ],
