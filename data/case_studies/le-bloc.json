@@ -4,7 +4,7 @@
   "card": {
     "image": {
       "src": "/images/case-studies/le-bloc/card.jpg",
-      "alt": "Lorem ipsum"
+      "alt": "Le Block mobile and desktop product detail screens"
     },
     "title": "Responsive Ecommerce Website",
     "description": "Le Bloc is a company that allows customers the experience of personalizing jewelry. I designed the user experience flow for the jewelry customization process."
@@ -20,8 +20,8 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/main.png",
-        "alt": "This is a sample image. Please replace.",
+        "src": "/images/case-studies/le-bloc/main.jpg",
+        "alt": "Mobile and desktop views screens for Le Block product detail page",
         "caption": false
       }
     },
@@ -29,7 +29,7 @@
       "type": "Image",
       "image": {
         "src": "/images/case-studies/le-bloc/image.png",
-        "alt": "This is a sample image. Please replace.",
+        "alt": "Desktop view for jewelry selection within product detail page",
         "caption": false
       }
     }
