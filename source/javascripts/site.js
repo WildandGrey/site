@@ -1,8 +1,10 @@
 /*
+
   INTERACTIONS
   - Link
   - Pseudolink
   - Controller
+
 */
 /* Link */
 const $links = document.querySelectorAll('[data-interaction="link"]');
@@ -56,8 +58,31 @@ if ($controllers) {
   })
 }
 /*
+
+  IMAGE CAPTION DYNAMIC PLACEMENT
+  - Caption
+
+*/
+/* Caption */
+const $images = document.querySelectorAll('[data-placement="image"]');
+if ($images) {
+  $images.forEach(function($image){
+    //  Image Caption
+    var $caption = $image.querySelector('[data-placement="caption"]');
+    //  Image and caption measurements
+    var imageHeight = $image.offsetHeight;
+    var captionWidth = $caption.offsetWidth;
+    var captionTop = (imageHeight - captionWidth) / 2;
+    console.log("Image: " + imageHeight + " | Caption: " + captionWidth);
+    //  Set caption top value
+    $caption.setAttribute('style', 'top: ' + captionTop + 'px;');
+  });
+}
+/*
+
   FOOTER COPYRIGHT YEAR
   - Year
+
 */
 /* Year */
 const date = new Date();
@@ -65,8 +90,10 @@ const currentYear = date.getFullYear();
 const $year = document.querySelector('[data-copyright="year"]');
 $year.innerHTML = currentYear;
 /*
+
   FUNCTIONS
   - Toggle Class
+
 */
 /* Toggle Class */
 function toggleClass($element, classes) {
