@@ -39,14 +39,6 @@
         "alt": "This is a sample image. Please replace.",
         "caption": "Concept Apps Showcase 03"
       }
-    },
-    {
-      "type": "Image",
-      "image": {
-        "src": "/images/case-studies/le-bloc/showcase_4.jpg",
-        "alt": "This is a sample image. Please replace.",
-        "caption": "Concept Apps Showcase 04"
-      }
     }
   ],
   "_meta": {
