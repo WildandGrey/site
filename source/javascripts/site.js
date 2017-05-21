@@ -47,12 +47,10 @@ if ($controllers) {
     var $arrow = $control.querySelector('[data-interaction="arrow"]');
     //  Mouse over
     $control.addEventListener('mouseover', function(){
-      toggleClass(this, ['c-coal', 'c-peach']);
       toggleClass($arrow, ['f-coal', 'f-peach']);
     });
     //  Mouse out
     $control.addEventListener('mouseout', function(){
-      toggleClass(this, ['c-coal', 'c-peach']);
       toggleClass($arrow, ['f-coal', 'f-peach']);
     });
   })
