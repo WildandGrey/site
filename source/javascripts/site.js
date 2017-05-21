@@ -65,17 +65,20 @@ if ($controllers) {
 */
 /* Caption */
 const $images = document.querySelectorAll('[data-placement="image"]');
+window.onload
 if ($images) {
-  $images.forEach(function($image){
-    //  Image Caption
-    var $caption = $image.querySelector('[data-placement="caption"]');
-    //  Image and caption measurements
-    var imageHeight = $image.offsetHeight;
-    var captionWidth = $caption.offsetWidth;
-    var captionTop = (imageHeight - captionWidth) / 2;
-    console.log("Image: " + imageHeight + " | Caption: " + captionWidth);
-    //  Set caption top value
-    $caption.setAttribute('style', 'top: ' + captionTop + 'px;');
+  window.addEventListener('load', function(){
+    $images.forEach(function($image){
+      //  Image Caption
+      var $caption = $image.querySelector('[data-placement="caption"]');
+      //  Image and caption measurements
+      var imageHeight = $image.offsetHeight;
+      var captionWidth = $caption.offsetWidth;
+      var captionTop = (imageHeight - captionWidth) / 2;
+      console.log("Image: " + imageHeight + " | Caption: " + captionWidth);
+      //  Set caption top value
+      $caption.setAttribute('style', 'top: ' + captionTop + 'px;');
+    });
   });
 }
 /*
@@ -93,6 +96,7 @@ $year.innerHTML = currentYear;
 
   FUNCTIONS
   - Toggle Class
+  - Element Height
 
 */
 /* Toggle Class */
@@ -100,4 +104,16 @@ function toggleClass($element, classes) {
   classes.forEach(function(className){
     $element.classList.toggle(className);
   });
+}
+/* Element Height */
+function getHeight($element) {
+  //  Source: StackOverflow
+  //  Author: Lonnie Best
+  //  Path: http://stackoverflow.com/questions/6937378/element-offsetheight-always-0
+  $element.style.visibility = "hidden";
+  document.body.appendChild($element);
+  var height = $element.offsetHeight + 0;
+  document.body.removeChild($element);
+  $element.style.visibility = "visible";
+  return height;
 }
