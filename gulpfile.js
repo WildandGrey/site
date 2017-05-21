@@ -5,52 +5,52 @@ var gzip = require('gulp-gzip');
 var clean = require('gulp-clean');
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
-var image = require('gulp-image');
+var imagemin = require('gulp-imagemin');
 var runSequence = require('run-sequence');
 
 //  Concatenate stylesheets -> site.css
-gulp.task('concat-css', function () {
+gulp.task('concat-css', function (){
   return gulp.src('source/stylesheets/*.css')
     .pipe(concatcss("stylesheets/site.css"))
     .pipe(gulp.dest('build/'));
 });
 
 //  Minify stylesheets
-gulp.task('minify-css', function () {
+gulp.task('minify-css', function (){
   gulp.src('build/stylesheets/site.css')
     .pipe(cssmin())
     .pipe(gulp.dest('build/stylesheets/'));
 });
 
 // Gzip stylesheets
-gulp.task('compress-css', function() {
+gulp.task('compress-css', function(){
   gulp.src('build/stylesheets/site.css')
 	.pipe(gzip())
 	.pipe(gulp.dest('build/stylesheets/'));
 });
 
 //  Ignore normalize.css
-gulp.task('ignore-css', function () {
+gulp.task('ignore-css', function (){
   return gulp.src('build/stylesheets/normalize.css', {read: false})
     .pipe(clean());
 });
 
 //  Minify html
-gulp.task('minify-html', function() {
+gulp.task('minify-html', function(){
   return gulp.src('build/**/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build/'));
 });
 
 //  Gzip html
-gulp.task('compress-html', function() {
+gulp.task('compress-html', function(){
   gulp.src('build/**/*.html')
   .pipe(gzip())
   .pipe(gulp.dest('build/'))
 });
 
 //  Minify javascripts
-gulp.task('minify-js', function() {
+gulp.task('minify-js', function(){
   gulp.src('build/javascripts/site.js')
   .pipe(uglify())
   .pipe(gulp.dest('build/javascripts/'))
@@ -64,23 +64,14 @@ gulp.task('compress-js', function(){
 });
 
 //  Compress images
-gulp.task('compress-images', function(){
-  gulp.src('build/images/*')
-  .pipe(image({
-    pngquant: true,
-    optipng: false,
-    zopflipng: true,
-    jpegRecompress: true,
-    jpegoptim: false,
-    mozjpeg: false,
-    gifsicle: true,
-    svgo: true
-  }))
-  .pipe(gulp.dest('build/images/'))
+gulp.task('compress-images', function (){
+  gulp.src('build/images/**/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('build/images/'));
 });
 
 // Run tasks in order
-gulp.task('sequence', function(callback) {
+gulp.task('sequence', function(callback){
   runSequence('concat-css', 'minify-css', 'compress-css', 'ignore-css', 'minify-html', 'compress-html', 'minify-js', 'compress-js', 'compress-images');
 });
 
