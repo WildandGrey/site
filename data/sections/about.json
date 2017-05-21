@@ -3,7 +3,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/greyson/header.png",
+        "src": "/images/greyson/couch.jpg",
         "alt": "This is a placeholder header image.",
         "caption": false
       }
@@ -21,12 +21,12 @@
       "type": "Image Stack",
       "images": {
         "top": {
-          "src": "/images/greyson/top-placeholder.png",
+          "src": "/images/greyson/side.jpg",
           "alt": "This is a placeholder image for the about page gallery.",
           "caption": false
         },
         "bottom": {
-          "src": "/images/greyson/bottom-placeholder.png",
+          "src": "/images/greyson/offscreen.jpg",
           "alt": "This is a placeholder image for the about page gallery.",
           "caption": false
         }
