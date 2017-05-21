@@ -20,7 +20,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
+        "src": "/images/case-studies/waverly-labs/working.jpg",
         "alt": "This is a sample image. Please replace.",
         "caption": false
       }
@@ -38,22 +38,12 @@
       "type": "Image Gallery",
       "images": [
         {
-          "src": "/images/case-studies/le-bloc/gallery-image-a.png",
+          "src": "/images/case-studies/waverly-labs/desk.jpg",
           "alt": "This is a sample image. Please replace.",
           "caption": false
         },
         {
-          "src": "/images/case-studies/le-bloc/gallery-image-b.png",
-          "alt": "This is a sample image. Please replace.",
-          "caption": false
-        },
-        {
-          "src": "/images/case-studies/le-bloc/gallery-image-b.png",
-          "alt": "This is a sample image. Please replace.",
-          "caption": false
-        },
-        {
-          "src": "/images/case-studies/le-bloc/gallery-image-a.png",
+          "src": "/images/case-studies/waverly-labs/jeremiah.jpg",
           "alt": "This is a sample image. Please replace.",
           "caption": false
         }
@@ -65,12 +55,12 @@
         "text": "Greyson is a fantastic designer. Every detail in a design matters to her. Her work is thoroughly thought out and researched. She is a pleasure to work with and someone I highly recommend.",
         "author": {
           "image": {
-            "src": "/images/case-studies/le-bloc/crop.png",
+            "src": "/images/case-studies/waverly-labs/crop.png",
             "alt": "This is a sample image. Please replace.",
             "caption": false
           },
-          "name": "Andrew Ochoa",
-          "description": "CEO of Waverly Labs"
+          "name": "Jeremiah Warren",
+          "description": "Creative Director"
         }
       }
     },
@@ -86,7 +76,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
+        "src": "/images/case-studies/waverly-labs/ios-wireframes.jpg",
         "alt": "This is a sample image. Please replace.",
         "caption": "Example of iOS Wireframes"
       }
@@ -94,7 +84,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
+        "src": "/images/case-studies/waverly-labs/image.png",
         "alt": "This is a sample image. Please replace.",
         "caption": "Example of iOS Wireframes"
       }
@@ -102,7 +92,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
+        "src": "/images/case-studies/waverly-labs/image.png",
         "alt": "This is a sample image. Please replace.",
         "caption": "Example of Android Wireframes"
       }
@@ -119,7 +109,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
+        "src": "/images/case-studies/waverly-labs/image.png",
         "alt": "This is a sample image. Please replace.",
         "caption": "Example of iOS Visuals"
       }
@@ -127,7 +117,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/le-bloc/image.png",
+        "src": "/images/case-studies/waverly-labs/image.png",
         "alt": "This is a sample image. Please replace.",
         "caption": "Example of Android Visuals"
       }
