@@ -7,11 +7,15 @@
       contact: Array:Pseudolink
 
 %>
-<nav class="mw-56rem mh-auto mt-3rem mb-8rem pb-2rem bbs-solid bbw-3x bc-coal">
-  <a href="/"><img src="<%= image.src %>" alt="<%= image.alt %>"></a>
-  <ul class="clearfix f-right ma-0 pa-0 lst-none">
+<nav class="p-relative mw-56rem mh-1_5rem mh-auto-ns mt-2rem mt-3rem-ns mb-5rem mb-8rem-ns pb-1_5rem pb-2rem-ns bg-tan bbs-solid bbw-3x bc-coal" style="z-index: 3;">
+  <a href="/"><img class="w-100px h-33px w-120px-ns h-38px-ns" src="<%= image.src %>" alt="<%= image.alt %>"></a>
+  <div class="d-none-ns p-absolute t-0_5rem r-0 clearfix">
+    <p class="ma-0 ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none">Menu</p>
+    <img class="d-none p-absolute t-0_3rem r-0" src="/images/brand/close.svg">
+  </div>
+  <ul class="d-block d-block-ns clearfix f-right-ns ma-0 mv-4rem mv-0-ns pa-0 lst-none">
     <% links.each do |link| %>
-      <li class="d-inline_block va-top">
+      <li class="d-block d-inline_block-ns mb-1rem mb-0-ns va-top">
         <% if !link.href && !link.target %>
           <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none"><%= link.title %></p>
         <% else %>
@@ -30,7 +34,7 @@
         <% if index == total_contact %>
           <% margin_bottom = "" %>
         <% else %>
-          <% margin_bottom = "mb-0_5rem" %>
+          <% margin_bottom = "mb-1rem mb-0_5-ns" %>
         <% end %>
         <%# END %>
         <% if !contact.href && !contact.target %>
@@ -42,3 +46,4 @@
     </li>
   </ul>
 </nav>
+<div style="z-index: 2;" class="p-absolute d-block d-none-ns h-100p w-100p bgc-black_40p" style="top: 0; right: 0; left: 0; bottom: 0;"></div>
