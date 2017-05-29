@@ -4,6 +4,7 @@
   - Link
   - Pseudolink
   - Controller
+  - Mobile Menu
 
 */
 /* Link */
@@ -56,6 +57,32 @@ if ($controllers) {
       toggleClass($arrow, ['f-coal', 'f-peach']);
     });
   })
+}
+/* Mobile Menu */
+const $menu = document.querySelector('[data-interaction="menu"]');
+const $open = document.querySelector('[data-interaction="open"]');
+const $close = document.querySelector('[data-interaction="close"]');
+const $list = document.querySelector('[data-interaction="list"]');
+const $cover = document.querySelector('[data-interaction="cover"]');
+var menu_open = false;
+if ($menu) {
+  //  Menu press
+  $open.addEventListener('click', function(){
+    toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
+    toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
+    toggleClass($cover, ['o-1', 'o-0']);
+  });
+  //  Close press
+  $close.addEventListener('click', function(){
+    toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
+    toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
+    toggleClass($cover, ['o-1', 'o-0']);
+  });
+  if (menu_open) {
+    menu_open = false;
+  } else {
+    menu_open = true;
+  }
 }
 /*
 
