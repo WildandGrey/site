@@ -5,19 +5,33 @@
 <main>
   <article>
     <%# List: Content Components %>
+    <%# Config %>
+    <%# Number of content components within content list %>
+    <% list_length = page.content.length - 1 %>
+    <%# End %>
     <% page.content.each_with_index do |component, index| %>
+      <%# Config %>
+      <%# Comment: Defines whether component is first element within component content list %>
+      <% if index === 0 %>
+        <% _first = true %>
+      <% else %>
+        <% _first = false %>
+      <% end %>
+      <%# End %>
       <%# Component: Image %>
       <% if component.type === "Image" %>
         <%= partial("components/image", :locals => {
               :src => component.image.src,
               :alt => component.image.alt,
-              :caption => component.image.caption
+              :caption => component.image.caption,
+              :_first => _first
         }) %>
       <% end %>
       <%# Component: Image Gallery %>
       <% if component.type === "Image Gallery" %>
         <%= partial("components/image_gallery", :locals => {
-              :images => component.images
+              :images => component.images,
+              :_first => _first
         }) %>
       <% end %>
       <%# Component: Image Stack %>
