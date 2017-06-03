@@ -15,10 +15,16 @@
 <% else %>
   <% margin_top = "" %>
 <% end %>
+<%# Comment: Conditional bottom margin if component is last component within content list %>
+<% if _last %>
+  <% margin_bottom = "mb-2rem" %>
+<% else %>
+  <% margin_bottom = "mb-5rem" %>
+<% end %>
 <%# End %>
-<figure <% if caption %>data-placement="image"<% end %> class="p-relative mw-56rem ma-0 mh-auto <%= margin_top %> mb-8rem ph-1_5rem ph-0-ns">
+<figure <% if caption %>data-placement="image"<% end %> class="p-relative mw-56rem ma-0 mh-auto <%= margin_top %> <%= margin_bottom %> mb-8rem-ns ph-1_5rem ph-0-ns">
   <img class="d-block w-100p" src="<%= src %>" alt="<%= alt %>">
   <% if caption %>
-    <figcaption data-placement="caption" class="p-absolute zi-2 l-2rem to-top_right t-caption ff-source_sans_pro fw-regular fs-0_8rem c-gray"><%= caption %></figcaption>
+    <figcaption data-placement="caption" class="d-none d-inline_block-ns p-absolute zi-2 l-2rem to-top_right t-caption ff-source_sans_pro fw-regular fs-0_8rem c-gray"><%= caption %></figcaption>
   <% end %>
 </figure>

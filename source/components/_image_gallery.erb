@@ -5,7 +5,21 @@
     images: Array:Image
 
 %>
-<section class="clearfix mw-50rem mh-auto mb-8rem">
+<%# Config %>
+<%# Comment: Conditional top margin if component is first component within content list %>
+<% if _first %>
+  <% margin_top = "mt-5rem mt-0-ns" %>
+<% else %>
+  <% margin_top = "" %>
+<% end %>
+<%# Comment: Conditional bottom margin if component is last component within content list %>
+<% if _last %>
+  <% margin_bottom = "mb-2rem" %>
+<% else %>
+  <% margin_bottom = "mb-5rem" %>
+<% end %>
+<%# END %>
+<section class="clearfix mw-50rem mh-auto <%= margin_top %> <%= margin_bottom %> mb-8rem-ns ph-1_5rem ph-0-ns">
   <%# CONFIG %>
   <%# COMMENT: Total number of images (index-base) %>
   <% total = images.length - 1 %>
@@ -22,7 +36,7 @@
     <%# END %>
     <% if index % 2 === 0 %>
       <% if index === 0 %>
-        <div class="f-left w-50p pr-2rem">
+        <div class="f-left w-50p pr-0_5rem pr-2rem-ns">
       <% end %>
           <figure class="ma-0 <%= margin_bottom %>">
             <img class="d-block w-100p" src="<%= image.src %>" alt="<%= image.alt %>">
@@ -44,7 +58,7 @@
     <%# END %>
     <% if index % 2 != 0 %>
       <% if index === 1 %>
-        <div class="f-right w-50p mt-4rem pl-2rem">
+        <div class="f-right w-50p mt-4rem pl-0_5rem pl-2rem-ns">
       <% end %>
         <figure class="ma-0 <%= margin_bottom %>">
           <img class="d-block w-100p" src="<%= image.src %>" alt="<%= image.alt %>">

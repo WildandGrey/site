@@ -9,7 +9,21 @@
       company: String
 
 %>
-<section class="mw-35rem mh-auto mb-8rem">
+<%# Config %>
+<%# Comment: Conditional top margin if component is first component within content list %>
+<% if _first %>
+  <% margin_top = "mt-5rem mt-0-ns" %>
+<% else %>
+  <% margin_top = "" %>
+<% end %>
+<%# Comment: Conditional bottom margin if component is last component within content list %>
+<% if _last %>
+  <% margin_bottom = "mb-2rem" %>
+<% else %>
+  <% margin_bottom = "mb-5rem" %>
+<% end %>
+<%# End %>
+<section class="mw-35rem mh-auto <%= margin_top %> <%= margin_bottom %> mb-8rem-ns ph-1_5rem ph-0-ns">
   <p class="ma-0 mb-1rem ff-source_sans_pro fw-regular lh-1_5 fs-1_5rem c-coal">"<%= quote %>"</p>
   <% if author %>
     <div>
