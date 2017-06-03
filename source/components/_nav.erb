@@ -1,0 +1,81 @@
+<%#
+
+    NAME: Nav
+    PARAMETERS:
+      logo: Image
+      links: Array:Pseudolink
+      contact: Array:Pseudolink
+
+%>
+<nav data-interaction="menu" class="p-relative zi-4 mw-56rem-l pt-2rem pt-3rem-ns mh-1_5rem mh-3rem-m mh-auto-l mb-8rem-ns pb-1_5rem pb-2rem-ns ttf-ease_in_out td-0_15s tp-border_color bgc-tan bbs-solid bbw-3px bc-coal">
+  <a href="/"><img class="w-100px h-33px w-120px-ns h-38px-ns" src="<%= image.src %>" alt="<%= image.alt %>"></a>
+  <div class="d-none-ns p-absolute t-2_5rem r-0 clearfix" style="top: 2.5rem;">
+    <p data-interaction="open" class="ttf-ease_in_out td-0_15s tp-opacity o-1 pe-auto ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none">Menu</p>
+    <img data-interaction="close" class="p-absolute t-0_3rem r-0 ttf-ease_in_out td-0_15s tp-opacity o-0 pe-none" src="/images/brand/close.svg">
+  </div>
+  <ul class="d-none d-block-ns clearfix f-right ma-0 mv-0 pa-0 lst-none">
+    <% links.each do |link| %>
+      <li class="d-inline_block va-top">
+        <% if !link.href && !link.target %>
+          <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fs-1rem c-coal td-none"><%= link.title %></p>
+        <% else %>
+          <a data-interaction="link" class="mr-3rem ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+        <% end %>
+      </li>
+    <% end %>
+    <%# CONFIG %>
+    <%# COMMENT: Total number of contacts (index-base) %>
+    <% total_contact = contact.length - 1 %>
+    <%# END %>
+    <li class="d-inline_block va-top">
+      <% contact.each_with_index do |contact, index| %>
+        <%# CONFIG %>
+        <%# COMMENT: Conditional bottom margin based on `contact` index %>
+        <% if index == total_contact %>
+          <% margin_bottom = "" %>
+        <% else %>
+          <% margin_bottom = "mb-0_5rem" %>
+        <% end %>
+        <%# END %>
+        <% if !contact.href && !contact.target %>
+          <p class="<%= margin_bottom %> ff-source_sans_pro fw-regular fs-1rem c-coal td-none"><%= contact.title %></p>
+        <% else %>
+          <a data-interaction="link" class="d-block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
+        <% end %>
+      <% end %>
+    </li>
+  </ul>
+</nav>
+<ul data-interaction="list" class="d-none-ns p-fixed t--100p zi-3 p-static-ns clearfix f-right-ns w-100p w-auto-ns ma-0 mv-0 pa-0 pv-4rem pv-0-ns ttf-ease_in_out td-0_15s tp-top lst-none bgc-tan">
+  <% links.each do |link| %>
+    <li data-interaction="item" class="d-block d-inline_block-ns mb-1rem mb-0-ns va-top ttf-ease_in_out td-0_15s tp-opacity o-0" style="padding-left: 1.5rem;">
+      <% if !link.href && !link.target %>
+        <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fs-1rem c-coal td-none"><%= link.title %></p>
+      <% else %>
+        <a class="mr-3rem ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+      <% end %>
+    </li>
+  <% end %>
+  <%# CONFIG %>
+  <%# COMMENT: Total number of contacts (index-base) %>
+  <% total_contact = contact.length - 1 %>
+  <%# END %>
+  <li class="d-inline_block va-top" style="padding-left: 1.5rem;">
+    <% contact.each_with_index do |contact, index| %>
+      <%# CONFIG %>
+      <%# COMMENT: Conditional bottom margin based on `contact` index %>
+      <% if index == total_contact %>
+        <% margin_bottom = "" %>
+      <% else %>
+        <% margin_bottom = "mb-0_5rem" %>
+      <% end %>
+      <%# END %>
+      <% if !contact.href && !contact.target %>
+        <p data-interaction="item" class="<%= margin_bottom %> ttf-ease_in_out td-0_15s tp-opacity o-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none"><%= contact.title %></p>
+      <% else %>
+        <a data-interaction="item" class="d-block <%= margin_bottom %> ttf-ease_in_out td-0_15s tp-opacity o-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
+      <% end %>
+    <% end %>
+  </li>
+</ul>
+<div data-interaction="cover" class="p-absolute zi-2 d-block d-none-ns h-100p w-100p pe-none ttf-ease_in_out td-0_15s tde-0_1s tp-opacity o-0 bgc-black_40p"></div>
