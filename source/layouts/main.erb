@@ -34,11 +34,11 @@
     <%# COMMENT: Storing `data/global/footer.json` data %>
     <% footer = data.global.footer %>
     <%# END %>
-    <%# Component: Legacy Nav %>
-    <%= partial("components/legacy_nav", :locals => {
-          :image => nav.image,
-          :links => nav.links,
-          :contact => nav.contact
+    <%# Component: Nav %>
+    <%= partial("components/nav", :locals => {
+        :image => nav.image,
+        :links => nav.links,
+        :contact => nav.contact
     }) %>
     <%= yield %>
     <%# Component: Footer %>
