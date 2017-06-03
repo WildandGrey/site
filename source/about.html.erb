@@ -14,8 +14,13 @@
       <%# Comment: Defines whether component is first element within component content list %>
       <% if index === 0 %>
         <% _first = true %>
+        <% _last = false %>
+      <% elsif index === list_length %>
+        <% _first = false %>
+        <% _last = true %>
       <% else %>
         <% _first = false %>
+        <% _last = false %>
       <% end %>
       <%# End %>
       <%# Component: Image %>
@@ -24,21 +29,25 @@
               :src => component.image.src,
               :alt => component.image.alt,
               :caption => component.image.caption,
-              :_first => _first
+              :_first => _first,
+              :_last => false
         }) %>
       <% end %>
       <%# Component: Image Gallery %>
       <% if component.type === "Image Gallery" %>
         <%= partial("components/image_gallery", :locals => {
               :images => component.images,
-              :_first => _first
+              :_first => _first,
+              :_last => false
         }) %>
       <% end %>
       <%# Component: Image Stack %>
       <% if component.type === "Image Stack" %>
         <%= partial("components/image_stack", :locals => {
               :top => component.images.top,
-              :bottom => component.images.bottom
+              :bottom => component.images.bottom,
+              :_first => _first,
+              :_last => false
         }) %>
       <% end %>
       <%# Component: Double-Column Paragraph %>
@@ -47,14 +56,18 @@
               :type => component.paragraph.type,
               :title => component.paragraph.title,
               :first_column => component.paragraph.first_column,
-              :second_column => component.paragraph.second_column
+              :second_column => component.paragraph.second_column,
+              :_first => _first,
+              :_last => false
         }) %>
       <% end %>
       <%# Component: Quote %>
       <% if component.type === "Quote" %>
         <%= partial("components/quote", :locals => {
               :quote => component.quote.text,
-              :author => component.quote.author
+              :author => component.quote.author,
+              :_first => _first,
+              :_last => false
         }) %>
       <% end %>
     <% end %>
