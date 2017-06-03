@@ -102,7 +102,6 @@ if ($images) {
       var imageHeight = $image.offsetHeight;
       var captionWidth = $caption.offsetWidth;
       var captionTop = (imageHeight - captionWidth) / 2;
-      console.log("Image: " + imageHeight + " | Caption: " + captionWidth);
       //  Set caption top value
       $caption.setAttribute('style', 'top: ' + captionTop + 'px;');
     });
