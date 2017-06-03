@@ -59,6 +59,7 @@ if ($controllers) {
   })
 }
 /* Mobile Menu */
+const $body = document.getElementsByTagName('body')[0];
 const $menu = document.querySelector('[data-interaction="menu"]');
 const $open = document.querySelector('[data-interaction="open"]');
 const $close = document.querySelector('[data-interaction="close"]');
@@ -68,15 +69,21 @@ var menu_open = false;
 if ($menu) {
   //  Menu press
   $open.addEventListener('click', function(){
+    toggleClass($body, ['o-hidden', 'o-auto']);
+    toggleClass($menu, ['bbs-solid', 'bbs-none']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($cover, ['o-1', 'o-0']);
+    toggleClass($list, ['h-0', 'h-133px', 'mv-0', 'mv-3rem', 'o-0', 'o-1']);
   });
   //  Close press
   $close.addEventListener('click', function(){
+    toggleClass($body, ['o-hidden', 'o-auto']);
+    toggleClass($menu, ['bbs-solid', 'bbs-none']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($cover, ['o-1', 'o-0']);
+    toggleClass($list, ['h-0', 'h-133px', 'mv-0', 'mv-3rem', 'o-0', 'o-1']);
   });
   if (menu_open) {
     menu_open = false;
@@ -92,7 +99,6 @@ if ($menu) {
 */
 /* Caption */
 const $images = document.querySelectorAll('[data-placement="image"]');
-window.onload
 if ($images) {
   window.addEventListener('load', function(){
     $images.forEach(function($image){
