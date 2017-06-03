@@ -65,25 +65,31 @@ const $open = document.querySelector('[data-interaction="open"]');
 const $close = document.querySelector('[data-interaction="close"]');
 const $list = document.querySelector('[data-interaction="list"]');
 const $cover = document.querySelector('[data-interaction="cover"]');
+const $items = document.querySelectorAll('[data-interaction="item"]');
 var menu_open = false;
 if ($menu) {
   //  Menu press
   $open.addEventListener('click', function(){
     toggleClass($body, ['o-hidden', 'o-auto']);
-    toggleClass($menu, ['bbs-solid', 'bbs-none']);
+    toggleClass($menu, ['bc-coal', 'bc-transparent']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-    toggleClass($cover, ['o-1', 'o-0']);
-    toggleClass($list, ['h-0', 'h-133px', 'mv-0', 'mv-3rem', 'o-0', 'o-1']);
+    toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
+    toggleClass($list, ['t--100p', 't-4rem']);
   });
   //  Close press
   $close.addEventListener('click', function(){
     toggleClass($body, ['o-hidden', 'o-auto']);
-    toggleClass($menu, ['bbs-solid', 'bbs-none']);
+    toggleClass($menu, ['bc-coal', 'bc-transparent']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-    toggleClass($cover, ['o-1', 'o-0']);
-    toggleClass($list, ['h-0', 'h-133px', 'mv-0', 'mv-3rem', 'o-0', 'o-1']);
+    toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
+    toggleClass($list, ['t--100p', 't-4rem']);
+  });
+  $list.addEventListener('transitionend', function(){
+    $items.forEach(function($item){
+      toggleClass($item, ['o-0', 'o-1']);
+    });
   });
   if (menu_open) {
     menu_open = false;
@@ -91,6 +97,51 @@ if ($menu) {
     menu_open = true;
   }
 }
+if ($menu) {
+  if (menu_open) {
+    $cover.addEventListener('click', function(){
+      toggleClass($body, ['o-hidden', 'o-auto']);
+      toggleClass($menu, ['bc-coal', 'bc-transparent']);
+      toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
+      toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
+      toggleClass(this, ['o-1', 'o-0', 'pe-none', 'pe-auto', 'tde-0', 'tde-0_1s']);
+      toggleClass($list, ['t--100p', 't-4rem']);
+    });
+    menu_open = false;
+  }
+}
+// const $body = document.getElementsByTagName('body')[0];
+// const $menu = document.querySelector('[data-interaction="menu"]');
+// const $open = document.querySelector('[data-interaction="open"]');
+// const $close = document.querySelector('[data-interaction="close"]');
+// const $list = document.querySelector('[data-interaction="list"]');
+// const $cover = document.querySelector('[data-interaction="cover"]');
+// var menu_open = false;
+// if ($menu) {
+//   //  Menu press
+//   $open.addEventListener('click', function(){
+//     toggleClass($body, ['o-hidden', 'o-auto']);
+//     toggleClass($menu, ['bbs-solid', 'bbs-none']);
+//     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
+//     toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
+//     toggleClass($cover, ['o-1', 'o-0']);
+//     toggleClass($list, ['h-0', 'h-133px', 'mv-0', 'mv-3rem', 'o-0', 'o-1']);
+//   });
+//   //  Close press
+//   $close.addEventListener('click', function(){
+//     toggleClass($body, ['o-hidden', 'o-auto']);
+//     toggleClass($menu, ['bbs-solid', 'bbs-none']);
+//     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
+//     toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
+//     toggleClass($cover, ['o-1', 'o-0']);
+//     toggleClass($list, ['h-0', 'h-133px', 'mv-0', 'mv-3rem', 'o-0', 'o-1']);
+//   });
+//   if (menu_open) {
+//     menu_open = false;
+//   } else {
+//     menu_open = true;
+//   }
+// }
 /*
 
   IMAGE CAPTION DYNAMIC PLACEMENT
@@ -129,6 +180,7 @@ $year.innerHTML = currentYear;
   FUNCTIONS
   - Toggle Class
   - Element Height
+  - Delayed Log
 
 */
 /* Toggle Class */
