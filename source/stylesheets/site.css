@@ -31,6 +31,7 @@
 .p-absolute { position: absolute; }
 .p-relative { position: relative; }
 .t-0 { top: 0; }
+.t-1rem { top: 1rem; }
 .t-0_3rem { top: 0.3rem; }
 .t-0_5rem { top: 0.5rem; }
 .t-2_5rem { top: 2.5rem; }
@@ -174,6 +175,7 @@
 /* Transition Duration */
 .td-0_15s { -webkit-transition-duration: 0.15s; transition-duration: 0.15s; }
 .td-0_25s { -webkit-transition-duration: 0.25s; transition-duration: 0.25s; }
+.td-0_35s { -webkit-transition-duration: 0.15s; transition-duration: 0.15s; }
 /* Transition Delay */
 .tde-0_1s { -webkit-transition-delay: 0.05s; transition-delay: 0.05s; }
 /* Transition Property */
@@ -334,7 +336,9 @@
   .mr-1_25rem-ns { margin-right: 1.25rem; }
   .mb-0-ns { margin-bottom: 0; }
   .mb-0_5rem-ns { margin-bottom: 1.5rem; }
+  .mb-3rem-ns { margin-bottom: 3rem; }
   .mb-4rem-ns { margin-bottom: 4rem; }
+  .mb-10rem-ns { margin-bottom: 10rem; }
   /* Padding */
   .pv-0 { padding-top: 0; padding-bottom: 0; }
   .ph-0-ns { padding-right: 0; padding-left: 0; }
