@@ -10,16 +10,16 @@
 <nav data-interaction="menu" class="p-relative zi-3 mw-56rem mh-1_5rem mh-3rem-m mh-auto-l mt-2rem mt-3rem-ns mb-8rem-ns pb-1_5rem pb-2rem-ns bg-tan bbs-solid bbw-3x bc-coal">
   <a href="/"><img class="w-100px h-33px w-120px-ns h-38px-ns" src="<%= image.src %>" alt="<%= image.alt %>"></a>
   <div class="d-none-ns p-absolute t-0_5rem r-0 clearfix">
-    <p data-interaction="open" class="ttf-ease_in_out td-0_15s tp-opacity o-1 pe-auto ma-0 ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none">Menu</p>
+    <p data-interaction="open" class="ttf-ease_in_out td-0_15s tp-opacity o-1 pe-auto ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none">Menu</p>
     <img data-interaction="close" class="p-absolute t-0_3rem r-0 ttf-ease_in_out td-0_15s tp-opacity o-0 pe-none" src="/images/brand/close.svg">
   </div>
-  <ul data-interaction="list" class="d-none d-block-ns clearfix f-right-ns ma-0 mv-4rem mv-0-ns pa-0 lst-none">
+  <ul data-interaction="list" class="o-0 h-0 h-auto-ns oy-hidden d-block-ns clearfix f-right-ns ma-0 mv-0 pa-0 ttf-cubic_bezier td-0_5s tp-height tp-margin tp-opacity lst-none">
     <% links.each do |link| %>
       <li class="d-block d-inline_block-ns mb-1rem mb-0-ns va-top">
         <% if !link.href && !link.target %>
-          <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none"><%= link.title %></p>
+          <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fs-1rem c-coal td-none"><%= link.title %></p>
         <% else %>
-          <a data-interaction="link" class="mr-3rem ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+          <a data-interaction="link" class="mr-3rem ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
         <% end %>
       </li>
     <% end %>
@@ -38,9 +38,9 @@
         <% end %>
         <%# END %>
         <% if !contact.href && !contact.target %>
-          <p class="<%= margin_bottom %> ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none"><%= contact.title %></p>
+          <p class="<%= margin_bottom %> ff-source_sans_pro fw-regular fs-1rem c-coal td-none"><%= contact.title %></p>
         <% else %>
-          <a data-interaction="link" class="d-block <%= margin_bottom %> ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
+          <a data-interaction="link" class="d-block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
         <% end %>
       <% end %>
     </li>
