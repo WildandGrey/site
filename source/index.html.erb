@@ -24,7 +24,7 @@
           :text => page.caption
     }) %>
     <%# List: Blocks %>
-    <div class="clearfix mw-16rem mw-45rem-ns mh-auto mb-3rem mb-8rem-ns">
+    <div class="clearfix mw-16rem mw-40rem-m mw-45rem-l mh-auto mb-3rem mb-5rem-m mb-8rem-l">
       <% page.blocks.each_with_index do |block, index| %>
         <%# Component: Block %>
         <%= partial("components/block", :locals => {
@@ -37,7 +37,7 @@
       <% end %>
     </div>
     <%# List: Cards %>
-    <div class="clearfix mw-56rem mh-auto ph-1_5rem ph-0-ns">
+    <div class="clearfix mw-56rem mh-3rem-m mh-auto-l ph-1_5rem ph-0-ns">
       <% case_studies.each_with_index do |card, index| %>
         <% if index % 2 === 0 %>
           <div class="f-left w-50p-ns pr-2rem-ns">
