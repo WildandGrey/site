@@ -1,12 +1,28 @@
 /*
 
   INTERACTIONS
+  - Card
   - Link
   - Pseudolink
   - Controller
   - Mobile Menu
 
 */
+/* Card */
+const $cards = document.querySelectorAll('[data-interaction="card"]');
+if ($cards) {
+  $cards.forEach(function($card){
+    const $index = $card.querySelector('[data-hover="index"]');
+    //  Mouse over
+    $card.addEventListener('mouseover', function(){
+      toggleClass($index, ['c-light_gray', 'c-peach']);
+    });
+    //  Mouse over
+    $card.addEventListener('mouseout', function(){
+      toggleClass($index, ['c-light_gray', 'c-peach']);
+    });
+  });
+}
 /* Link */
 const $links = document.querySelectorAll('[data-interaction="link"]');
 if ($links) {
@@ -74,7 +90,7 @@ if ($menu) {
     toggleClass($menu, ['bc-coal', 'bc-transparent']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-    toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
+    toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto', 'td-0_35s', 'td-15s']);
     toggleClass($list, ['t--100p', 't-4rem']);
   });
   //  Close press
@@ -83,7 +99,7 @@ if ($menu) {
     toggleClass($menu, ['bc-coal', 'bc-transparent']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-    toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
+    toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto', 'td-0_35s', 'td-15s']);
     toggleClass($list, ['t--100p', 't-4rem']);
   });
   $list.addEventListener('transitionend', function(){
