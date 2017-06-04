@@ -118,6 +118,10 @@
   "_meta": {
     "title": "Greyson MacAlpine — Waverly Labs",
     "description": "The Pilot is a translation app that corresponds with its smart wearables counterpart. I was brought in to concept and design the first MVP for Waverly Labs.",
-    "keywords": "translation app smart wearables Waverly Labs MVP"
+    "keywords": "translation app smart wearables Waverly Labs MVP",
+    "images": {
+      "facebook": "https://www.greysonmacalpine.com/images/case-studies/waverly-labs/facebook.jpg",
+      "twitter": "https://www.greysonmacalpine.com/images/case-studies/waverly-labs/twitter.jpg"
+    }
   }
 }

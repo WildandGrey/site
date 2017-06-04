@@ -37,6 +37,10 @@
   "_meta": {
     "title": "Greyson MacAlpine — Wild & Grey",
     "description": "What first started out as my passion project, Wild & Grey officially launched in 2016 and is now a studio collective of designers and artists from the US and Europe. We focus on client services such as video production, photography, and design, as well as internal projects under the Wild & Grey brand. The official site will be released in the summer of 2017.",
-    "keywords": "studio collective design video production photograph"
+    "keywords": "studio collective design video production photograph",
+    "images": {
+      "facebook": "https://www.greysonmacalpine.com/images/case-studies/wild-and-grey/facebook.jpg",
+      "twitter": "https://www.greysonmacalpine.com/images/case-studies/wild-and-grey/twitter.jpg"
+    }
   }
 }
