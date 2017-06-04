@@ -1,0 +1,23 @@
+<meta property="og:url" content="<%= data.meta.site.url %>">
+<% if locals[:article] %>
+  <meta property="og:type" content="summary">
+  <meta property="og:title" content="<%= article.title %>">
+  <meta property="og:description" content="<%= article.card.description %>">
+  <meta property="og:image" content="<%= article._meta.images.facebook %>">
+<% else %>
+  <meta property="og:type" content="<%= data.meta.type %>">
+  <meta property="og:title" content="<%= data.meta.title %>">
+  <meta property="og:description" content="<%= data.meta.description %>">
+  <meta property="og:image" content="<%= data.meta.images.og %>">
+<% end %>
+<meta name="twitter:card" content="<%= data.meta.site.card %>">
+<meta name="twitter:site" content="<%= data.meta.site.site %>">
+<% if locals[:article] %>
+  <meta name="twitter:title" content="<%= article.title %>">
+  <meta name="twitter:description" content="<%= article.card.description %>">
+  <meta name="twitter:image" content="<%= article._meta.images.twitter %>">
+<% else %>
+  <meta name="twitter:title" content="<%= data.meta.site.title %>">
+  <meta name="twitter:description" content="<%= data.meta.site.description %>">
+  <meta name="twitter:image" content="<%= data.meta.site.images.twitter %>">
+<% end %>
