@@ -1,8 +1,11 @@
 {
   "hero": {
-    "heading": "Product designer formerly at <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://ueno.co/\" target=\"_blank\">Ueno</a>,<br><a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://www.knifeandfox.com/\" target=\"_blank\">Knife & Fox</a>,<br>and <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"http://www.mossio.co/\" target=\"_blank\">Mossio</a>.",
+    "heading": "Product designer in San Francisco formerly at <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://ueno.co/\" target=\"_blank\">Ueno</a>, <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://www.knifeandfox.com/\" target=\"_blank\">Knife & Fox</a>, and <a data-interaction=\"link\" class=\"c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"http://www.mossio.co/\" target=\"_blank\">Mossio</a>.",
     "image": {
-      "src": "/images/greyson/hero.jpg",
+      "src": {
+        "small": "/images/home/hero-mobile.jpg",
+        "not_small": "/images/home/hero.jpg"
+      },
       "alt": "Hi there, I'm Greyson!",
       "caption": "Photo by: <a data-interaction=\"link\" class=\"c-steel td-none ttf-ease_in_out td-0_15s tp-color\" href=\"http://troystains.co/\" target=\"_blank\">Troy Stains</a>, Ueno"
     }
@@ -87,6 +90,10 @@
   "_meta": {
     "title": "Greyson MacAlpine — Product Designer",
     "description": "Product Designer based in San Francisco running Wild & Grey. Formerly at Ueno, Kinfe and Fox, and Mossio.",
-    "keywords": "product designer San Francisco experience meaningful UX business"
+    "keywords": "product designer San Francisco experience meaningful UX business",
+    "images": {
+      "facebook": "https://www.greysonmacalpine.com/images/greyson/facebook.jpg",
+      "twitter": "https://www.greysonmacalpine.com/images/greyson/twitter.jpg"
+    }
   }
 }
