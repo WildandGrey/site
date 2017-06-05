@@ -86,7 +86,7 @@ var menu_open = false;
 if ($menu) {
   //  Menu press
   $open.addEventListener('click', function(){
-    toggleClass($html, ['o-hidden', 'o-auto']);
+    toggleClass($html, ['oy-hidden', 'o-auto']);
     toggleClass($menu, ['bc-coal', 'bc-transparent']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
@@ -95,7 +95,7 @@ if ($menu) {
   });
   //  Close press
   $close.addEventListener('click', function(){
-    toggleClass($html, ['o-hidden', 'o-auto']);
+    toggleClass($html, ['oy-hidden', 'o-auto']);
     toggleClass($menu, ['bc-coal', 'bc-transparent']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
@@ -116,7 +116,7 @@ if ($menu) {
 if ($menu) {
   if (menu_open) {
     $cover.addEventListener('click', function(){
-      toggleClass($html, ['o-hidden', 'o-auto']);
+      toggleClass($html, ['oy-hidden', 'o-auto']);
       toggleClass($menu, ['bc-coal', 'bc-transparent']);
       toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
       toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
