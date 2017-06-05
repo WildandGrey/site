@@ -7,7 +7,7 @@
       contact: Array:Pseudolink
 
 %>
-<nav data-interaction="menu" class="p-relative zi-4 mw-56rem-l pt-2rem pt-3rem-ns mh-1_5rem mh-3rem-m mh-auto-l mb-8rem-ns pb-1_5rem pb-2rem-ns ttf-ease_in_out td-0_15s tp-border_color bgc-tan bbs-solid bbw-3px bc-coal">
+<nav data-interaction="menu" class="p-relative zi-4 mw-56rem-l pt-2rem pt-3rem-ns mh-1_5rem mh-3rem-m mh-auto-l mb-8rem-ns pb-1_5rem pb-2rem-ns ttf-ease_in_out td-0_15s tp-border_color bbs-solid bbw-3px bc-coal">
   <a href="/"><img class="w-100px h-33px w-120px-ns h-38px-ns" src="<%= image.src %>" alt="<%= image.alt %>"></a>
   <div class="d-none-ns p-absolute t-2_5rem r-0 clearfix">
     <p data-interaction="open" class="ttf-ease_in_out td-0_15s tp-opacity o-1 pe-auto ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none">Menu</p>
@@ -46,7 +46,7 @@
     </li>
   </ul>
 </nav>
-<ul data-interaction="list" class="d-none-ns p-absolute t--100p zi-3 p-static-ns clearfix f-right-ns w-100p w-auto-ns ma-0 mv-0 pa-0 pv-6rem pv-0-ns ttf-cubic_bezier td-0_25s tp-top lst-none bgc-tan">
+<ul data-interaction="list" class="d-none-ns p-absolute t--100p zi-3 p-static-ns clearfix f-right-ns w-100p w-auto-ns ma-0 mv-0 pa-0 pv-6rem pv-0-ns ttf-ease_in_out td-0_25s tp-top lst-none bgc-tan">
   <% links.each do |link| %>
     <li data-interaction="item" class="d-block d-inline_block-ns mb-1_5rem mb-0-ns pl-1_5rem va-top">
       <% if !link.href && !link.target %>
@@ -78,4 +78,4 @@
     <% end %>
   </li>
 </ul>
-<div data-interaction="cover" class="p-absolute zi-2 d-block d-none-ns h-100p w-100p pe-none ttf-ease_in_out td-0_35s tp-opacity o-0 bgc-black_20p"></div>
+<div data-interaction="cover" class="p-absolute zi-2 d-block d-none-ns h-100p w-100p pe-none ttf-ease_in_out td-0_25s tp-opacity o-0 bgc-black_20p"></div>

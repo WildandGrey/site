@@ -90,7 +90,7 @@ if ($menu) {
     toggleClass($menu, ['bc-coal', 'bc-transparent']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-    toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto', 'td-0_35s', 'td-15s']);
+    toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
     toggleClass($list, ['t--100p', 't-4rem']);
   });
   //  Close press
