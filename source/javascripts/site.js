@@ -102,11 +102,11 @@ if ($menu) {
     toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto', 'td-0_35s', 'td-15s']);
     toggleClass($list, ['t--100p', 't-4rem']);
   });
-  $list.addEventListener('transitionend', function(){
-    $items.forEach(function($item){
-      toggleClass($item, ['o-0', 'o-1']);
-    });
-  });
+  // $list.addEventListener('transitionend', function(){
+  //   $items.forEach(function($item){
+  //     toggleClass($item, ['o-0', 'o-1']);
+  //   });
+  // });
   if (menu_open) {
     menu_open = false;
   } else {

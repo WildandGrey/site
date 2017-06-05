@@ -139,6 +139,7 @@
 .mb-0_4rem { margin-bottom: 0.4rem; }
 .mb-0_5rem { margin-bottom: 0.5rem; }
 .mb-1rem { margin-bottom: 1rem; }
+.mb-1_5rem { margin-bottom: 1.5rem; }
 .mb-2rem { margin-bottom: 2rem; }
 .mb-3rem { margin-bottom: 3rem; }
 .mb-4rem { margin-bottom: 4rem; }
@@ -151,6 +152,7 @@
 .pa-0 { padding: 0; }
 .pv-3rem { padding-top: 3rem; padding-bottom: 3rem; }
 .pv-4rem { padding-top: 4rem; padding-bottom: 4rem; }
+.pv-6rem { padding-top: 6rem; padding-bottom: 6rem; }
 .ph-1_5rem { padding-right: 1.5rem; padding-left: 1.5rem; }
 .pt-0_5rem { padding-top: 0.5rem; }
 .pt-2rem { padding-top: 2rem; }
@@ -257,7 +259,7 @@
 /* Background Color */
 .bgc-tan { background-color: #f2edea; }
 .bgc-coal { background-color: #282828; }
-.bgc-black_40p { background-color: rgba(0,0,0,0.4); }
+.bgc-black_20p { background-color: rgba(0,0,0,0.2); }
 /* Fill */
 .f-coal { fill: #282828; }
 .f-peach { fill: #f0ab93; }
@@ -370,6 +372,7 @@
     - Font Size
 
   */
+  .fs-1rem-ns { font-size: 1rem; }
   .fs-2_5rem-ns { font-size: 2.5rem; }
 }
 /* Medium */
