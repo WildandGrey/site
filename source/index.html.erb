@@ -24,7 +24,7 @@
           :text => page.caption
     }) %>
     <%# List: Blocks %>
-    <div class="clearfix mw-16rem mw-35rem-ns mh-auto mb-3rem mb-5rem-m mb-8rem-l">
+    <div class="clearfix mw-16rem mw-35rem-ns mh-auto mb-5rem-m mb-8rem-l">
       <% page.blocks.each_with_index do |block, index| %>
         <%# Component: Block %>
         <%= partial("components/block", :locals => {
