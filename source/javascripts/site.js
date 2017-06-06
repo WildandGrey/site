@@ -92,6 +92,7 @@ if ($menu) {
     toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
     toggleClass($list, ['t--100p', 't-4rem']);
+    menu_open = true;
   });
   //  Close press
   $close.addEventListener('click', function(){
@@ -99,20 +100,27 @@ if ($menu) {
     toggleClass($menu, ['bc-coal', 'bc-transparent']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-    toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto', 'td-0_35s', 'td-15s']);
+    toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
     toggleClass($list, ['t--100p', 't-4rem']);
-  });
-  // $list.addEventListener('transitionend', function(){
-  //   $items.forEach(function($item){
-  //     toggleClass($item, ['o-0', 'o-1']);
-  //   });
-  // });
-  if (menu_open) {
     menu_open = false;
-  } else {
-    menu_open = true;
-  }
+  });
 }
+//  Transition end listener on opening of Mobile Menu
+$list.addEventListener('transitionend', function(){
+  if (!menu_open) {
+    for (var i = 0; i < $items.length; i++) {
+      var delay = (i + 1) * 250;
+      delayToggle($items[i], ['t--0_5rem', 't-0', 'o-0', 'o-1'], delay);
+    }
+  }
+  if (menu_open) {
+    console.log("I'm up!");
+    for (var i = 0; i < $items.length; i++) {
+      toggleClass($items[i], ['t--0_5rem', 't-0', 'o-0', 'o-1']);
+    }
+  }
+});
+//  Cover Event Listener
 if ($menu) {
   if (menu_open) {
     $cover.addEventListener('click', function(){
@@ -120,44 +128,12 @@ if ($menu) {
       toggleClass($menu, ['bc-coal', 'bc-transparent']);
       toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
       toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-      toggleClass(this, ['o-1', 'o-0', 'pe-none', 'pe-auto', 'tde-0', 'tde-0_1s']);
+      toggleClass(this, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
       toggleClass($list, ['t--100p', 't-4rem']);
+      menu_open = false;
     });
-    menu_open = false;
   }
 }
-// const $body = document.getElementsByTagName('body')[0];
-// const $menu = document.querySelector('[data-interaction="menu"]');
-// const $open = document.querySelector('[data-interaction="open"]');
-// const $close = document.querySelector('[data-interaction="close"]');
-// const $list = document.querySelector('[data-interaction="list"]');
-// const $cover = document.querySelector('[data-interaction="cover"]');
-// var menu_open = false;
-// if ($menu) {
-//   //  Menu press
-//   $open.addEventListener('click', function(){
-//     toggleClass($body, ['o-hidden', 'o-auto']);
-//     toggleClass($menu, ['bbs-solid', 'bbs-none']);
-//     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-//     toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-//     toggleClass($cover, ['o-1', 'o-0']);
-//     toggleClass($list, ['h-0', 'h-133px', 'mv-0', 'mv-3rem', 'o-0', 'o-1']);
-//   });
-//   //  Close press
-//   $close.addEventListener('click', function(){
-//     toggleClass($body, ['o-hidden', 'o-auto']);
-//     toggleClass($menu, ['bbs-solid', 'bbs-none']);
-//     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-//     toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
-//     toggleClass($cover, ['o-1', 'o-0']);
-//     toggleClass($list, ['h-0', 'h-133px', 'mv-0', 'mv-3rem', 'o-0', 'o-1']);
-//   });
-//   if (menu_open) {
-//     menu_open = false;
-//   } else {
-//     menu_open = true;
-//   }
-// }
 /*
 
   IMAGE CAPTION DYNAMIC PLACEMENT
@@ -196,7 +172,7 @@ $year.innerHTML = currentYear;
   FUNCTIONS
   - Toggle Class
   - Element Height
-  - Delayed Log
+  - Delayed Toggle
 
 */
 /* Toggle Class */
@@ -216,4 +192,10 @@ function getHeight($element) {
   document.body.removeChild($element);
   $element.style.visibility = "visible";
   return height;
+}
+/* Delayed Toggle */
+function delayToggle($element, classList, time) {
+  setTimeout(function(){
+    toggleClass($element, classList);
+  }, time);
 }

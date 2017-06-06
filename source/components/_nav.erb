@@ -7,7 +7,7 @@
       contact: Array:Pseudolink
 
 %>
-<nav data-interaction="menu" class="p-relative zi-4 mw-56rem-l pt-2rem pt-3rem-ns mh-1_5rem mh-3rem-m mh-auto-l mb-8rem-ns pb-1_5rem pb-2rem-ns ttf-ease_in_out td-0_15s tp-border_color bbs-solid bbw-3px bc-coal">
+<nav data-interaction="menu" class="p-relative zi-4 mw-56rem-l pt-2rem pt-3rem-ns mh-1_5rem mh-3rem-m mh-auto-l mb-8rem-ns pb-1_5rem pb-2rem-ns ttf-ease_in_out td-0_25s tp-border_color bbs-solid bbw-3px bc-coal">
   <a href="/"><img class="w-100px h-33px w-120px-ns h-38px-ns" src="<%= image.src %>" alt="<%= image.alt %>"></a>
   <div class="d-none-ns p-absolute t-2_5rem r-0 clearfix">
     <p data-interaction="open" class="ttf-ease_in_out td-0_15s tp-opacity o-1 pe-auto ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none">Menu</p>
@@ -48,11 +48,11 @@
 </nav>
 <ul data-interaction="list" class="d-none-ns p-absolute t--100p zi-3 p-static-ns clearfix f-right-ns w-100p w-auto-ns ma-0 mv-0 pa-0 pv-6rem pv-0-ns ttf-ease_in_out td-0_25s tp-top lst-none bgc-tan">
   <% links.each do |link| %>
-    <li data-interaction="item" class="d-block d-inline_block-ns mb-1_5rem mb-0-ns pl-1_5rem va-top">
+    <li data-interaction="item" class="p-relative t--1rem o-0 d-block d-inline_block-ns mb-1_5rem mb-0-ns pl-1_5rem va-top ttf-cubic_bezier td-0_75s tp-all">
       <% if !link.href && !link.target %>
-        <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none"><%= link.title %></p>
+        <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-ease_in_out td-0_15s tp-all"><%= link.title %></p>
       <% else %>
-        <a class="mr-3rem ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+        <a class="mr-3rem ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
       <% end %>
     </li>
   <% end %>
@@ -71,11 +71,11 @@
       <% end %>
       <%# END %>
       <% if !contact.href && !contact.target %>
-        <p data-interaction="item" class="<%= margin_bottom %> ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none"><%= contact.title %></p>
+        <p data-interaction="item" class="p-relative t--1rem o-0 <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-cubic_bezier td-0_75s tp-all"><%= contact.title %></p>
       <% else %>
-        <a data-interaction="item" class="d-block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
+        <a data-interaction="item" class="p-relative t--1rem o-0 d-block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-cubic_bezier td-0_75s tp-all" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
       <% end %>
     <% end %>
   </li>
 </ul>
-<div data-interaction="cover" class="p-absolute zi-2 d-block d-none-ns h-100p w-100p pe-none ttf-ease_in_out td-0_25s tp-opacity o-0 bgc-black_20p"></div>
+<div data-interaction="cover" class="p-absolute zi-2 d-block d-none-ns h-100p w-100p pe-none ttf-ease_in_out td-0_25s tp-opacity o-0 bgc-gradient"></div>

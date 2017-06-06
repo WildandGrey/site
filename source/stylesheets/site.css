@@ -30,6 +30,7 @@
 .p-fixed { position: fixed; }
 .p-absolute { position: absolute; }
 .p-relative { position: relative; }
+.t--1rem { top: -1rem; }
 .t-0 { top: 0; }
 .t-0_2rem { top: 0.2rem; }
 .t-0_3rem { top: 0.3rem; }
@@ -182,8 +183,9 @@
 .ttf-cubic_bezier { -webkit-transition-timing-function: cubic-bezier(0.45, 0.25, 0.25, 1); transition-timing-function: cubic-bezier(0.45, 0.25, 0.25, 1); }
 /* Transition Duration */
 .td-0_15s { -webkit-transition-duration: 0.15s; transition-duration: 0.15s; }
-.td-0_25s { -webkit-transition-duration: 0.25s; transition-duration: 0.25s; }
+.td-0_25s { -webkit-transition-duration: 0.5s; transition-duration: 0.5s; }
 .td-0_35s { -webkit-transition-duration: 0.15s; transition-duration: 0.15s; }
+.td-0_75s { -webkit-transition-duration: 1s; transition-duration: 1s; }
 /* Transition Delay */
 .tde-0_1s { -webkit-transition-delay: 0.05s; transition-delay: 0.05s; }
 /* Transition Property */
@@ -193,6 +195,7 @@
 .tp-fill { -webkit-transition-property: fill; transition-property: fill; }
 .tp-height { -webkit-transition-property: height; transition-property: height; }
 .tp-margin { -webkit-transition-property: margin; transition-property: margin; }
+.tp-all { -webkit-transition-property: all; transition-property: all; }
 /*
   TRANSFORMATIONS AND PROPERTIES
   - Trandform Origin
@@ -260,6 +263,11 @@
 .bgc-tan { background-color: #f2edea; }
 .bgc-coal { background-color: #282828; }
 .bgc-black_20p { background-color: rgba(0,0,0,0.2); }
+.bgc-gradient {
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
 /* Fill */
 .f-coal { fill: #282828; }
 .f-peach { fill: #f0ab93; }
