@@ -105,19 +105,10 @@ if ($menu) {
     menu_open = false;
   });
 }
-//  Transition end listener on opening of Mobile Menu
+//  Transition-end listener on activation of Mobile Menu
 $list.addEventListener('transitionend', function(){
-  if (!menu_open) {
-    for (var i = 0; i < $items.length; i++) {
-      var delay = (i + 1) * 250;
-      delayToggle($items[i], ['t--0_5rem', 't-0', 'o-0', 'o-1'], delay);
-    }
-  }
-  if (menu_open) {
-    console.log("I'm up!");
-    for (var i = 0; i < $items.length; i++) {
-      toggleClass($items[i], ['t--0_5rem', 't-0', 'o-0', 'o-1']);
-    }
+  for (var i = 0; i < $items.length; i++) {
+    toggleClass($items[i], ['o-0', 'o-1']);
   }
 });
 //  Cover Event Listener
@@ -192,10 +183,4 @@ function getHeight($element) {
   document.body.removeChild($element);
   $element.style.visibility = "visible";
   return height;
-}
-/* Delayed Toggle */
-function delayToggle($element, classList, time) {
-  setTimeout(function(){
-    toggleClass($element, classList);
-  }, time);
 }

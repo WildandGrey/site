@@ -48,9 +48,9 @@
 </nav>
 <ul data-interaction="list" class="d-none-ns p-absolute t--100p zi-3 p-static-ns clearfix f-right-ns w-100p w-auto-ns ma-0 mv-0 pa-0 pv-6rem pv-0-ns ttf-ease_in_out td-0_25s tp-top lst-none bgc-tan">
   <% links.each do |link| %>
-    <li data-interaction="item" class="p-relative t--1rem o-0 d-block d-inline_block-ns mb-1_5rem mb-0-ns pl-1_5rem va-top ttf-cubic_bezier td-0_75s tp-all">
+    <li data-interaction="item" class="o-0 d-block d-inline_block-ns mb-1_5rem mb-0-ns pl-1_5rem va-top ttf-cubic_bezier td-0_75s tp-opacity">
       <% if !link.href && !link.target %>
-        <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-ease_in_out td-0_15s tp-all"><%= link.title %></p>
+        <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none"><%= link.title %></p>
       <% else %>
         <a class="mr-3rem ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
       <% end %>
@@ -71,9 +71,9 @@
       <% end %>
       <%# END %>
       <% if !contact.href && !contact.target %>
-        <p data-interaction="item" class="p-relative t--1rem o-0 <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-cubic_bezier td-0_75s tp-all"><%= contact.title %></p>
+        <p data-interaction="item" class="o-0 <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-cubic_bezier td-0_75s tp-opacity"><%= contact.title %></p>
       <% else %>
-        <a data-interaction="item" class="p-relative t--1rem o-0 d-block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-cubic_bezier td-0_75s tp-all" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
+        <a data-interaction="item" class="o-0 d-block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-cubic_bezier td-0_75s tp-opacity" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
       <% end %>
     <% end %>
   </li>
