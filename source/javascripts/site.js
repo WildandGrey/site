@@ -21,6 +21,10 @@ if ($cards) {
     $card.addEventListener('mouseleave', function(){
       toggleClass($index, ['c-light_gray', 'c-peach']);
     });
+    //  Click
+    $card.addEventListener('click', function(){
+      toggleClass($index, ['c-coal', 'c-peach']);
+    });
   });
 }
 /* Link */
@@ -33,6 +37,10 @@ if ($links) {
     });
     //  Mouse out
     $link.addEventListener('mouseleave', function(){
+      toggleClass(this, ['c-coal', 'c-peach']);
+    });
+    //  Click
+    $link.addEventListener('click', function(){
       toggleClass(this, ['c-coal', 'c-peach']);
     });
   });
