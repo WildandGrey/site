@@ -14,11 +14,11 @@ if ($cards) {
   $cards.forEach(function($card){
     const $index = $card.querySelector('[data-hover="index"]');
     //  Mouse over
-    $card.addEventListener('mouseover', function(){
+    $card.addEventListener('mouseenter', function(){
       toggleClass($index, ['c-light_gray', 'c-peach']);
     });
     //  Mouse over
-    $card.addEventListener('mouseout', function(){
+    $card.addEventListener('mouseleave', function(){
       toggleClass($index, ['c-light_gray', 'c-peach']);
     });
   });
@@ -28,15 +28,11 @@ const $links = document.querySelectorAll('[data-interaction="link"]');
 if ($links) {
   $links.forEach(function($link){
     //  Mouse over
-    $link.addEventListener('mouseover', function(){
+    $link.addEventListener('mouseenter', function(){
       toggleClass(this, ['c-coal', 'c-peach']);
     });
     //  Mouse out
-    $link.addEventListener('mouseout', function(){
-      toggleClass(this, ['c-coal', 'c-peach']);
-    });
-    //  Click
-    $link.addEventListener('click', function(){
+    $link.addEventListener('mouseleave', function(){
       toggleClass(this, ['c-coal', 'c-peach']);
     });
   });
@@ -49,13 +45,13 @@ if ($pseudolinks && $note) {
     //  Asterisk symbol
     var $asterisk = $pseudolink.querySelector('[data-interaction="asterisk"]');
     //  Mouse over
-    $pseudolink.addEventListener('mouseover', function(){
+    $pseudolink.addEventListener('mouseenter', function(){
       toggleClass(this, ['c-coal', 'c-peach']);
       toggleClass($asterisk, ['c-steel', 'c-salmon']);
       toggleClass($note, ['o-0', 'o-1']);
     });
     //  Mouse out
-    $pseudolink.addEventListener('mouseout', function(){
+    $pseudolink.addEventListener('mouseleave', function(){
       toggleClass(this, ['c-coal', 'c-peach']);
       toggleClass($asterisk, ['c-steel', 'c-salmon']);
       toggleClass($note, ['o-0', 'o-1']);
@@ -69,11 +65,11 @@ if ($controllers) {
     //  Arrow svg
     var $arrow = $control.querySelector('[data-interaction="arrow"]');
     //  Mouse over
-    $control.addEventListener('mouseover', function(){
+    $control.addEventListener('mouseenter', function(){
       toggleClass($arrow, ['f-coal', 'f-peach']);
     });
     //  Mouse out
-    $control.addEventListener('mouseout', function(){
+    $control.addEventListener('mouseleave', function(){
       toggleClass($arrow, ['f-coal', 'f-peach']);
     });
   })
