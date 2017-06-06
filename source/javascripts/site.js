@@ -23,7 +23,7 @@ if ($cards) {
     });
     //  Click
     $card.addEventListener('click', function(){
-      toggleClass($index, ['c-coal', 'c-peach']);
+      toggleClass($index, ['c-light_gray', 'c-peach']);
     });
   });
 }
