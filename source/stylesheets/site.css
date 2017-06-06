@@ -61,6 +61,7 @@
 .o-hidden { overflow: hidden; }
 .o-auto { overflow: auto; }
 .oy-hidden { overflow-y: hidden; }
+.ox-hidden { overflow-x: hidden; }
 /* Opacity */
 .o-0 { opacity: 0; }
 .o-1 { opacity: 1; }
@@ -113,6 +114,7 @@
 .h-15rem { height: 15rem; }
 .h-35rem { height: 35rem; }
 .h-100p { height: 100%; }
+.h-100vh { height: 100vh; }
 /* Min Height */
 .mh-1px { min-height: 1px; }
 /*

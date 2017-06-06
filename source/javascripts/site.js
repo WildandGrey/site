@@ -96,7 +96,7 @@ if ($menu) {
   });
   //  Close press
   $close.addEventListener('click', function(){
-    toggleClass($html, ['oy-hidden', 'o-auto']);
+    toggleClass($html, ['oy-hidden', 'oy-auto', 'h-100p', 'h-100vh']);
     toggleClass($menu, ['bc-coal', 'bc-transparent']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
