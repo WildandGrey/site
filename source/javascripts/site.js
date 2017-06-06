@@ -100,6 +100,7 @@ if ($menu) {
     toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
     toggleClass($list, ['t--100p', 't-4rem']);
+    stopBodyScrolling(true);
     menu_open = true;
   });
   //  Close press
@@ -110,6 +111,7 @@ if ($menu) {
     toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
     toggleClass($list, ['t--100p', 't-4rem']);
+    stopBodyScrolling(false);
     menu_open = false;
   });
 }
@@ -129,6 +131,7 @@ if ($menu) {
       toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
       toggleClass(this, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
       toggleClass($list, ['t--100p', 't-4rem']);
+      stopBodyScrolling(true);
       menu_open = false;
     });
   }
@@ -171,7 +174,8 @@ $year.innerHTML = currentYear;
   FUNCTIONS
   - Toggle Class
   - Element Height
-  - Delayed Toggle
+  - Stop Body Scrolling
+  - Freeze View Port
 
 */
 /* Toggle Class */
@@ -192,3 +196,15 @@ function getHeight($element) {
   $element.style.visibility = "visible";
   return height;
 }
+//  Stop Body Scrolloing
+function stopBodyScrolling (bool) {
+  if (bool) {
+    document.body.addEventListener("touchmove", freezeVp, false);
+  } else {
+    document.body.removeEventListener("touchmove", freezeVp, false);
+  }
+}
+//  Freeze View Port
+var freezeVp = function(e) {
+  e.preventDefault();
+};
