@@ -35,6 +35,10 @@ if ($links) {
     $link.addEventListener('mouseout', function(){
       toggleClass(this, ['c-coal', 'c-peach']);
     });
+    //  Click
+    $link.addEventListener('click', function(){
+      toggleClass(this, ['c-coal', 'c-peach']);
+    });
   });
 }
 /* Pseudolink */
