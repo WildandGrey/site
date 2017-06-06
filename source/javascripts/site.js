@@ -185,10 +185,10 @@ function toggleClass($element, classes) {
   });
 }
 /* Element Height */
+//  Source: StackOverflow
+//  Author: Lonnie Best
+//  Path: http://stackoverflow.com/questions/6937378/element-offsetheight-always-0
 function getHeight($element) {
-  //  Source: StackOverflow
-  //  Author: Lonnie Best
-  //  Path: http://stackoverflow.com/questions/6937378/element-offsetheight-always-0
   $element.style.visibility = "hidden";
   document.body.appendChild($element);
   var height = $element.offsetHeight + 0;
@@ -196,7 +196,10 @@ function getHeight($element) {
   $element.style.visibility = "visible";
   return height;
 }
-//  Stop Body Scrolloing
+/* Stop Body Scrolloing */
+//  Source: benfrain.com
+//  Author: Ben Frain
+//  Path: https://benfrain.com/preventing-body-scroll-for-modals-in-ios/
 function stopBodyScrolling (bool) {
   if (bool) {
     document.body.addEventListener("touchmove", freezeVp, false);
@@ -204,7 +207,7 @@ function stopBodyScrolling (bool) {
     document.body.removeEventListener("touchmove", freezeVp, false);
   }
 }
-//  Freeze View Port
+/*  Freeze View Port */
 var freezeVp = function(e) {
   e.preventDefault();
 };
