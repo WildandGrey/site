@@ -14,20 +14,24 @@
 <%# CONFIG %>
 <%# COMMENT: Conditional horizontal padding %>
 <% if _index % 2 === 0 %>
-  <% padding = "pr-2rem" %>
+  <% padding = "pr-2rem-ns" %>
 <% else %>
-  <% padding = "pl-2rem" %>
+  <% padding = "pl-2rem-ns" %>
+<% end %>
+<%# COMMENT: Conditional mobile bottom margin %>
+<% if _index === 0 %>
+  <% margin_bottom = "mb-3rem mb-0-ns" %>
+<% else %>
+  <% margin_bottom = "mb-5rem mb-0-ns" %>
 <% end %>
 <%# COMMENT: Type conditional width and right padding %>
 <% if type === "single" %>
   <% width = "w-100p" %>
-  <% margin_right = "" %>
 <% elsif type === "third" %>
   <% width = "" %>
-  <% margin_right = "mr-1_25rem" %>
 <% end %>
 <%# END %>
-<article class="p-relative f-left w-50p <%= padding %>">
+<article class="p-relative f-left-ns clearfix w-50p-ns <%= margin_bottom %> <%= padding %>">
   <header class="mb-1rem">
     <h1 class="ma-0 ff-source_sans_pro fw-bold fs-1_2rem c-coal"><%= title %></h1>
   </header>
@@ -42,9 +46,17 @@
       <% margin_bottom = "" %>
     <% end %>
     <%# END %>
-    <% links.each do |link| %>
+    <% links.each_with_index do |link, index| %>
+      <%# CONFIG %>
+      <%# COMMENT: Conditional right margin %>
+      <% if index === 6 %>
+        <% margin_right = "" %>
+      <% else %>
+        <% margin_right = "mr-1_25rem mr-2_5rem-ns" %>
+      <% end %>
+      <%# END %>
       <% if counter === 0 %>
-        <div class="f-left <%= width %> clearfix <%= margin_right %> <%= margin_bottom %>">
+        <div class="f-left <%= width %> clearfix <%= margin_right %> <%= margin_bottom %> <%= index %>">
       <% end %>
         <% if !link.href && !link.target %>
           <li class="mb-0_2rem"><p data-interaction="pseudolink" class="p-relative cr-default ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color"><span data-interaction="asterisk" class="p-absolute l--0_4rem c-steel ttf-ease_in_out td-0_15s tp-color">*</span><%= link.title %></p></li>

@@ -33,6 +33,7 @@
     "gulp-imagemin": "^3.2.0",
     "gulp-inline-source": "^3.1.0",
     "gulp-uglify": "^2.1.2",
+    "gulp-uncss": "^1.0.6",
     "run-sequence": "^1.2.2"
   }
 }

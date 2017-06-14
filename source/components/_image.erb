@@ -5,11 +5,26 @@
       src: String
       alt: String
       caption: String?
+      _first: Bool
 
 %>
-<figure <% if caption %>data-placement="image"<% end %> class="p-relative mw-56rem ma-0 mh-auto mb-8rem">
+<%# Config %>
+<%# Comment: Conditional top margin if component is first component within content list %>
+<% if _first %>
+  <% margin_top = "mt-5rem mt-0-ns" %>
+<% else %>
+  <% margin_top = "" %>
+<% end %>
+<%# Comment: Conditional bottom margin if component is last component within content list %>
+<% if _last %>
+  <% margin_bottom = "mb-2rem mb-5rem-ns" %>
+<% else %>
+  <% margin_bottom = "mb-5rem mb-8rem-ns" %>
+<% end %>
+<%# End %>
+<figure <% if caption %>data-placement="image"<% end %> class="p-relative mw-56rem ma-0 mh-3rem-m mh-auto-l <%= margin_top %> <%= margin_bottom %> ph-1_5rem ph-0-ns">
   <img class="d-block w-100p" src="<%= src %>" alt="<%= alt %>">
   <% if caption %>
-    <figcaption data-placement="caption" class="p-absolute zi-2 l-2rem to-top_right t-caption ff-source_sans_pro fw-regular fs-0_8rem c-gray"><%= caption %></figcaption>
+    <figcaption data-placement="caption" class="d-none d-inline_block-ns p-absolute zi-2 l-2rem to-top_right t-caption ff-source_sans_pro fw-regular fs-0_8rem c-gray"><%= caption %></figcaption>
   <% end %>
 </figure>

@@ -7,15 +7,19 @@
       contact: Array:Pseudolink
 
 %>
-<nav class="mw-56rem mh-auto mt-3rem mb-8rem pb-2rem bbs-solid bbw-3x bc-coal">
-  <a href="/"><img src="<%= image.src %>" alt="<%= image.alt %>"></a>
-  <ul class="clearfix f-right ma-0 pa-0 lst-none">
+<nav data-interaction="menu" class="p-relative zi-4 mw-56rem-l pt-2rem pt-3rem-ns mh-1_5rem mh-3rem-m mh-auto-l mb-8rem-ns pb-1_5rem pb-2rem-ns ttf-ease_in_out td-0_25s tp-border_color bbs-solid bbw-3px bc-coal">
+  <a href="/"><img class="w-100px h-33px w-120px-ns h-38px-ns" src="<%= image.src %>" alt="<%= image.alt %>"></a>
+  <div class="d-none-ns p-absolute t-2_5rem r-0 clearfix">
+    <p data-interaction="open" class="ttf-ease_in_out td-0_15s tp-opacity o-1 pe-auto ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none">Menu</p>
+    <p data-interaction="close" class="p-absolute t-0 r-0 ttf-ease_in_out td-0_15s tp-opacity o-0 pe-none ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none">Close</p>
+  </div>
+  <ul class="d-none d-block-ns clearfix f-right ma-0 mv-0 pa-0 lst-none">
     <% links.each do |link| %>
       <li class="d-inline_block va-top">
         <% if !link.href && !link.target %>
-          <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none"><%= link.title %></p>
+          <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fs-1rem c-coal td-none"><%= link.title %></p>
         <% else %>
-          <a data-interaction="link" class="mr-3rem ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+          <a data-interaction="link" class="mr-3rem ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
         <% end %>
       </li>
     <% end %>
@@ -34,11 +38,44 @@
         <% end %>
         <%# END %>
         <% if !contact.href && !contact.target %>
-          <p class="<%= margin_bottom %> ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none"><%= contact.title %></p>
+          <p class="<%= margin_bottom %> ff-source_sans_pro fw-regular fs-1rem c-coal td-none"><%= contact.title %></p>
         <% else %>
-          <a data-interaction="link" class="d-block <%= margin_bottom %> ff-source_sans_pro fw-regular fst-italic fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
+          <a data-interaction="link" class="d-block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
         <% end %>
       <% end %>
     </li>
   </ul>
 </nav>
+<ul data-interaction="list" class="d-none-ns p-absolute t--100p zi-3 p-static-ns clearfix f-right-ns w-100p w-auto-ns ma-0 mv-0 pa-0 pv-6rem pv-0-ns ttf-ease_in_out td-0_25s tp-top lst-none bgc-tan">
+  <% links.each do |link| %>
+    <li data-interaction="item" class="o-0 d-block d-inline_block-ns mb-1_5rem mb-0-ns pl-1_5rem va-top ttf-cubic_bezier td-0_75s tp-opacity">
+      <% if !link.href && !link.target %>
+        <p class="ma-0 mr-3rem ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none"><%= link.title %></p>
+      <% else %>
+        <a class="mr-3rem ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+      <% end %>
+    </li>
+  <% end %>
+  <%# CONFIG %>
+  <%# COMMENT: Total number of contacts (index-base) %>
+  <% total_contact = contact.length - 1 %>
+  <%# END %>
+  <li class="d-inline_block pl-1_5rem va-top">
+    <% contact.each_with_index do |contact, index| %>
+      <%# CONFIG %>
+      <%# COMMENT: Conditional bottom margin based on `contact` index %>
+      <% if index == total_contact %>
+        <% margin_bottom = "" %>
+      <% else %>
+        <% margin_bottom = "mb-1_5rem mb-0_5rem-ns" %>
+      <% end %>
+      <%# END %>
+      <% if !contact.href && !contact.target %>
+        <p data-interaction="item" class="o-0 <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-cubic_bezier td-0_75s tp-opacity"><%= contact.title %></p>
+      <% else %>
+        <a data-interaction="item" class="o-0 d-block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1_5rem fs-1rem-ns c-coal td-none ttf-cubic_bezier td-0_75s tp-opacity" href="<%= contact.href %>" <% if contact.target %>target="_blank"<% end %>><%= contact.title %></a>
+      <% end %>
+    <% end %>
+  </li>
+</ul>
+<div data-interaction="cover" class="p-absolute zi-2 d-block d-none-ns h-100p w-100p pe-none ttf-ease_in_out td-0_25s tp-opacity o-0 bgc-gradient"></div>

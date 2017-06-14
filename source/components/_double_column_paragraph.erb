@@ -17,17 +17,30 @@
 <% elsif type === "Right" %>
   <% max_width = "mw-56rem" %>
 <% end %>
+<%# Comment: Conditional top margin if component is first component within content list %>
+<% if _first %>
+  <% margin_top = "mt-5rem mt-0-ns" %>
+<% else %>
+  <% margin_top = "" %>
+<% end %>
+<%# Comment: Conditional bottom margin if component is last component within content list %>
+<% if _last %>
+  <% margin_bottom = "mb-2rem" %>
+<% else %>
+  <% margin_bottom = "mb-5rem" %>
+<% end %>
+<%# End %>
 <%# END %>
-<section class="clearfix <%= max_width %> mh-auto mb-8rem">
+<section class="clearfix <%= max_width %> mh-3rem-m mh-auto-l <%= margin_top %> <%= margin_bottom %> mb-8rem-ns ph-1_5rem ph-0-ns">
   <% if type == "Right" %>
-    <div class="f-right mw-50rem">
+    <div class="f-right-ns mw-50rem">
   <% end %>
       <header class="mb-1rem">
         <h1 class="ma-0 ff-source_sans_pro fw-bold fs-1_2rem c-coal"><%= title %></h1>
       </header>
       <div class="clearfix">
-        <p class="f-left w-50p ma-0 pr-0_5rem ff-source_sans_pro fw-regular fs-1rem c-coal lh-1_5"><%= first_column %></p>
-        <p class="f-right w-50p ma-0 pl-0_5rem ff-source_sans_pro fw-regular fs-1rem c-coal lh-1_5"><%= second_column %></p>
+        <p class="f-left-ns w-50p-ns ma-0 mb-2rem mb-0-ns pr-0 pr-0_5rem-ns ff-source_sans_pro fw-regular fs-1rem c-coal lh-1_5"><%= first_column %></p>
+        <p class="f-right-ns w-50p-ns ma-0 pl-0 pl-0_5rem-ns ff-source_sans_pro fw-regular fs-1rem c-coal lh-1_5"><%= second_column %></p>
       </div>
   <% if type == "Right" %>
     </div>

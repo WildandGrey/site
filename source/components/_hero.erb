@@ -6,10 +6,10 @@
       portrait: Image
 
 %>
-<header class="d-flex ai-center jc-space_between mw-45rem mh-auto mb-8rem">
-  <h1 class="w-45p ma-0 ff-source_sans_pro fw-regular fs-2_5rem lh-1_5 c-coal"><%= heading %></h1>
-  <div class="w-50p">
-    <img class="d-block mw-100p mb-0_5rem" src="<%= portrait.src %>" alt="<%= portrait.alt %>">
+<header class="d-flex-ns ai-center jc-space_between mw-16rem mw-40rem-m mw-50rem-l mh-auto mt-5rem mt-0-ns mb-5rem mb-8rem-ns">
+  <h1 class="w-50p-ns ma-0 mb-5rem mb-0-ns pr-1rem ff-source_sans_pro fw-regular fs-2rem fs-2_5rem-l lh-1_5 c-coal"><%= heading %></h1>
+  <div class="w-45p-ns">
+    <img class="d-block mw-100p mb-0_5rem" src="<%= portrait.src.not_small %>" alt="<%= portrait.alt %>">
     <% if portrait.caption %>
       <p class="ma-0 ff-source_sans_pro fw-bold fs-0_8rem c-steel"><%= portrait.caption %></p>
     <% end %>

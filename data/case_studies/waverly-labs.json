@@ -13,7 +13,7 @@
     "title": "Overview",
     "text": [
       "The Pilot app is a translation application that corresponds with its smart wearables counterpart developed by Waverly Labs, a consumer electronics company. They use the latest technologies in machine translation and speech recognition for their flagship product to allow wearers to speak different languages while clearly understanding each other.",
-      "After the viral success of their <a data-interaction=\"link\" class=\"fw-bold c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://www.indiegogo.com/projects/meet-the-pilot-smart-earpiece-language-translator-headphones-travel#/\" target=\"_blank\">Indiegogo<a/> video, I was brought in to concept and design the first MVP. The first version would be a simple stand-alone app. Its scope was intentionally kept to a minimum, offering speech translation in only 5 languages. Quality of experience and relevance to the target demographic were top priorities, as was developing an intuitive way for users to submit feedback during beta."
+      "After the viral success of their <a data-interaction=\"link\" class=\"fw-bold c-coal td-none ttf-ease_in_out td-0_15s tp-color\" href=\"https://www.indiegogo.com/projects/meet-the-pilot-smart-earpiece-language-translator-headphones-travel#/\" target=\"_blank\">Indiegogo</a> video, I was brought in to concept and design the first MVP. The first version would be a simple stand-alone app. Its scope was intentionally kept to a minimum, offering speech translation in only 5 languages. Quality of experience and relevance to the target demographic were top priorities, as was developing an intuitive way for users to submit feedback during beta."
     ]
   },
   "content": [
@@ -118,6 +118,10 @@
   "_meta": {
     "title": "Greyson MacAlpine — Waverly Labs",
     "description": "The Pilot is a translation app that corresponds with its smart wearables counterpart. I was brought in to concept and design the first MVP for Waverly Labs.",
-    "keywords": "translation app smart wearables Waverly Labs MVP"
+    "keywords": "translation app smart wearables Waverly Labs MVP",
+    "images": {
+      "facebook": "https://www.greysonmacalpine.com/images/case-studies/waverly-labs/facebook.jpg",
+      "twitter": "https://www.greysonmacalpine.com/images/case-studies/waverly-labs/twitter.jpg"
+    }
   }
 }
