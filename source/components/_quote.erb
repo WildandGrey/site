@@ -24,7 +24,7 @@
 <% end %>
 <%# End %>
 <section class="mw-35rem mh-auto <%= margin_top %> <%= margin_bottom %> mb-8rem-ns ph-1_5rem ph-0-ns">
-  <p class="ma-0 mb-1rem ff-source_sans_pro fw-regular lh-1_5 fs-1_5rem c-coal">"<%= quote %>"</p>
+  <p class="p-relative ma-0 mb-1rem ff-source_sans_pro fw-regular lh-1_5 fs-1_5rem c-coal"><span class="p-absolute l--0_65rem">"</span><%= quote %>"</p>
   <% if author %>
     <div>
       <img class="d-inline_block w-1_5rem h-1_5rem mr-0_5rem br-50p" src="<%= author.image.src %>" alt="<%= author.image.alt %>">
