@@ -64,6 +64,12 @@ if ($pseudolinks && $note) {
       toggleClass($asterisk, ['c-steel', 'c-salmon']);
       toggleClass($note, ['o-0', 'o-1']);
     });
+    //  Click
+    $pseudolink.addEventListener('click', function(){
+      toggleClass(this, ['c-coal', 'c-peach']);
+      toggleClass($asterisk, ['c-steel', 'c-salmon']);
+      toggleClass($note, ['o-0', 'o-1']);
+    });
   });
 }
 /* Controller */
