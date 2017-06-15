@@ -59,9 +59,9 @@
         <div class="f-left <%= width %> clearfix <%= margin_right %> <%= margin_bottom %> <%= index %>">
       <% end %>
         <% if !link.href && !link.target %>
-          <li class="mb-0_2rem"><p data-interaction="pseudolink" class="p-relative cr-default ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color"><span data-interaction="asterisk" class="p-absolute l--0_4rem c-steel ttf-ease_in_out td-0_15s tp-color">*</span><%= link.title %></p></li>
+          <li class="pb-0_2rem"><p data-interaction="pseudolink" class="p-relative cr-default ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color"><span data-interaction="asterisk" class="p-absolute l--0_4rem c-steel ttf-ease_in_out td-0_15s tp-color">*</span><%= link.title %></p></li>
         <% else %>
-          <li class="mb-0_2rem"><a data-interaction="link" class="ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
+          <li class="pb-0_2rem"><a data-interaction="link" class="ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
         <% end %>
       <% if counter === 2 %>
         </div>
