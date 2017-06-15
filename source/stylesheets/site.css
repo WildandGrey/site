@@ -190,7 +190,8 @@
 .td-0_35s { -webkit-transition-duration: 0.15s; transition-duration: 0.15s; }
 .td-0_75s { -webkit-transition-duration: 1s; transition-duration: 1s; }
 /* Transition Delay */
-.tde-0_1s { -webkit-transition-delay: 0.05s; transition-delay: 0.05s; }
+.tde-0 { -webkit-transition-delay: 0s; transition-delay: 0s; }
+.tde-0_25s { -webkit-transition-delay: 0.25s; transition-delay: 0.25s; }
 /* Transition Property */
 .tp-border_color { -webkit-transition-property: border-color; transition-property: border-color; }
 .tp-color { -webkit-transition-property: color; transition-property: color; }

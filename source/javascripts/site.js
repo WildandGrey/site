@@ -95,7 +95,7 @@ if ($menu) {
   //  Menu press
   $open.addEventListener('click', function(){
     toggleClass($html, ['oy-hidden', 'o-auto']);
-    toggleClass($menu, ['bc-coal', 'bc-transparent']);
+    toggleClass($menu, ['bc-coal', 'bc-transparent', 'tde-0', 'tde-0_5s']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
@@ -106,7 +106,7 @@ if ($menu) {
   //  Close press
   $close.addEventListener('click', function(){
     toggleClass($html, ['oy-hidden', 'oy-auto', 'h-100p', 'h-100vh']);
-    toggleClass($menu, ['bc-coal', 'bc-transparent']);
+    toggleClass($menu, ['bc-coal', 'bc-transparent', 'tde-0', 'tde-0_5s']);
     toggleClass(this, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
     toggleClass($cover, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
@@ -126,7 +126,7 @@ if ($menu) {
   if (menu_open) {
     $cover.addEventListener('click', function(){
       toggleClass($html, ['oy-hidden', 'o-auto']);
-      toggleClass($menu, ['bc-coal', 'bc-transparent']);
+      toggleClass($menu, ['bc-coal', 'bc-transparent', 'tde-0', 'tde-0_5s']);
       toggleClass($open, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
       toggleClass($close, ['pe-auto', 'pe-none', 'o-1', 'o-0']);
       toggleClass(this, ['o-1', 'o-0', 'pe-none', 'pe-auto']);
