@@ -27,24 +27,22 @@ if ($cards) {
     });
   });
 }
-/* Link */
-const $links = document.querySelectorAll('[data-interaction="link"]');
-if ($links) {
-  $links.forEach(function($link){
-    //  Click
-    $link.addEventListener('click', function(){
-      toggleClass(this, ['c-coal', 'c-peach']);
-    });
-  });
-}
 /* Pseudolink */
 const $pseudolinks = document.querySelectorAll('[data-interaction="pseudo"]');
 const $note = document.querySelector('[data-interaction="note"]');
 if ($pseudolinks) {
   $pseudolinks.forEach(function($pseudolink){
+    //  Mouse enter
+    $pseudolink.addEventListener('mouseenter', function(){
+      toggleClass($note, ['o-0-ns', 'o-1-ns']);
+    });
+    //  Mouse leave
+    $pseudolink.addEventListener('mouseleave', function(){
+      toggleClass($note, ['o-0-ns', 'o-1-ns']);
+    });
     //  Click
     $pseudolink.addEventListener('click', function(){
-      toggleClass($note, ['o-0', 'o-1']);
+      toggleClass($note, ['o-0-ns', 'o-1-ns']);
     });
   });
 }
