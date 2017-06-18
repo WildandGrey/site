@@ -31,14 +31,6 @@ if ($cards) {
 const $links = document.querySelectorAll('[data-interaction="link"]');
 if ($links) {
   $links.forEach(function($link){
-    //  Mouse over
-    $link.addEventListener('mouseenter', function(){
-      toggleClass(this, ['c-coal', 'c-peach']);
-    });
-    //  Mouse out
-    $link.addEventListener('mouseleave', function(){
-      toggleClass(this, ['c-coal', 'c-peach']);
-    });
     //  Click
     $link.addEventListener('click', function(){
       toggleClass(this, ['c-coal', 'c-peach']);
@@ -46,28 +38,12 @@ if ($links) {
   });
 }
 /* Pseudolink */
-const $pseudolinks = document.querySelectorAll('[data-interaction="pseudolink"]');
+const $pseudolinks = document.querySelectorAll('[data-interaction="pseudo"]');
 const $note = document.querySelector('[data-interaction="note"]');
-if ($pseudolinks && $note) {
+if ($pseudolinks) {
   $pseudolinks.forEach(function($pseudolink){
-    //  Asterisk symbol
-    var $asterisk = $pseudolink.querySelector('[data-interaction="asterisk"]');
-    //  Mouse over
-    $pseudolink.addEventListener('mouseenter', function(){
-      toggleClass(this, ['c-coal', 'c-peach']);
-      toggleClass($asterisk, ['c-steel', 'c-salmon']);
-      toggleClass($note, ['o-0', 'o-1']);
-    });
-    //  Mouse out
-    $pseudolink.addEventListener('mouseleave', function(){
-      toggleClass(this, ['c-coal', 'c-peach']);
-      toggleClass($asterisk, ['c-steel', 'c-salmon']);
-      toggleClass($note, ['o-0', 'o-1']);
-    });
     //  Click
     $pseudolink.addEventListener('click', function(){
-      toggleClass(this, ['c-coal', 'c-peach']);
-      toggleClass($asterisk, ['c-steel', 'c-salmon']);
       toggleClass($note, ['o-0', 'o-1']);
     });
   });
