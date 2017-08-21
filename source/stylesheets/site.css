@@ -267,6 +267,7 @@
 /* Background Color */
 .bgc-tan { background-color: #f2edea; }
 .bgc-coal { background-color: #282828; }
+.bgc-white { background-color: #ffffff; }
 .bgc-black_20p { background-color: rgba(0,0,0,0.2); }
 .bgc-gradient {
   background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 100%); /* FF3.6-15 */
