@@ -29,7 +29,6 @@ if ($cards) {
 }
 /* Pseudolink */
 const $pseudolinks = document.querySelectorAll('[data-interaction="pseudo"]');
-const $note = document.querySelector('[data-interaction="note"]');
 if ($pseudolinks) {
   $pseudolinks.forEach(function($pseudolink){
     //  Mouse enter
