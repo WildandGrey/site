@@ -24,18 +24,14 @@
           :text => page.caption
     }) %>
     <%# List: Blocks %>
-    <div class="clearfix mw-16rem mw-35rem-ns mh-auto mb-5rem-m mb-8rem-l">
-      <% page.blocks.each_with_index do |block, index| %>
-        <%# Component: Block %>
-        <%= partial("components/block", :locals => {
-              :_index => index,
-              :title => block.title,
-              :type => block.type,
-              :note => block.note,
-              :links => block.links
-        }) %>
-      <% end %>
-    </div>
+    <% page.blocks.each do |block| %>
+      <%# Component: Block %>
+      <%= partial("components/block", :locals => {
+            :title => block.title,
+            :type => block.type,
+            :links => block.links
+      }) %>
+    <% end %>
     <%# List: Cards %>
     <div class="clearfix mw-56rem mh-3rem-m mh-auto-l ph-1_5rem ph-0-ns">
       <% case_studies.each_with_index do |card, index| %>
