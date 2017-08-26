@@ -52,15 +52,15 @@
     {
       "type": "Quote",
       "quote": {
-        "text": "Greyson is a fantastic designer. Every detail in a design matters to her. Her work is thoroughly thought out and researched. She is a pleasure to work with and someone I highly recommend.",
+        "text": "Greyson did a wonderful job helping us develop a roadmap for our mobile app strategy. We were at the early stages of planning our first app and she started by researching our competitors and helping us gauge the sentiment of the customer audience. Her UI and visual designs were well thought out and she was able to bring great suggestions to the table with little direction. We'd be happy to work with her on a future project.",
         "author": {
           "image": {
-            "src": "/images/case-studies/waverly-labs/jeremiah-warren.jpg",
-            "alt": "Jeremiah Warren, Creative Director",
+            "src": "/images/case-studies/waverly-labs/andrew-ochoa.png",
+            "alt": "Andrew Ochoa, Founder",
             "caption": false
           },
-          "name": "Jeremiah Warren",
-          "description": "Creative Director"
+          "name": "Andrew Ochoa",
+          "description": "Founder"
         }
       }
     },
@@ -84,8 +84,8 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/waverly-labs/android-wireframes.jpg",
-        "alt": "Sample Andoird Wireframes",
+        "src": "/images/case-studies/waverly-labs/android-wireframes.png",
+        "alt": "Sample Android Wireframes",
         "caption": "Example of Andoroid Wireframes"
       }
     },
