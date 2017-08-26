@@ -80,6 +80,7 @@
 */
 /* Width */
 .w-25px { width: 25px; }
+.w-45px { width: 45px; }
 .w-100px { width: 100px }
 .w-185px { width: 185px; }
 .w-250px { width: 250px; }
@@ -108,6 +109,7 @@
 /* Height */
 .h-auto { height: auto; }
 .h-0 { height: 0; }
+.h-3px { height: 3px; }
 .h-10px { height: 10px; }
 .h-33px { height: 33px; }
 .h-133px { height: 133px; }
@@ -243,6 +245,7 @@
 .fs-2_5rem { font-size: 2.5rem; }
 /* Line Height */
 .lh-0 { line-height: 0; }
+.lh-1_4 { line-height: 1.4; }
 .lh-1_3 { line-height: 1.6; }
 .lh-1_5 { line-height: 1.5; }
 /* Color */
@@ -339,6 +342,7 @@
   /* Position */
   .p-relative-ns { position: relative; }
   .p-static-ns { position: static; }
+  .t-3px-ns { top: 3px; }
   /* Float */
   .f-right-ns { float: right; }
   .f-left-ns { float: left; }
