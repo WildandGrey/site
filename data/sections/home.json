@@ -12,75 +12,63 @@
   "caption": "As a product designer I care about people as much as I care about visual craft. My end-to-end process encompasses early UX to delivery of polished pixels, while remaining purposeful in helping companies deliver meaningful experiences.",
   "blocks": [
     {
-      "title": "Companies I've Worked With",
-      "type": "third",
-      "note": "*NDA, will be shared on release",
+      "title": "A Few Companies<br> I've Worked With",
+      "type": "logo",
       "links": [
         {
-          "title": "Airbnb",
-          "href": false,
-          "target": false
+          "src": "",
+          "alt": "",
+          "caption": false
         },
         {
-          "title": "Samsung",
-          "href": false,
-          "target": false
+          "src": "",
+          "alt": "",
+          "caption": false
         },
         {
-          "title": "Articulate",
-          "href": "https://dribbble.com/shots/3103661-Articulate-Heroes",
-          "target": true
+          "src": "",
+          "alt": "",
+          "caption": false
         },
         {
-          "title": "SalesLoft",
-          "href": "https://dribbble.com/shots/2811832-Email-Reports",
-          "target": true
+          "src": "",
+          "alt": "",
+          "caption": false
         },
         {
-          "title": "Waverly Labs",
-          "href": "https://www.indiegogo.com/projects/meet-the-pilot-smart-earpiece-language-translator-headphones-travel#/",
-          "target": true
+          "src": "",
+          "alt": "",
+          "caption": false
         },
         {
-          "title": "1Face Watch",
-          "href": "https://www.instagram.com/1facewatch/",
-          "target": true
-        },
-        {
-          "title": "Mux",
-          "href": "https://mux.com/",
-          "target": true
-        },
-        {
-          "title": "Ueno",
-          "href": "https://dribbble.com/ueno",
-          "target": true
-        },
-        {
-          "title": "Uber",
-          "href": false,
-          "target": false
+          "src": "",
+          "alt": "",
+          "caption": false
         }
       ]
     },
     {
       "title": "Conference Talks",
-      "type": "single",
-      "note": false,
+      "type": "link",
       "links": [
         {
-          "title": "Valiocon",
-          "href": "http://valiocon.com/",
-          "target": true
-        },
-        {
-          "title": "Squares Conference",
-          "href": "http://squaresconference.com/",
+          "title": "Epicurrence",
+          "href": "https://www.epicurrence.com/",
           "target": true
         },
         {
           "title": "Creative Works",
           "href": "https://conference.creativeworks.co/",
+          "target": true
+        },
+        {
+          "title": "Squares",
+          "href": "http://squaresconference.com/",
+          "target": true
+        },
+        {
+          "title": "Valiocon",
+          "href": "http://valiocon.com/",
           "target": true
         }
       ]
