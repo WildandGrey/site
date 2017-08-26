@@ -2,81 +2,41 @@
 
     NAME: Block
     PARAMETERS:
-      _index: Int
       title: String
-      type: Enum
-            - single
-            - third
-      note: String
-      links: Array:Pseudolink
-
+      type: String:image, pseudolink
+      links: Array:Images, Pseudolinks
 %>
-<%# CONFIG %>
-<%# COMMENT: Conditional horizontal padding %>
-<% if _index % 2 === 0 %>
-  <% padding = "pr-2rem-ns" %>
-<% else %>
-  <% padding = "pl-2rem-ns" %>
-<% end %>
-<%# COMMENT: Conditional mobile bottom margin %>
-<% if _index === 0 %>
-  <% margin_bottom = "mb-3rem mb-0-ns" %>
-<% else %>
-  <% margin_bottom = "mb-5rem mb-0-ns" %>
-<% end %>
-<%# COMMENT: Type conditional width and right padding %>
-<% if type === "single" %>
-  <% width = "w-100p" %>
-<% elsif type === "third" %>
-  <% width = "" %>
-<% end %>
-<%# END %>
-<article class="p-relative f-left-ns clearfix w-50p-ns <%= margin_bottom %> <%= padding %>">
-  <header class="mb-1rem">
-    <h1 class="ma-0 ff-source_sans_pro fw-bold fs-1_2rem c-coal"><%= title %></h1>
+<article class="clearfix mw-16rem mw-35rem-ns mh-auto mb-5rem mb-8rem-ns">
+  <header class="f-left-ns w-50p-ns mb-2rem">
+    <h1 class="ma-0 mb-1rem ff-source_sans_pro fw-bold fs-1_2rem lh-1_4  c-coal"><%= title %></h1>
+    <span class="d-block w-45px h-3px bgc-coal"></span>
   </header>
-  <ul class="clearfix ma-0 pa-0 lst-none">
+  <ul class="clearfix p-relative-ns f-left-ns t-3px-ns w-50p-ns ma-0 pa-0">
     <%# CONFIG %>
-    <%# COMMENT: Link counter %>
-    <% counter = 0 %>
-    <%# COMMENT: Conditional bottom margin %>
-    <% if note %>
-      <% margin_bottom = "mb-1rem" %>
-    <% else %>
-      <% margin_bottom = "" %>
-    <% end %>
+    <% total_links = links.length - 1 %>
     <%# END %>
-    <% links.each_with_index do |link, index| %>
+    <% links.each_with_index do |link, _index| %>
       <%# CONFIG %>
-      <%# COMMENT: Conditional right margin %>
-      <% if index === 6 %>
-        <% margin_right = "" %>
+      <% if _index % 2 == 0 %>
+        <% padding = "pr-0_5rem" %>
       <% else %>
-        <% margin_right = "mr-1_25rem mr-2_5rem-ns" %>
+        <% padding = "pl-0_5rem" %>
+      <% end %>
+      <% if _index < total_links - 1 %>
+        <% logo_margin = "mb-1rem" %>
+        <% link_margin = "mb-0_5rem" %>
+      <% else %>
+        <% logo_margin = "" %>
+        <% link_margin = "" %>
       <% end %>
       <%# END %>
-      <% if counter === 0 %>
-        <div class="f-left <%= width %> clearfix <%= margin_right %> <%= margin_bottom %> <%= index %>">
+      <% if type === "logo" %>
+        <li class="d-block f-left w-50p <%= logo_margin %> <%= padding %> lst-none bgc-coal" style="height: 4rem;"><a></a></li>
+      <% elsif type === "link" %>
+        <li class="d-block f-left w-50p lst-none">
+          <a class="d-inline_block <%= link_margin %> ff-source_sans_pro fw-regular fs-1_2rem td-none c-coal ttf-ease_in_out td-0_15s tp-color" href="<%= link.target %>" <% if link.target %>target="_blank"<% end %> data-interaction="pseudo"><%= link.title %></a>
+        </li>
       <% end %>
-        <% if !link.href && !link.target %>
-          <li class="pb-0_2rem"><p data-interaction="pseudo" class="p-relative pe-none pe-auto-ns cr-default ma-0 ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color"><span data-interaction="asterisk" class="p-absolute l--0_4rem c-steel ttf-ease_in_out td-0_15s tp-color">*</span><%= link.title %></p></li>
-        <% else %>
-          <li class="pb-0_2rem"><a data-interaction="link" class="ff-source_sans_pro fw-regular fs-1rem c-coal td-none ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a></li>
-        <% end %>
-      <% if counter === 2 %>
-        </div>
-      <% end %>
-      <%# CONFIG %>
-      <%# COMMENT: Counter modifier (3n-1) %>
-      <% if counter < 2 %>
-        <% counter = counter + 1 %>
-      <% else %>
-        <% counter = 0 %>
-      <% end %>
-      <%# END %>
     <% end %>
   </ul>
-  <% if note %>
-    <p data-interaction="note" class="p-absolute ma-0 o-1 o-0-ns ff-source_sans_pro fw-regular fs-0_8rem c-gray ttf-ease_in_out td-0_15s tp-opacity"><%= note %></p>
-  <% end %>
 </article>
