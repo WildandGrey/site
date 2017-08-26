@@ -39,6 +39,14 @@
         "alt": "iOS mockups for a concept app showcase",
         "caption": "Concept Apps Showcase 03"
       }
+    },
+    {
+      "type": "Image",
+      "image": {
+        "src": "/images/case-studies/concept-projects/showcase_4.jpg",
+        "alt": "Website mockups for a concept project.",
+        "caption": "Concept Apps Showcase 04"
+      }
     }
   ],
   "_meta": {
