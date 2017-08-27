@@ -16,33 +16,33 @@
       "type": "logo",
       "links": [
         {
-          "src": "",
-          "alt": "",
+          "src": "/images/logos/samsung.svg",
+          "alt": "Samsung Logo",
           "caption": false
         },
         {
-          "src": "",
-          "alt": "",
+          "src": "/images/logos/adobe.svg",
+          "alt": "Adobe Logo",
           "caption": false
         },
         {
-          "src": "",
-          "alt": "",
+          "src": "/images/logos/articulate.svg",
+          "alt": "Articulate Logo",
           "caption": false
         },
         {
-          "src": "",
-          "alt": "",
+          "src": "/images/logos/uber.svg",
+          "alt": "Uber Logo",
           "caption": false
         },
         {
-          "src": "",
-          "alt": "",
+          "src": "/images/logos/sales-loft.svg",
+          "alt": "Sales Loft Logo",
           "caption": false
         },
         {
-          "src": "",
-          "alt": "",
+          "src": "/images/logos/waverly-labs.svg",
+          "alt": "Waverly Labs Logo",
           "caption": false
         }
       ]
