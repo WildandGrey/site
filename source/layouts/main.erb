@@ -43,9 +43,13 @@
         :contact => nav.contact
     }) %>
     <%= yield %>
-    <%# Component: Footer %>
-    <%= partial("components/footer", :locals => {
+    <%# Component: Footer New %>
+    <%= partial("components/footer_new", :locals => {
           :copyright => footer.copyright,
+          :image => footer.blog.image,
+          :logo => footer.blog.logo,
+          :text => footer.blog.text,
+          :link => footer.blog.link,
           :social => footer.social
     }) %>
     <%= javascript_include_tag "site" %>
