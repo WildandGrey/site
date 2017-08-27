@@ -3,7 +3,7 @@
   "title": "Wild & Grey",
   "card": {
     "image": {
-      "src": "/images/case-studies/wild-and-grey/card.jpg",
+      "src": "/images/case-studies/wild-and-grey/cards.jpg",
       "alt": "Wild & Grey desktop homepage screen"
     },
     "title": "Marketing Website",
@@ -20,7 +20,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/wild-and-grey/main.jpg",
+        "src": "/images/case-studies/wild-and-grey/mains.jpg",
         "alt": "Desktop homepage screen for Wild and Grey",
         "caption": "Site Showcase 01"
       }
@@ -28,7 +28,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/wild-and-grey/details.png",
+        "src": "/images/case-studies/wild-and-grey/detail.jpg",
         "alt": "Two screens with different sections of the Wild and Grey homepage.",
         "caption": false
       }

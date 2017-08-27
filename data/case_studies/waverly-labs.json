@@ -30,6 +30,7 @@
       "paragraph": {
         "type": "Centered",
         "title": "Secondary & Competitive Research",
+        "link": false,
         "first_column": "Time and budget constraints limited in-depth and extensive user interviews, so secondary research was prioritized. Qualitative data was collected from the Pilot’s Indiegogo backers through specific surveys and insights were gathered by meticulously assessing user sentiment through reviews of competing translation apps.",
         "second_column": "We also learned that a high percentage of the Pilot backers were educated males living in Westernized countries. Learning which languages they prioritized for both leisure and business purposes helped inform which five language offerings would be available in beta and which language would be the app default."
       }
@@ -69,6 +70,7 @@
       "paragraph": {
         "type": "Right",
         "title": "Wireframes & Prototypes",
+        "link": false,
         "first_column": "We jumped into Sketch for higher fidelity in the wireframing process and designed flows for onboarding, text translation, voice translation, support and feedback, and more. It was particularly important that users be able to easily submit feedback and support requests.",
         "second_column": "I worked closely with the team and their developers to ensure that the project would meet both business goals and also be completed by the beta’s launch date. We used Invision as an efficient way to engage with simple prototypes and leave feedback for each design iteration."
       }
@@ -84,7 +86,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/waverly-labs/android-wireframe.png",
+        "src": "/images/case-studies/waverly-labs/android-wireframes.png",
         "alt": "Sample Android Wireframes",
         "caption": "Example of Andoroid Wireframes"
       }
@@ -94,6 +96,7 @@
       "paragraph": {
         "type": "Right",
         "title": "Rebrand & Launch for iOS & Android",
+        "link": false,
         "first_column": "The app would be supported on both iOS and Android, so I designed the end-to-end experience for both, getting feedback from users of both platforms to better understand their needs and expectations. During this design process, Waverly Labs underwent a rebrand, which we integrated in the final design.",
         "second_column": "Visually, we knew that we wanted to focus on undistracted simplicity. We embraced white space and kept the iconography straightfoward. The beta apps were quietly launched last year in November."
       }
