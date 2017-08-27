@@ -16,33 +16,33 @@
       "type": "logo",
       "links": [
         {
-          "src": "/images/logos/samsung.svg",
-          "alt": "Samsung Logo",
-          "caption": false
-        },
-        {
-          "src": "/images/logos/adobe.svg",
+          "src": "/images/logos/adobe.png",
           "alt": "Adobe Logo",
           "caption": false
         },
         {
-          "src": "/images/logos/articulate.svg",
-          "alt": "Articulate Logo",
-          "caption": false
-        },
-        {
-          "src": "/images/logos/uber.svg",
+          "src": "/images/logos/uber.png",
           "alt": "Uber Logo",
           "caption": false
         },
         {
-          "src": "/images/logos/sales-loft.svg",
-          "alt": "Sales Loft Logo",
+          "src": "/images/logos/articulate.png",
+          "alt": "Articulate Logo",
           "caption": false
         },
         {
-          "src": "/images/logos/waverly-labs.svg",
+          "src": "/images/logos/samsung.png",
+          "alt": "Samsung Logo",
+          "caption": false
+        },
+        {
+          "src": "/images/logos/waverly_labs.png",
           "alt": "Waverly Labs Logo",
+          "caption": false
+        },
+        {
+          "src": "/images/logos/salesloft.png",
+          "alt": "Sales Loft Logo",
           "caption": false
         }
       ]
@@ -69,6 +69,11 @@
         {
           "title": "Valiocon",
           "href": "http://valiocon.com/",
+          "target": true
+        },
+        {
+          "title": "Verse",
+          "href": "",
           "target": true
         }
       ]
