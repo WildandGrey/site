@@ -6,6 +6,7 @@
             - Centered
             - Right
       title: String
+      link?: Pseudolink
       first_column: String
       second_column: String
 
@@ -40,7 +41,17 @@
       </header>
       <div class="clearfix">
         <p class="f-left-ns w-50p-ns ma-0 mb-2rem mb-0-ns pr-0 pr-0_5rem-ns ff-source_sans_pro fw-regular fs-1rem c-coal lh-1_5"><%= first_column %></p>
-        <p class="f-right-ns w-50p-ns ma-0 pl-0 pl-0_5rem-ns ff-source_sans_pro fw-regular fs-1rem c-coal lh-1_5"><%= second_column %></p>
+        <p class="f-right-ns w-50p-ns ma-0 pl-0 pl-0_5rem-ns ff-source_sans_pro fw-regular fs-1rem c-coal lh-1_5">
+          <%= second_column %>
+          <% if link != false %>
+            <a class="d-block mt-1rem ff-source_sans_pro fw-semi_bold fs-1rem c-coal td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %><svg data-interaction="arrow" class="d-inline_block w-25px h-10px ml-1_25rem f-coal ttf-ease_in_out td-0_15s tp-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.98 5.66">
+              <title>Navigation Arrow: Next Case Study</title>
+              <rect y="2.33" width="14" height="1"/>
+              <rect x="11.36" y="1.38" width="4" height="1" transform="translate(5.09 -9) rotate(45)"/>
+              <rect x="11.36" y="3.5" width="4" height="1" transform="translate(0.94 10.51) rotate(-45)"/>
+            </svg></a>
+          <% end %>
+        </p>
       </div>
   <% if type == "Right" %>
     </div>
