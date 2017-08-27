@@ -1,0 +1,77 @@
+<%#
+    NAME: Footer
+    PARAMETERS:
+      copyright: String
+      image: Image
+      logo: Image
+      text: String
+      link: Pseudolink
+      social: Array:Pseudolink
+%>
+<footer class="p-relative clearfix w-100p bgc-white">
+  <div class="p-absolute clearfix w-100p h-318px-ns">
+    <div class="f-left w-50p h-100p bgc-white"></div>
+    <div class="f-left w-50p h-100p bgc-coal"></div>
+  </div>
+  <div class="p-relative zi-2 clearfix w-100p mw-56rem mh-auto ph-1_5rem ph-3rem-m pr-0-l pl-6rem-l bgc-coal">
+    <div class="p-relative f-left-ns w-50p-ns pr-4rem-ns" style="top: -2rem;">
+      <img class="w-100p" src="<%= image.src %>" alt="<%= image.alt %>">
+    </div>
+    <div class="f-left-ns w-50p-ns pt-4rem-ns pl-4rem-ns">
+      <span style="width: 50px; height: 50px; background-color: white; display: block; margin-bottom: 1rem;"></span>
+      <p class="ff-source_sans_pro fw-regular fs-1rem c-white lh-1_5"><%= text %></p>
+      <a class="ff-source_sans_pro fw-semi_bold fs-1rem c-white td-none" href="<%= link.href %>" ><%= link.title %><svg class="d-inline_block w-25px h-10px ml-1_25rem f-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.98 5.66">
+        <title>Take a Look</title>
+        <rect y="2.33" width="14" height="1"/>
+        <rect x="11.36" y="1.38" width="4" height="1" transform="translate(5.09 -9) rotate(45)"/>
+        <rect x="11.36" y="3.5" width="4" height="1" transform="translate(0.94 10.51) rotate(-45)"/>
+      </svg></a>
+    </div>
+  </div>
+  <div class="p-absolute clearfix w-100p h-145px-ns">
+    <div class="f-left w-50p h-100p bgc-white"></div>
+    <div class="f-left w-50p h-100p bgc-coal"></div>
+  </div>
+  <div class="p-relative zi-2 clearfix w-100p mw-56rem mh-auto pv-3rem ph-1_5rem ph-3rem-m pr-0-l pl-6rem-l bgc-coal">
+    <%# copyright %>
+    <p class="p-relative t-0_2rem f-right w-auto-l ma-0 ff-source_sans_pro fw-regular fs-0_8rem c-steel"><%= copyright %> <span data-copyright="year"></span></p>
+    <%# social %>
+    <ul class="f-left w-auto-l clearfix ma-0 pa-0 lst-none">
+      <%# CONFIG %>
+      <%# COMMENT: Link index %>
+      <% index = 0 %>
+      <%# END %>
+      <% social.each do |link| %>
+        <%# CONFIG %>
+        <% if index === 2 %>
+          <% margin_bottom = "" %>
+        <% else %>
+          <% margin_bottom = "mb-0_2rem" %>
+        <% end %>
+        <%# END %>
+        <%# Link %>
+        <% if index === 0 %>
+          <div class="f-right mr-2_5rem">
+        <% end %>
+            <li>
+              <% if !link.href && !link.target %>
+                <p class="<%= margin_bottom %> ff-source_sans_pro fw-regular fs-0_8rem c-white td-none"><%= link.title %></p>
+              <% else %>
+                <a class="d-inline_block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-0_8rem c-white td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+              <% end %>
+            </li>
+        <% if index === 2 %>
+          </div>
+        <% end %>
+        <%# CONFIG %>
+        <%# COMMENT: Updates/resets index based on value %>
+        <% if index < 2 %>
+          <% index = index + 1 %>
+        <% else %>
+          <% index = 0 %>
+        <% end %>
+        <%# END %>
+      <% end %>
+    </ul>
+  </div>
+</footer>
