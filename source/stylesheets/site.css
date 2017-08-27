@@ -115,7 +115,7 @@
 .h-33px { height: 33px; }
 .h-133px { height: 133px; }
 .h-1_5rem { height: 1.5rem; }
-.h-4rem { height: 4rem; }
+.h-3rem { height: 3rem; }
 .h-15rem { height: 15rem; }
 .h-35rem { height: 35rem; }
 .h-100p { height: 100%; }
@@ -178,6 +178,7 @@
 .pb-2rem { padding-bottom: 2rem; }
 .pl-0 { padding-left: 0; }
 .pl-0_5rem { padding-left: 0.5rem; }
+.pl-1rem { padding-left: 1rem; }
 .pl-1_5rem { padding-left: 1.5rem; }
 .pl-2rem { padding-left: 2rem; }
 .pl-4rem { padding-left: 4rem; }
