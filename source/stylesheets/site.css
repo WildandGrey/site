@@ -132,6 +132,7 @@
 .mv-4rem { margin-top: 4rem; margin-bottom: 4rem; }
 .mh-auto { margin-right: auto; margin-left: auto; }
 .mh-1_5rem { margin-right: 1.5rem; margin-left: 1.5rem; }
+.mt-1rem { margin-top: 1rem; }
 .mt-2rem { margin-top: 2rem; }
 .mt-3rem { margin-top: 3rem; }
 .mt-4rem { margin-top: 4rem; }
@@ -161,6 +162,7 @@
 .pv-6rem { padding-top: 6rem; padding-bottom: 6rem; }
 .ph-1_5rem { padding-right: 1.5rem; padding-left: 1.5rem; }
 .pt-0_5rem { padding-top: 0.5rem; }
+.pt-1rem { padding-top: 1rem; }
 .pt-2rem { padding-top: 2rem; }
 .pr-0 { padding-right: 0; }
 .pr-0_2rem { padding-right: 0.2rem; }
