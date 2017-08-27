@@ -3,13 +3,21 @@
     NAME: Card
     PARAMETERS:
       _index: Int
+      _total: Int
       title: String
       image: Image
       project: String
       description: String
 
 %>
-<article class="mb-5rem mb-10rem-ns">
+<%# CONFIG %>
+<% if _index < _total %>
+  <% margin = "mb-5rem mb-10rem-ns" %>
+<% else %>
+  <% margin = "mb-5rem" %>
+<% end %>
+<%# END %>
+<article class="<%= margin %>">
   <a data-interaction="card" class="d-block p-relative" href="/case-studies/<%= title.parameterize %>">
     <span data-hover="index" class="d-inline_block-ns p-absolute t-1_5rem l-2_5rem zi-2 to-top-right t-caption ttf-ease_in_out td-0_15s tp-color ff-source_sans_pro fw-bold fs-1_2rem c-light_gray"><%= "0#{ _index }" %></span>
     <img class="w-100p mb-1rem" src="<%= image.src %>" alt="<%= image.alt %>">
