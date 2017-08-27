@@ -25,6 +25,7 @@
 .d-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 /* Flexbox */
 .ai-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.jc-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .jc-space_between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 /* Position */
 .p-fixed { position: fixed; }
@@ -114,6 +115,7 @@
 .h-33px { height: 33px; }
 .h-133px { height: 133px; }
 .h-1_5rem { height: 1.5rem; }
+.h-4rem { height: 4rem; }
 .h-15rem { height: 15rem; }
 .h-35rem { height: 35rem; }
 .h-100p { height: 100%; }
@@ -261,6 +263,7 @@
 .c-salmon { color: #e5c7bb; }
 /* Text Decoration */
 .td-none { text-decoration: none; }
+.ta-center { text-align: center; }
 /* Vertical Align */
 .va-top { vertical-align: top; }
 .va-middle { vertical-align: middle; }
