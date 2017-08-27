@@ -3,7 +3,7 @@
   "title": "Waverly Labs",
   "card": {
     "image": {
-      "src": "/images/case-studies/waverly-labs/card.jpg",
+      "src": "/images/case-studies/waverly-labs/cards.jpg",
       "alt": "iPhone mockup displaying the main translation screen"
     },
     "title": "The Pilot App",
@@ -55,7 +55,7 @@
         "text": "Greyson did a wonderful job helping us develop a roadmap for our mobile app strategy. We were at the early stages of planning our first app and she started by researching our competitors and helping us gauge the sentiment of the customer audience. Her UI and visual designs were well thought out and she was able to bring great suggestions to the table with little direction. We'd be happy to work with her on a future project.",
         "author": {
           "image": {
-            "src": "/images/case-studies/waverly-labs/andrew-ochoa.png",
+            "src": "/images/case-studies/waverly-labs/andrew.png",
             "alt": "Andrew Ochoa, Founder",
             "caption": false
           },
@@ -76,7 +76,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/waverly-labs/ios-wireframes.jpg",
+        "src": "/images/case-studies/waverly-labs/ios-wireframe.jpg",
         "alt": "Sample iOS Wireframes",
         "caption": "Example of iOS Wireframes"
       }
@@ -84,7 +84,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/waverly-labs/android-wireframes.png",
+        "src": "/images/case-studies/waverly-labs/android-wireframe.png",
         "alt": "Sample Android Wireframes",
         "caption": "Example of Andoroid Wireframes"
       }
@@ -101,7 +101,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/waverly-labs/ios-visuals.jpg",
+        "src": "/images/case-studies/waverly-labs/ios-visual.jpg",
         "alt": "3 iPhone devices featuring iOS visual samples",
         "caption": "Example of iOS Visuals"
       }
@@ -109,7 +109,7 @@
     {
       "type": "Image",
       "image": {
-        "src": "/images/case-studies/waverly-labs/android-visuals.jpg",
+        "src": "/images/case-studies/waverly-labs/android-visual.jpg",
         "alt": "3 Samsung mobile devices featuring Android visual samples",
         "caption": "Example of Android Visuals"
       }
