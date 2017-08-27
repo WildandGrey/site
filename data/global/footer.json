@@ -1,5 +1,21 @@
 {
   "copyright": "© Wild & Grey",
+  "blog": {
+    "image": {
+      "src": "/images/brand/footer.jpg",
+      "alt": "Leve Ren"
+    },
+    "logo": {
+      "src": "",
+      "alt": ""
+    },
+    "text": "Originally derived from the Danish meaning for \"live pure\", Leve Ren is my new personal blog where I  share my journey in pursuing a more holistic and creative life.",
+    "link": {
+      "title": "Take a look",
+      "href": "",
+      "target": true
+    }
+  },
   "social": [
     {
       "title": "Linkedin",
