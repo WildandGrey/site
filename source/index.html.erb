@@ -34,12 +34,16 @@
     <% end %>
     <%# List: Cards %>
     <div class="clearfix mw-56rem mh-3rem-m mh-auto-l ph-1_5rem ph-0-ns">
+      <%# CONFIG %>
+      <% total_cards = case_studies.length - 1 %>
+      <%# END %>
       <% case_studies.each_with_index do |card, index| %>
         <% if index % 2 === 0 %>
           <div class="f-left w-50p-ns pr-2rem-ns">
             <%# Component: Card %>
             <%= partial("components/card", :locals => {
                   :_index => card._index,
+                  :_total => total_cards,
                   :title => card.title,
                   :image => card.card.image,
                   :project => card.card.title,
@@ -51,6 +55,7 @@
             <%# Component: Card %>
             <%= partial("components/card", :locals => {
                   :_index => card._index,
+                  :_total => total_cards,
                   :title => card.title,
                   :image => card.card.image,
                   :project => card.card.title,
