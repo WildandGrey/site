@@ -37,7 +37,7 @@
         <li class="d-flex ai-center jc-center f-left w-50p h-3rem <%= logo_margin %> <%= padding %> lst-none ta-center"><img class="w-100p va-middle" src="<%= link.src %>" alt="<%= link.alt %>"></li>
       <% elsif type === "link" %>
         <li class="d-block f-left w-50p lst-none">
-          <a class="d-inline_block <%= link_margin %> ff-source_sans_pro fw-regular fs-1_2rem td-none c-coal ttf-ease_in_out td-0_15s tp-color" href="<%= link.target %>" <% if link.target %>target="_blank"<% end %> data-interaction="pseudo"><%= link.title %></a>
+          <a class="d-inline_block <%= link_margin %> ff-source_sans_pro fw-regular fs-1_2rem td-none c-coal ttf-ease_in_out td-0_15s tp-color" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %> data-interaction="pseudo"><%= link.title %></a>
         </li>
       <% end %>
       <% if _index % 2 != 0 %>
