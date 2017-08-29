@@ -22,7 +22,10 @@
       "image": {
         "src": "/images/case-studies/waverly-labs/working.jpg",
         "alt": "The CEO and engineers of the Pilot App working on some initial designs",
-        "caption": false
+        "caption": {
+          "type": "hanging",
+          "text": "Photos of Waverly Labs team by Wild & Grey"
+        }
       }
     },
     {
@@ -80,7 +83,10 @@
       "image": {
         "src": "/images/case-studies/waverly-labs/ios-wireframe.jpg",
         "alt": "Sample iOS Wireframes",
-        "caption": "Example of iOS Wireframes"
+        "caption": {
+          "type": "vertical",
+          "text": "Example of iOS Wireframes"
+        }
       }
     },
     {
@@ -88,7 +94,10 @@
       "image": {
         "src": "/images/case-studies/waverly-labs/android-wireframes.png",
         "alt": "Sample Android Wireframes",
-        "caption": "Example of Andoroid Wireframes"
+        "caption": {
+          "type": "vertical",
+          "text": "Example of Andoroid Wireframes"
+        }
       }
     },
     {
@@ -106,7 +115,10 @@
       "image": {
         "src": "/images/case-studies/waverly-labs/ios-visual.jpg",
         "alt": "3 iPhone devices featuring iOS visual samples",
-        "caption": "Example of iOS Visuals"
+        "caption": {
+          "type": "vertical",
+          "text": "Example of iOS Visuals"
+        }
       }
     },
     {
@@ -114,7 +126,10 @@
       "image": {
         "src": "/images/case-studies/waverly-labs/android-visual.jpg",
         "alt": "3 Samsung mobile devices featuring Android visual samples",
-        "caption": "Example of Android Visuals"
+        "caption": {
+          "type": "vertical",
+          "text": "Example of Android Visuals"
+        }
       }
     }
   ],
