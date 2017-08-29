@@ -9,16 +9,16 @@
       social: Array:Pseudolink
 %>
 <footer class="p-relative clearfix w-100p mt-8rem mt-12rem-l bgc-white">
-  <div class="p-absolute clearfix w-100p h-318px-ns">
+  <div class="p-absolute clearfix w-100p h-348px-ns">
     <div class="f-left w-50p h-100p bgc-white"></div>
     <div class="f-left w-50p h-100p bgc-coal"></div>
   </div>
   <div class="p-relative zi-2 clearfix w-100p mw-56rem mh-auto ph-1_5rem ph-3rem-m pr-0-l pl-6rem-l bgc-coal">
-    <div class="p-relative f-left-ns w-50p-ns pr-2rem-m pr-4rem-l" style="top: -4rem;">
+    <div class="p-relative t--4rem f-left-ns w-50p-ns pr-2rem-m pr-2rem-l">
       <img class="w-100p" src="<%= image.src %>" alt="<%= image.alt %>">
     </div>
-    <div class="p-relative f-left-ns w-50p-ns pt-5rem-ns pr-2rem-m pl-4rem-ns" style="top: -2rem;">
-      <span style="width: 50px; height: 50px; display: block; margin-bottom: 1rem;"><img src="<%= logo.src %>" alt="<%= logo.alt %>"></span>
+    <div class="p-relative t--2rem f-left-ns w-50p-ns pt-5rem-ns pr-2rem-m pl-2rem-l">
+      <span class="d-block w-50p h-50px mb-1rem"><img src="<%= logo.src %>" alt="<%= logo.alt %>"></span>
       <p class="ff-source_sans_pro fw-regular fs-1rem c-white lh-1_5"><%= text %></p>
       <a class="ff-source_sans_pro fw-semi_bold fs-1rem c-white td-none" href="<%= link.href %>" ><%= link.title %><svg class="d-inline_block w-25px h-10px ml-1_25rem f-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.98 5.66">
         <title>Take a Look</title>
@@ -28,13 +28,13 @@
       </svg></a>
     </div>
   </div>
-  <div class="p-absolute clearfix w-100p h-115px-ns">
+  <div class="p-absolute clearfix w-100p h-127px-ns">
     <div class="f-left w-50p h-100p bgc-white"></div>
     <div class="f-left w-50p h-100p bgc-coal"></div>
   </div>
   <div class="p-relative zi-2 clearfix w-100p mw-56rem mh-auto pv-3rem ph-1_5rem ph-3rem-m pr-0-l pl-6rem-l bgc-coal" style="padding-top: 1rem; padding-bottom: 3rem;">
     <%# copyright %>
-    <p class="p-relative t-0_2rem f-right w-auto-l ma-0 ff-source_sans_pro fw-regular fs-0_8rem c-steel"><%= copyright %> <span data-copyright="year"></span></p>
+    <p class="f-right w-auto-l ma-0 ff-source_sans_pro fw-regular fs-1rem c-steel"><%= copyright %> <span data-copyright="year"></span></p>
     <%# social %>
     <ul class="f-left w-auto-l clearfix ma-0 pa-0 lst-none">
       <%# CONFIG %>
@@ -46,7 +46,7 @@
         <% if index === 2 %>
           <% margin_bottom = "" %>
         <% else %>
-          <% margin_bottom = "mb-0_2rem" %>
+          <% margin_bottom = "mb-0_5rem" %>
         <% end %>
         <%# END %>
         <%# Link %>
@@ -55,9 +55,9 @@
         <% end %>
             <li>
               <% if !link.href && !link.target %>
-                <p class="<%= margin_bottom %> ff-source_sans_pro fw-regular fs-0_8rem c-white td-none"><%= link.title %></p>
+                <p class="<%= margin_bottom %> ff-source_sans_pro fw-regular fs-1rem c-white td-none"><%= link.title %></p>
               <% else %>
-                <a class="d-inline_block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-0_8rem c-white td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
+                <a class="d-inline_block <%= margin_bottom %> ff-source_sans_pro fw-regular fs-1rem c-white td-none" href="<%= link.href %>" <% if link.target %>target="_blank"<% end %>><%= link.title %></a>
               <% end %>
             </li>
         <% if index === 2 %>
