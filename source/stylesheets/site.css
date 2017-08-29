@@ -31,6 +31,8 @@
 .p-fixed { position: fixed; }
 .p-absolute { position: absolute; }
 .p-relative { position: relative; }
+.t--4rem { top: -4rem; }
+.t--2rem { top: -2rem; }
 .t--1rem { top: -1rem; }
 .t-0 { top: 0; }
 .t-0_2rem { top: 0.2rem; }
@@ -113,6 +115,7 @@
 .h-3px { height: 3px; }
 .h-10px { height: 10px; }
 .h-33px { height: 33px; }
+.h-50px { height: 50px; }
 .h-133px { height: 133px; }
 .h-1_5rem { height: 1.5rem; }
 .h-3rem { height: 3rem; }
@@ -377,8 +380,8 @@
   /* Height */
   .h-auto-ns { height: auto; }
   .h-38px-ns { height: 38px; }
-  .h-115px-ns { height: 115px; }
-  .h-318px-ns { height: 318px; }
+  .h-127px-ns { height: 127px; }
+  .h-348px-ns { height: 348px; }
   .h-35rem-ns { height: 35rem; }
   .h-100p-ns { height: 100%; }
   /*
